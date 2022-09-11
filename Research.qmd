@@ -1,0 +1,90 @@
+---
+title: "Research"
+editor: visual
+---
+
+## Research Interests
+
+Nonparametric econometrics, health economics, health technology assessment, survey statistics.
+
+## Peer Reviewed Publications
+
+1.  Clair, Luc, Hope Anderson, Christopher Anderson, Okechukwu Ekuma, and Heather Prior. (2022). "Cardiovascular Disease and the Risk of Dementia: A Survival Analysis Using Administrative Data from Canada". *Canadian Journal of Public Health*. [https://doi.org/10.17269/s41997-021-00589-2](https://link.springer.com/article/10.17269/s41997-021-00589-2)
+
+2.  Riediger, Natalie, Laplante, Jeffrey, Mudryj, Adriana, and Clair, Luc. (2022). "Examining differences in diet quality between Canadian Indigenous and non-Indigenous adults: results from the 2004 and 2015 Canadian Community Health Survey Nutrition Surveys". The Canadian *Journal of Public Health*. DOI: [10.17269/s41997-021-00580-x.](https://link.springer.com/article/10.17269%2Fs41997-021-00580-x)
+
+3.  Riediger, Natalie, Laplante, Jeffrey, Mudryj, Adriana, and Clair, Luc. (2021). "Diet quality among Indigenous and non-Indigenous children and youth in Canada in 2004 and 2015: a repeated cross-sectional design". *Public Health Nutrition*. Jun 10:1-10. DOI: [10.1017/S1368980021002561](https://www.cambridge.org/core/journals/public-health-nutrition/article/diet-quality-among-indigenous-and-nonindigenous-children-and-youth-in-canada-in-2004-and-2015-a-repeated-crosssectional-design/723ECCB88D8E26FB50B13E0FAFE3C036)
+
+4.  Mahon KN, SN Garland, G Eaton, K Chalifour, BE Lane, K Fowler, L Gambin, and L Clair. (2021). "The Financial Impact of Cancer on Canadian Young Adults". *Journal of Cancer Survivorship : Research and Practice*.
+
+5.  Pauls, Samantha, Youjia Du, Luc Clair, Tanja Winter, Harold M. Aukema, Carla G. Taylor, Peter Zahradka. (2020). "Impact of Age, Menopause, and Obesity on Oxylipins Linked to Vascular Health". *Arteriosclerosis, Thrombosis, and Vascular Biology*, 41(2): 883-897.
+
+6.  Gibson, Grant and Luc Clair. (2019). "Oh Brother How Art Thou? Differential Reporting of Unmet Need - Evidence from Ontario". *Social Science and Medicine*. 243. 112632.
+
+7.  Clair, Luc. (2019). "Nonparametric Kernel Regression Using Complex Survey Data". *Advances in Econometrics*. Vol. 39.
+
+8.  Moghadasian, Mohammed H., Luc Clair, Francesca Bonomini, Gaia Favero, and Rita Rezzani. (2018). "Obesity and Related Disorders: An International Perspective". *Current Research in Diabetes & Obesity Journal*. 7(5): 55721.
+
+## Works Submitted for Publication
+
+1.  Abo Aoun, Mohamed; Meek, Benjamin; Clair, Luc; Wikstrom, Sara; Prasad, Benjamin; Modirrousta, Mandana. "Prognostic factors in major depressive disorder: comparing responders and non-responders to Repetitive Transcranial Magnetic Stimulation (rTMS), a naturalistic retrospective chart review". Revise and Resubmit at *The Canadian Journal of Psychiatry*.
+
+## Working Papers
+
+1.  Private Supplemental Insurance and Mental Health Care Utilization in Canada: An Investigation using Nonparametric Estimation Methods. Collaborative Applied Research in Economics, Department of Economics, Memorial University of Newfoundland.
+
+## Technical Reports
+
+1.  Clair, Luc, Angela Tan, Carla Taylor, and Peter Zahradka. "Estimating the Additional Health Care Costs Associated with Peripheral Artery Disease in Manitoba." Prepared for Manitoba Agriculture on October 31, 2021.
+
+2.  Clair, Luc. "Estimating the Economic Impact of Agri-Food-Based Health Care Interventions". Prepared for Manitoba Agriculture on March 31, 2021.
+
+## Unpublished Manuscripts
+
+1\. Nonparametric Kernel Estimation Methods using Complex Survey Data (2016), PhD Thesis, McMaster University.
+
+## Works in Progress
+
+-   Probability-Weighted Nonparametric Conditional PDF Estimation
+
+-   Nonparametric Instrumental Variable Estimation Using Complex Survey Data
+
+-   Socioeconomic Impact of Pulse-Based Treatment for Peripheral Artery Disease
+
+-   Nonparametric Multiple Imputation.
+
+-   Writing an R package for nonparametric kernel estimation methods for survey data.
+
+-   Genome 360 Phase II: Manitoba's Provincial Applied Genomics Enterprise Platform.
+
+-   The effect of flax milk on arterial hypertension: Evaluation of blood pressure response by 24 hour ambulatory blood pressure monitoring. with Dr. Delfin Rodrigez-Leyva, and Dr. Grant Pierce.
+
+-   Flaxseed prevents broken hearts in breast cancer (CANFLAX study). With Dr. Davinder Jassal, Dr. Grant Pierce, and Dr. Pawan Singal.
+
+-   Cost-Effectiveness Analysis of the Anti-Inflammatory Effects of Flax Oil. With Dr. Grant Pierce, Dr. Carla Taylor, Dr. Peter Zahradka, and Dr. Samantha Pauls.
+
+-   Effects of dietary Flaxseed on Memory and Cognition. With Dr. Ben Albensi, Dr. Mandana Modirrousta, Dr. Colleen Millikin, and Dr. Grant Pierce.
+
+## Referee Activities
+
+### Academic Journals
+
+-   Alzheimer's and Dementia
+
+-   Reviewed chapters in "Macroeconomics: Canada in the Global Economy, 11the Edition" for Pearson Publishing.
+
+-   Quality of Life Research
+
+-   Advances in Econometrics
+
+### Textbooks
+
+-   Reviewed chapters in "Macroeconomics: Canada in the Global Economy, 11the Edition" for Pearson Publishing.
+
+## Research Experience
+
+-   Research Assistant (2016), Dr. Jeremiah Hurley, Dean, Faculty of Social Science, McMaster University.
+
+-   Research Assistant (2014-2015), Dr. Rick Audas, Associate Professor, Faculty of Medicine, Memorial University of Newfoundland.
+
+-   Research Policy Analyst (2012), St. John's Board of Trade, St. John's NL.

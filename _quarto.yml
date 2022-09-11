@@ -9,6 +9,8 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: Research.qmd
+        text: Research
       - href: Teaching.qmd
         text: Teaching
 
