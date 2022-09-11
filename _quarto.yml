@@ -1,6 +1,7 @@
 project:
   type: website
-  output-dir: docs 
+  output-dir: docs
+  
 
 website:
   title: "Luc Clair"
@@ -8,14 +9,19 @@ website:
     left:
       - href: index.qmd
         text: Home
+        icon: fa-home
       - href: Research.qmd
         text: Research
-      - href: Teaching.qmd
-        text: Teaching
+      - text: Teaching
+        menu:
+          - text: Overview
+            href: Teaching.qmd 
+          - text: Teaching Philosophy
+            href: philosophy.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: simplex
     css: styles.css
     toc: true
 
