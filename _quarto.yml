@@ -9,7 +9,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-        icon: \F3ED
+        icon: {{< fa brands apple >}}
       - href: Research.qmd
         text: Research
       - text: Teaching
