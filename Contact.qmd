@@ -10,7 +10,8 @@ editor: visual
 {{< fa paper-plane >}} Department of Economics   
 &nbsp;&nbsp;&nbsp;&nbsp; University of Winnipeg   
 &nbsp;&nbsp;&nbsp;&nbsp; 515 Portage Avenue   
-&nbsp;&nbsp;&nbsp;&nbsp; Winnipeg, MB
+&nbsp;&nbsp;&nbsp;&nbsp; Winnipeg, MB, Canada   
+&nbsp;&nbsp;&nbsp;&nbsp; R3B 2E9
 
 &nbsp;
 
