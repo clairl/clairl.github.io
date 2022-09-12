@@ -3,7 +3,7 @@ title: "Contact Infotmation"
 editor: visual
 ---
 
-{{< fa at >}} l.clair@uwinnipeg.ca
+{{< fa at >}} [l.clair@uwinnipeg.ca](l.clair@uwinnipeg.ca)
 
 {{< fa phone >}} (204) 789-4216
 
