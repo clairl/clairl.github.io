@@ -8,16 +8,21 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-        icon: {{< fa brands apple >}}
+        text: "{{< fa house >}} Home"
       - href: Research.qmd
-        text: Research
-      - text: Teaching
+        text: "{{< fa book >}} Research"
+      - text: "{{< fa chalkboard-user >}} Teaching"
         menu:
           - text: Overview
             href: Teaching.qmd 
           - text: Teaching Philosophy
             href: philosophy.qmd
+    right:
+      - href: github.com
+        icon: github
+      - href: https://twitter.com/Luc_Clair
+        icon: twitter
+
 
 format:
   html:
