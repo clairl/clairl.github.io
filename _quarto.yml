@@ -23,7 +23,7 @@ website:
         
     right:
       - href: Contact.qmd
-        text: Contact
+        text: "{{< fa envelope >}} Contact"
       - href: github.com
         icon: github
       - href: https://twitter.com/Luc_Clair
