@@ -1,15 +1,14 @@
 ---
-title: "About"
+title: ""
 ---
 
-:::: {.columns}
+## About
+
+::: columns
 ::: {.column width="40%"}
-I am an Associate Professor of Economics at the University of Winnipeg and a Principal Investigator at the Canadian Centre for Agri-Food Research in Health and Medicine. My current research looks at the economic impact of health food products from two perspectives: the impact on the Canadian health care system and the impact on the Canadian agricultural industry. My other research interests include health care equity and the statistical methods for analyzing survey data.
-:::
-::: {.column width="60%"}
 ![](IMG_8786.jpeg)
 :::
-::::
-
-
-
+::: {.column width="60%"}
+I am an Associate Professor of Economics at the University of Winnipeg and a Principal Investigator at the Canadian Centre for Agri-Food Research in Health and Medicine. My current research looks at the economic impact of health food products from two perspectives: the impact on the Canadian health care system and the impact on the Canadian agricultural industry. My other research interests include health care equity and the statistical methods for analyzing survey data.
+:::
+:::
