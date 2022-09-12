@@ -123,7 +123,7 @@
     "href": "index.html",
     "title": "Luc Clair",
     "section": "",
-    "text": "I am an Associate Professor of Economics at the University of Winnipeg and a Principal Investigator at the Canadian Centre for Agri-Food Research in Health and Medicine. My current research looks at the economic impact of health food products from two perspectives: the impact on the Canadian health care system and the impact on the Canadian agricultural industry. My other research interests include health care equity and the statistical methods for analyzing survey data."
+    "text": "Associate Professor\nDepartment of Economics, University of Winnipeg\nPrincipal Investigator\nAg/Health Economics, Canadian Centre for Agri-Food Research in Health and Medicine"
   },
   {
     "objectID": "about.html",
@@ -131,5 +131,19 @@
     "title": "About",
     "section": "",
     "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Contact.html",
+    "href": "Contact.html",
+    "title": "Contact Infotmation",
+    "section": "",
+    "text": "(204) 789-4216\n Department of Economics\n     University of Winnipeg\n     515 Portage Avenue\n     Winnipeg, MB"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Luc Clair",
+    "section": "About",
+    "text": "About\nMy current research looks at the economic impact of health food products from two perspectives: the impact on the Canadian health care system and the impact on the Canadian agricultural industry. My other research interests include health care equity and the statistical methods for analyzing survey data."
   }
 ]

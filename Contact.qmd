@@ -1,0 +1,15 @@
+---
+title: "Contact Infotmation"
+editor: visual
+---
+
+{{< fa at >}} l.clair@uwinnipeg.ca
+
+{{< fa phone >}} (204) 789-4216
+
+{{< fa envelope >}} Department of Economics   
+&nbsp;&nbsp;&nbsp;&nbsp; University of Winnipeg   
+&nbsp;&nbsp;&nbsp;&nbsp; 515 Portage Avenue   
+&nbsp;&nbsp;&nbsp;&nbsp; Winnipeg, MB
+
+
