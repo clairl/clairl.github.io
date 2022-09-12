@@ -9,14 +9,17 @@ website:
     left:
       - href: index.qmd
         text: "{{< fa house >}} Home"
+     
       - text: "{{< fa chalkboard-user >}} Teaching"
         menu:
           - text: Overview
             href: Teaching.qmd 
           - text: Teaching Philosophy
             href: philosophy.qmd
+     
       - href: Research.qmd
         text: "{{< fa book >}} Research"
+        
     right:
       - href: github.com
         icon: github
