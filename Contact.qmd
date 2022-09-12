@@ -12,4 +12,6 @@ editor: visual
 &nbsp;&nbsp;&nbsp;&nbsp; 515 Portage Avenue   
 &nbsp;&nbsp;&nbsp;&nbsp; Winnipeg, MB
 
+&nbsp;
 
+Updated on: `r Sys.Date()`

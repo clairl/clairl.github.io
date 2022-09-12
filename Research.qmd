@@ -88,3 +88,7 @@ Nonparametric econometrics, health economics, health technology assessment, surv
 -   Research Assistant (2014-2015), Dr. Rick Audas, Associate Professor, Faculty of Medicine, Memorial University of Newfoundland.
 
 -   Research Policy Analyst (2012), St. John's Board of Trade, St. John's NL.
+
+&nbsp;
+
+Updated on: `r Sys.Date()`

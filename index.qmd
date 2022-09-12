@@ -20,3 +20,7 @@ Ag/Health Economics, Canadian Centre for Agri-Food Research in Health and Medici
 
 ## About
 My current research looks at the economic impact of health food products from two perspectives: the impact on the Canadian health care system and the impact on the Canadian agricultural industry. My other research interests include health care equity and the statistical methods for analyzing survey data.
+
+&nbsp;
+
+Updated on: `r Sys.Date()`
