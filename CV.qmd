@@ -5,7 +5,7 @@ editor: visual
 
 (Updated on: `r Sys.Date()`)
 
-PDF Version [here](docs/CVpdf.pdf)
+PDF Version [here](docs/Curriculum_Vitae.pdf)
 
 ## Contact Information
 
