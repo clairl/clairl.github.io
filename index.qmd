@@ -11,10 +11,12 @@ title: ""
 :::
 ::: {.column width="60%"}
 **Associate Professor**   
-Department of Economics, University of Winnipeg
+Department of Economics    
+University of Winnipeg
 
 **Principal Investigator**   
-Ag/Health Economics, Canadian Centre for Agri-Food Research in Health and Medicine
+Ag/Health Economics    
+Canadian Centre for Agri-Food Research in Health and Medicine
 :::
 :::
 
