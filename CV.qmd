@@ -5,6 +5,8 @@ editor: visual
 
 (Updated on: `r Sys.Date()`)
 
+PDF Version [here](docs/CVpdf.pdf)
+
 ## Contact Information
 
 {{< fa envelope >}} [l.clair@uwinnipeg.ca](mailto:l.clair@uwinnipeg.ca)

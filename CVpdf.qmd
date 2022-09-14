@@ -2,17 +2,13 @@
 title: "Curriculum Vitae"
 author: "Luc Clair"
 format: pdf
+date: "`r Sys.Date()`"
 editor: visual
 ---
 
-```{=tex}
-\begin{center}
-(Updated on: `r Sys.Date()`)
-\end{center}
-```
 ## Contact Information
 
-{{< fa envelope >}} l.clair@uwinnipeg.ca
+{{< fa envelope >}} [l.clair@uwinnipeg.ca](mailto:l.clair@uwinnipeg.ca)
 
 {{< fa phone >}} (204) 789-4216
 
