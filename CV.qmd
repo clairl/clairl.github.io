@@ -3,6 +3,8 @@ title: "Curriculum Vitae"
 editor: visual
 ---
 
+(Updated on: `r Sys.Date()`)
+
 ## Contact Information
 
 {{< fa envelope >}} [l.clair@uwinnipeg.ca](mailto:l.clair@uwinnipeg.ca)
