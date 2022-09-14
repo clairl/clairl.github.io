@@ -5,7 +5,7 @@ editor: visual
 
 ## Contact Information
 
-{{< fa envelope >}} [l.clair@uwinnipeg.ca](l.clair@uwinnipeg.ca)
+{{< fa envelope >}} [l.clair@uwinnipeg.ca](mailto:l.clair@uwinnipeg.ca)
 
 {{< fa phone >}} (204) 789-4216
 
@@ -19,13 +19,14 @@ editor: visual
 
 ## Academic Profiles and Website
 
-- {{< fa user >}} Personal Website: [www.lclair.ca](www.lclair.ca)
-- {{< fa seedling >}} Canadian Centre for Agri-Food Research in Health and Medicine: [www.sbrc.ca/clair](www.sbrc.ca/clair)
-- {{< fa graduation-cap >}}  Rate My Professor: [http://www.ratemyprofessors.com/ShowRatings.jsp?tid=2334849](www.ratemyprofessors.com)
+- {{< fa user >}} Personal Website: [www.lclair.ca](http://www.lclair.ca)
+- {{< fa seedling >}} Canadian Centre for Agri-Food Research in Health and Medicine: [www.sbrc.ca/clair](http://www.sbrc.ca/clair)
+- {{< fa graduation-cap >}}  Rate My Professor: [www.ratemyprofessors.com](http://www.ratemyprofessors.com/ShowRatings.jsp?tid=2334849)
+
 
 ## Education
 
-- Ph.D. Economics (2017), McMaster University (Supervisor Dr. Jeffrey Racine) 
+- Ph.D. Economics (2017), McMaster University (Supervisor Dr. Jeffrey Racine)   
 - M.A. Economics (2012), Memorial University of Newfoundland 
 - B.Sc. Pure Mathematics and Economics (2008), Memorial University of Newfoundland 
 
@@ -165,34 +166,73 @@ editor: visual
 
 ## Grants and Fellowships
 
-1. Social Sciences and Humanities Research Council of Canada - Insight Grant, *co-applicant with Melanie O'Gorman (Principal Investigator), Kerry Black, and Stewart Hill*. **Title:** How Important are Water and Sanitation? Investigating the Associations between Water/Sanitation and Well-being in First Nations in Manitoba. **Amount:**  \$211,624. **Date:**  April 1, 2022 - March 31, 2025.
+1. Social Sciences and Humanities Research Council of Canada - Insight Grant, *co-applicant with Melanie O'Gorman (Principal Investigator), Kerry Black, and Stewart Hill*.  
+    **Title:** How Important are Water and Sanitation? Investigating the Associations between Water/Sanitation and Well-being in First Nations in Manitoba.   
+    **Amount:**  \$211,624.     
+    **Date:**  April 1, 2022 - March 31, 2025.
 
-1. Canadian Agriculture Partnership - Processing and Value Added Grant, *with Miyoung Suh (Principal Investigator), Champa Wijekoon, Glen Ross, James House, and Joan Niquanicappo*. **Title:** Smart Vertical Farm for Health in Northern Communities. **Amount:**  \$454,445. **Date:**  April 1, 2020 - March 31, 2023.
+1. Canadian Agriculture Partnership - Processing and Value Added Grant, *with Miyoung Suh (Principal Investigator), Champa Wijekoon, Glen Ross, James House, and Joan Niquanicappo*.   
+**Title:** Smart Vertical Farm for Health in Northern Communities.      
+**Amount:**  \$454,445.     
+**Date:**  April 1, 2020 - March 31, 2023.
  
-1. Canadian Agriculture Partnership - Research and Innovation Grant, *principal investigator with Dr. Carl Taylor and Nkiru Eze*. **Title:** Socioeconomic Impact of Legume-Based Health Care Intervention for Treating Peripheral Artery Disease. **Amount:**  \$35,000. **Date:**  April 1, 2020 - August 31, 2021
+1. Canadian Agriculture Partnership - Research and Innovation Grant, *principal investigator with Dr. Carl Taylor and Nkiru Eze*.     
+**Title:** Socioeconomic Impact of Legume-Based Health Care Intervention for Treating Peripheral Artery Disease.     
+**Amount:**  \$35,000.     
+**Date:**  April 1, 2020 - August 31, 2021
 
-1. University of Winnipeg Major Research Grant, *principal investigator with Dr. Carl Taylor and Nkiru Eze*. **Title:** Estimating the Cost of Peripheral Artery Disease in Manitoba. **Amount:** $7,500. **Date:**  April 1, 2019 - March 31, 2020
+1. University of Winnipeg Major Research Grant, *principal investigator with Dr. Carl Taylor and Nkiru Eze*.      
+**Title:** Estimating the Cost of Peripheral Artery Disease in Manitoba.    
+**Amount:** $7,500.     
+**Date:**  April 1, 2019 - March 31, 2020
 
-1. Canada Agriculture Partnership - Research and Innovation, *co-investigator with Dr. Delfin Rodrigez-Leyva (Principal Investigator), and Dr. Grant Pierce*. **Title:** The effect of flax milk on arterial hypertension: Evaluation of blood pressure response by 24 hour ambulatory blood pressure monitoring. **Amount:**  $103,825. **Date:**  April 1, 2019 - March 31, 2021
+1. Canada Agriculture Partnership - Research and Innovation, *co-investigator with Dr. Delfin Rodrigez-Leyva (Principal Investigator), and Dr. Grant Pierce*. **Title:** The effect of flax milk on arterial hypertension: Evaluation of blood pressure response by 24 hour ambulatory blood pressure monitoring.     
+**Amount:**  $103,825.      
+**Date:**  April 1, 2019 - March 31, 2021
 
-1. Canada Agriculture Partnership - Research and Innovation, *co-investigator with Dr. Davinder Jassal (Principal Investigator), Dr. Grant Pierce, and Dr. Pawan Singal*. **Title:** Flaxseed prevents broken hearts in breast cancer patients (CANFLAX study). **Amount:**  $229,113. **Date:**  April 1, 2019 - March 31, 2022
+1. Canada Agriculture Partnership - Research and Innovation, *co-investigator with Dr. Davinder Jassal (Principal Investigator), Dr. Grant Pierce, and Dr. Pawan Singal*.     
+**Title:** Flaxseed prevents broken hearts in breast cancer patients (CANFLAX study).     
+**Amount:**  $229,113.     
+**Date:**  April 1, 2019 - March 31, 2022
 
-1. Canada Agriculture Partnership - Research and Innovation, *co-investigator with Dr. Harold Aukema (Principal Investigator), Dr. Grant Pierce, Dr. Carla Taylor, Dr. Peter Zahradka, and Dr. Samantha Pauls*. **Title:** Cost-Effectiveness Analysis of the Anti-Inflammatory Effects of Flax Oil. **Amount:**  $103,258. **Date:**  April 1, 2019 - March 31, 2021.
+1. Canada Agriculture Partnership - Research and Innovation, *co-investigator with Dr. Harold Aukema (Principal Investigator), Dr. Grant Pierce, Dr. Carla Taylor, Dr. Peter Zahradka, and Dr. Samantha Pauls*.      
+**Title:** Cost-Effectiveness Analysis of the Anti-Inflammatory Effects of Flax Oil.     
+**Amount:**  $103,258.     
+**Date:**  April 1, 2019 - March 31, 2021.
 
-1. Canada Agriculture Partnership - Grain Innovation Hub, *co-investigator with Dr. Ben Albensi (Principal Investigator), Dr. Mandana Modirrousta, Dr. Colleen Millikin, and Dr. Grant Pierce*. **Title:** Effects of dietary Flaxseed on Memory and Cognition. **Amount:**  $215,373. **Date:**  April 1, 2019 - March 31, 2021
+1. Canada Agriculture Partnership - Grain Innovation Hub, *co-investigator with Dr. Ben Albensi (Principal Investigator), Dr. Mandana Modirrousta, Dr. Colleen Millikin, and Dr. Grant Pierce*.      
+**Title:** Effects of dietary Flaxseed on Memory and Cognition.     
+**Amount:**  $215,373.     
+**Date:**  April 1, 2019 - March 31, 2021
 
-1. Manitoba Medical Service Foundation Operating Grant, *principal investigator with collaborators Dr. Hope Anderson (CCARM) and Dr. Chris Anderson (University of Manitoba)*. **Title:** Estimating the Relationship Between Cardiovascular Health and the Use of Neurodegenerative Pharmaceuticals. **Amount:** $30,000. **Date:** April 1, 2017 - March 31, 2019
+1. Manitoba Medical Service Foundation Operating Grant, *principal investigator with collaborators Dr. Hope Anderson (CCARM) and Dr. Chris Anderson (University of Manitoba)*.     
+**Title:** Estimating the Relationship Between Cardiovascular Health and the Use of Neurodegenerative Pharmaceuticals.    
+**Amount:** $30,000.      
+**Date:** April 1, 2017 - March 31, 2019
 
-1. Newfoundland and Labrador SUPPORT Patient-Oriented Research Grant, *co-investigator with Dr. Sheila Garland (Principal Investigator), Ken Fowler, Karine Calfour, Geoff Eaton, Breanna Lane*. **Title:** Young Adults with Cancer in their Prime (YACC PRIME): A Patient Oriented Collaborative Study. **Amount:** $75,000. **Date:** June 1 2017 - May 31, 2018.
+1. Newfoundland and Labrador SUPPORT Patient-Oriented Research Grant, *co-investigator with Dr. Sheila Garland (Principal Investigator), Ken Fowler, Karine Calfour, Geoff Eaton, Breanna Lane*.      
+**Title:** Young Adults with Cancer in their Prime (YACC PRIME): A Patient Oriented Collaborative Study.     
+**Amount:** $75,000.      
+**Date:** June 1 2017 - May 31, 2018.
 
-1. Postdoctoral Fellowship, Collaborative Applied Research in Economics, Memorial University of Newfoundland. **Title:** A Review of the Newfoundland and Labrador Health Care System: An Economist's Perspective. **Amount:** $55,000. **Date:** September 1, 2016 - August 31, 2017.
+1. Postdoctoral Fellowship, Collaborative Applied Research in Economics, Memorial University of Newfoundland.      
+**Title:** A Review of the Newfoundland and Labrador Health Care System: An Economist's Perspective.      
+**Amount:** $55,000.      
+**Date:** September 1, 2016 - August 31, 2017.
 
-1. PhD. Graduate Scholarship, McMaster University. **Amount:** $7200 per annum. **Date:** Academic Years 2012 - 2016.
+1. PhD. Graduate Scholarship, McMaster University.      
+**Amount:** $7200 per annum.      
+**Date:** Academic Years 2012 - 2016.
 
-1. Travel Award, Canadian Society of Epidemiology and Biostatistics Conference. **Title:** Prevalence Estimates of Five Mental Health Conditions: A Comparison of Approaches **Amount:** $500. **Date:** June 1, 2015.
+1. Travel Award, Canadian Society of Epidemiology and Biostatistics Conference.       
+**Title:** Prevalence Estimates of Five Mental Health Conditions: A Comparison of Approaches       
+**Amount:** $500.      
+**Date:** June 1, 2015.
 
 
-1. M.A. Graduate Scholarship, Memorial University of Newfoundland. **Amount:** $5000. **Date:** September 1, 2011 - August 31, 2012.
+1. M.A. Graduate Scholarship, Memorial University of Newfoundland.       
+**Amount:** $5000.      
+**Date:** September 1, 2011 - August 31, 2012.
 
 ## Awards 
 
@@ -203,11 +243,11 @@ editor: visual
 ## Peer Reviewed Publications
 
 
-1. Clair, Luc, Hope Anderson, Christopher Anderson, Okechukwu Ekuma, and Heather Prior. (2022). ``Cardiovascular Disease and the Risk of Dementia: A Survival Analysis Using Administrative Data from Canada". *Canadian Journal of Public Health*. DOI: [https://link.springer.com/article/10.17269/s41997-021-00589-2](https://doi.org/10.17269/s41997-021-00589-2).
+1. Clair, Luc, Hope Anderson, Christopher Anderson, Okechukwu Ekuma, and Heather Prior. (2022). ``Cardiovascular Disease and the Risk of Dementia: A Survival Analysis Using Administrative Data from Canada". *Canadian Journal of Public Health*. DOI: [https://doi.org/10.17269/s41997-021-00589-2](https://link.springer.com/article/10.17269/s41997-021-00589-2).
 
-1.  Riediger, Natalie, Jeffrey Laplante, Adriana Mudryj, and Luc Clair. (2022). ``Examining differences in diet quality between Canadian Indigenous and non-Indigenous adults: results from the 2004 and 2015 Canadian Community Health Survey Nutrition Surveys".  *The Canadian Journal of Public Health*. DOI: [https://link.springer.com/article/10.17269\%2Fs41997-021-00580-x](10.17269/s41997-021-00580-x).
+1.  Riediger, Natalie, Jeffrey Laplante, Adriana Mudryj, and Luc Clair. (2022). ``Examining differences in diet quality between Canadian Indigenous and non-Indigenous adults: results from the 2004 and 2015 Canadian Community Health Survey Nutrition Surveys".  *The Canadian Journal of Public Health*. DOI: [10.17269/s41997-021-00580-x](https://link.springer.com/article/10.17269\%2Fs41997-021-00580-x).
 
-1. Riediger, Natalie, Laplante, Jeffrey, Mudryj, Adriana, and Clair, Luc. (2021). ``Diet quality among Indigenous and non-Indigenous children and youth in Canada in 2004 and 2015: a repeated cross-sectional design".  *Public Health Nutrition*. Jun 10:1-10. DOI: [https://www.cambridge.org/core/journals/public-health-nutrition/article/diet-quality-among-indigenous-and-nonindigenous-children-and-youth-in-canada-in-2004-and-2015-a-repeated-crosssectional-design/723ECCB88D8E26FB50B13E0FAFE3C036](10.1017/S1368980021002561)
+1. Riediger, Natalie, Laplante, Jeffrey, Mudryj, Adriana, and Clair, Luc. (2021). ``Diet quality among Indigenous and non-Indigenous children and youth in Canada in 2004 and 2015: a repeated cross-sectional design".  *Public Health Nutrition*. Jun 10:1-10. DOI: [10.1017/S1368980021002561](https://www.cambridge.org/core/journals/public-health-nutrition/article/diet-quality-among-indigenous-and-nonindigenous-children-and-youth-in-canada-in-2004-and-2015-a-repeated-crosssectional-design/723ECCB88D8E26FB50B13E0FAFE3C036)
 
 1. Mahon KN, SN Garland, G Eaton, K Chalifour, BE Lane, K Fowler, L Gambin, and L Clair. (2021). ``The Financial Impact of Cancer on Canadian Young Adults". *Journal of Cancer Survivorship: Research and Practice*.
 
