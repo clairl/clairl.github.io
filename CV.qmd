@@ -3,8 +3,6 @@ title: "Curriculum Vitae"
 editor: visual
 ---
 
-(Updated on: `r Sys.Date()`)
-
 PDF Version [here](docs/Curriculum_Vitae.pdf)
 
 ## Contact Information
@@ -87,13 +85,11 @@ PDF Version [here](docs/Curriculum_Vitae.pdf)
 ## Student Supervision and Training
 
 - *Thesis Supervisor*    
-      
-  - Dhingra, Vaishali (2022, M.A. in Applied Economics, University of Winnipeg)
+   - Dhingra, Vaishali (2022, M.A. in Applied Economics, University of Winnipeg)
 		
 	
 - *Thesis Committee Member*:
-
-  - Khawar, Hibah (2018, M.Sc Food and Human Nutritional Sciences, University of Manitoba)
+   - Khawar, Hibah (2018, M.Sc Food and Human Nutritional Sciences, University of Manitoba)
 	
 - *Research Assistants*:
 
@@ -161,7 +157,7 @@ PDF Version [here](docs/Curriculum_Vitae.pdf)
 
 - *Media*:
 
-  - Interview for The University of Winnipeg NewsCentre, April 9, 2018.\href{url{http://news-centre.uwinnipeg.ca/allposts/does-heart-disease-lead-to-dementia/ 
+  - Interview for The University of Winnipeg NewsCentre, April 9, 2018. ([Link](http://news-centre.uwinnipeg.ca/allposts/does-heart-disease-lead-to-dementia/)) 
 
 - *External Service*:
 
