@@ -3,6 +3,8 @@ title: "Curriculum Vitae"
 editor: visual
 ---
 
+<P align="right"> Version date: `r Sys.Date()`</P>
+
 PDF Version [here](docs/Curriculum_Vitae.pdf)
 
 ## Contact Information
