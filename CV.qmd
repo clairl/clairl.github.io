@@ -3,7 +3,7 @@ title: "Curriculum Vitae"
 editor: visual
 ---
 
-<P align="right"> Version date: `r Sys.Date()`</P>
+*Updated*: `r Sys.Date()`
 
 PDF Version [here](docs/Curriculum_Vitae.pdf)
 
