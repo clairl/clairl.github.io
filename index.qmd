@@ -7,7 +7,7 @@ title: ""
 
 ::: columns
 ::: {.column width="40%"}
-![](IMG_8786.jpeg)
+![](IMG_8795.jpeg)
 :::
 ::: {.column width="60%"}
 
