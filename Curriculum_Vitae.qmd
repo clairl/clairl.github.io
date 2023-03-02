@@ -269,12 +269,13 @@ editor: visual
 
 8.  Moghadasian, Mohammed H., Luc Clair, Francesca Bonomini, Gaia Favero, and Rita Rezzani. (2018). \`\`Obesity and Related Disorders: An International Perspective". *Current Research in Diabetes & Obesity Journal.* 7(5): 55721.
 
+<!--
 ## Work Submitted for Publication
-
--   Abo Aoun, Mohamed; Meek, Benjamin; Clair, Luc; Wikstrom, Sara; Prasad, Benjamin; Modirrousta, Mandana. "Prognostic factors in major depressive disorder: comparing responders and non-responders to Repetitive Transcranial Magnetic Stimulation (rTMS), a naturalistic retrospective chart review". *Revise and Resubmit at The Canadian Journal of Psychiatry*.
+-->
 
 ## Working Papers
 
+- Clair, Luc. (2022). "Nonparametric Instrumental Variable Estimation Using Complex Survey Data". *University of Winnipeg Working Paper Series*.
 -   Clair, Luc. (2017). \`\`Private Supplemental Insurance and Mental Health Care Utilization in Canada: An Investigation using Nonparametric Estimation Methods." *Collaborative Applied Research in Economics, Department of Economics, Memorial University of Newfoundland*.
 
 ## Technical Reports
