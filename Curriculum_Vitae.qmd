@@ -251,6 +251,8 @@ editor: visual
 
 ## Peer Reviewed Publications
 
+1. Abo Aoun, Mohamed; Meek, Benjamin; Clair, Luc; Wikstrom, Sara; Prasad, Benjamin; Modirrousta, Mandana. (2023). "Prognostic factors in major depressive disorder: comparing responders and non-responders to Repetitive Transcranial Magnetic Stimulation (rTMS), a naturalistic retrospective chart review". _Psychiatry and Clinical Neuroscience_. 
+
 1.  Clair, Luc, Hope Anderson, Christopher Anderson, Okechukwu Ekuma, and Heather Prior. (2022). \`\`Cardiovascular Disease and the Risk of Dementia: A Survival Analysis Using Administrative Data from Canada". *Canadian Journal of Public Health*. DOI: [https://doi.org/10.17269/s41997-021-00589-2](https://link.springer.com/article/10.17269/s41997-021-00589-2).
 
 2.  Riediger, Natalie, Jeffrey Laplante, Adriana Mudryj, and Luc Clair. (2022). \`\`Examining differences in diet quality between Canadian Indigenous and non-Indigenous adults: results from the 2004 and 2015 Canadian Community Health Survey Nutrition Surveys". *The Canadian Journal of Public Health*. DOI: [10.17269/s41997-021-00580-x](https://link.springer.com/article/10.17269%2Fs41997-021-00580-x).

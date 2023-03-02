@@ -245,6 +245,7 @@ PDF Version [here](docs/Curriculum_Vitae.pdf)
 
 ## Peer Reviewed Publications
 
+1. Abo Aoun, Mohamed; Meek, Benjamin; Clair, Luc; Wikstrom, Sara; Prasad, Benjamin; Modirrousta, Mandana. (2023). "Prognostic factors in major depressive disorder: comparing responders and non-responders to Repetitive Transcranial Magnetic Stimulation (rTMS), a naturalistic retrospective chart review". _Psychiatry and Clinical Neuroscience_. 
 
 1. Clair, Luc, Hope Anderson, Christopher Anderson, Okechukwu Ekuma, and Heather Prior. (2022). ``Cardiovascular Disease and the Risk of Dementia: A Survival Analysis Using Administrative Data from Canada". *Canadian Journal of Public Health*. DOI: [https://doi.org/10.17269/s41997-021-00589-2](https://link.springer.com/article/10.17269/s41997-021-00589-2).
 

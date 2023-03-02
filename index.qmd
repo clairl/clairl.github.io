@@ -3,34 +3,32 @@ title: ""
 format: 
   html: 
     include-in-header: GA_Script.html
-  
 ---
 
-&nbsp;
-
+ 
 
 ::: columns
 ::: {.column width="40%"}
-&nbsp;
-![](3B711248-8DA9-4410-A529-8BB61655CBAC_1_201_a-modified.png)
+  ![](3B711248-8DA9-4410-A529-8BB61655CBAC_1_201_a-modified.png)
 :::
+
 ::: {.column width="60%"}
+### Luc Clair, PhD Economics
 
-### Luc Clair, PhD Economics 
-
-**Associate Professor**   
-Department of Economics    
+**Associate Professor**\
+Department of Economics\
 University of Winnipeg
 
-**Principal Investigator**   
-Ag/Health Economics    
+**Principal Investigator**\
+Ag/Health Economics\
 Canadian Centre for Agri-Food Research in Health and Medicine
 :::
 :::
 
 ## About
+
 My current research looks at the economic impact of health food products from two perspectives: the impact on the Canadian health care system and the impact on the Canadian agricultural industry. My other research interests include health care equity and the statistical methods for analyzing survey data.
 
-&nbsp;
+ 
 
 Updated on: `r Sys.Date()`
