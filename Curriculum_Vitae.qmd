@@ -69,13 +69,13 @@ editor: visual
 
 ### University of Winnipeg
 
--   *Graduate*:
+*Graduate*:
 
 -   GECON 7000, MAE Research Project
 
 -   GECON 7003, Cost-Benefit Analysis
 
--   *Undergraduate*:
+*Undergraduate*:
 
 -   ECON 1102, Intro - Microeconomics
 
@@ -87,9 +87,11 @@ editor: visual
 
 -   ECON 3310, Economics of Canadian Health Care
 
+-   ECON 3316, Cost-Benefit Analysis and Program Evaluation
+
 ### Memorial University of Newfoundland
 
--   *Undergraduate*:
+ *Undergraduate*:
 
 -   Economics 2020, Introductory Macroeconomics
 
@@ -180,6 +182,11 @@ editor: visual
 1.  Social Sciences and Humanities Research Council of Canada - Insight Grant, *co-applicant with Melanie O'Gorman (Principal Investigator), Kerry Black, and Stewart Hill*.\
     **Title:** How Important are Water and Sanitation? Investigating the Associations between Water/Sanitation and Well-being in First Nations in Manitoba.\
     **Amount:** \$211,624.\
+    **Date:** April 1, 2022 - March 31, 2025.
+
+1.  Canadian Institute of Health Research - Project Grant, *co-investigator with Dylan MacKay (Principal Investigator), Navdeep Tangri, et al.*.\
+    **Title:** Reducing Dietary Acid with Fruit and Vegetables Versus Oral Alkali in People with Chronic Kidney Disease (ReDACKD) Feasibility Trial.\
+    **Amount:** \$320,534.\
     **Date:** April 1, 2022 - March 31, 2025.
 
 2.  Canadian Agriculture Partnership - Processing and Value Added Grant, *with Miyoung Suh (Principal Investigator), Champa Wijekoon, Glen Ross, James House, and Joan Niquanicappo*.\
@@ -286,6 +293,8 @@ editor: visual
 
 ## Works in Progress
 
+-   Least-Squares Cross-Validation for Selecting the Bandwidths for Design-Based Kernel Density Estimator
+
 -   Probability-Weighted Nonparametric Conditional PDF Estimation
 
 -   Nonparametric Instrumental Variable Estimation Using Complex Survey Data
@@ -331,6 +340,8 @@ editor: visual
 -   Genome Canada
 
 ## Conference Presentations and Invited Lectures
+
+-   3rd Annual Manitoba Sustainable Protein Research Symposium, June 21, 2023, "Health Economics of Sustainable Protein".
 
 -   CIHR Smart Cities Lecture Series, March 30, 2022. \`\`Introduction to Health Economics".
 

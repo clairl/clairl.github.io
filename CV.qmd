@@ -174,6 +174,11 @@ PDF Version [here](docs/Curriculum_Vitae.pdf)
     **Amount:**  \$211,624.     
     **Date:**  April 1, 2022 - March 31, 2025.
 
+1.  Canadian Institute of Health Research - Project Grant, *co-investigator with Dylan MacKay (Principal Investigator), Navdeep Tangri, et al.*.\
+    **Title:** Reducing Dietary Acid with Fruit and Vegetables Versus Oral Alkali in People with Chronic Kidney Disease (ReDACKD) Feasibility Trial.\
+    **Amount:** \$320,534.\
+    **Date:** April 1, 2022 - March 31, 2025.
+    
 1. Canadian Agriculture Partnership - Processing and Value Added Grant, *with Miyoung Suh (Principal Investigator), Champa Wijekoon, Glen Ross, James House, and Joan Niquanicappo*.   
 **Title:** Smart Vertical Farm for Health in Northern Communities.      
 **Amount:**  \$454,445.     
@@ -282,7 +287,7 @@ PDF Version [here](docs/Curriculum_Vitae.pdf)
 
 
 ## Works in Progress
-
+-   Least-Squares Cross-Validation for Selecting the Bandwidths for Design-Based Kernel Density Estimator
 - Probability-Weighted Nonparametric Conditional PDF Estimation
 - Nonparametric Instrumental Variable Estimation Using Complex Survey Data 
 - Socioeconomic Impact of Pulse-Based Treatment for Peripheral Artery Disease 
@@ -318,7 +323,7 @@ PDF Version [here](docs/Curriculum_Vitae.pdf)
 
 
 ## Conference Presentations and Invited Lectures
-
+-   3rd Annual Manitoba Sustainable Protein Research Symposium, June 21, 2023, "Health Economics of Sustainable Protein".
 - CIHR Smart Cities Lecture Series, March 30, 2022. ``Introduction to Health Economics". 
 - Millennium Library Skywalk Lecture Series, Winnipeg, Manitoba February 16, 2022, ``Estimating the Relationship Between Cardiovascular Disease and Dementia".
 - Dementia Journal Club, University of Manitoba, February 25, 2021. ``Estimating the Relationship Between CVD and dementia". 

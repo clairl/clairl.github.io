@@ -5,9 +5,28 @@ editor: visual
 
 ## Research Interests
 
-Nonparametric econometrics, health economics, health technology assessment, survey statistics.
+Development Economics, nonparametric econometrics, health economics, health technology assessment, survey statistics.
 
-## Peer Reviewed Publications
+## Current Research Projects
+
+- Nonparametric Instrumental Variable Estimation Using Complex Survey Data". [Latest Version](docs/WNPIV_July_16_2023.pdf) 
+
+
+- "How Important are Water and Sanitation? Investigating the Associations between Water/Sanitation and Well-being in First Nations in Manitoba", with with Melanie O'Gorman (Principal Investigator), Kerry Black, and Stewart Hill.
+
+- "Smart Vertical Farm for Health in Northern Communities", with Miyoung Suh (Principal Investigator), Champa Wijekoon, Glen Ross, James House, and Joan Niquanicappo.
+
+-   "Probability-Weighted Nonparametric Conditional PDF Estimation"
+
+-   "Least-Squares Cross-Validation for Selecting the Bandwidths for Design-Based Kernel Density Estimator"
+
+-   "Socioeconomic Impact of Pulse-Based Treatment for Peripheral Artery Disease", with Angela Tan.
+
+-   "Nonparametric Multiple Imputation".
+
+## Peer-Reviewed Publications
+
+1. Abo Aoun, Mohamed; Meek, Benjamin; Clair, Luc; Wikstrom, Sara; Prasad, Benjamin; Modirrousta, Mandana. (2023). "Prognostic factors in major depressive disorder: comparing responders and non-responders to Repetitive Transcranial Magnetic Stimulation (rTMS), a naturalistic retrospective chart review". _Psychiatry and Clinical Neuroscience_. 
 
 1.  Clair, Luc, Hope Anderson, Christopher Anderson, Okechukwu Ekuma, and Heather Prior. (2022). "Cardiovascular Disease and the Risk of Dementia: A Survival Analysis Using Administrative Data from Canada". *Canadian Journal of Public Health*. [https://doi.org/10.17269/s41997-021-00589-2](https://link.springer.com/article/10.17269/s41997-021-00589-2)
 
@@ -25,11 +44,13 @@ Nonparametric econometrics, health economics, health technology assessment, surv
 
 8.  Moghadasian, Mohammed H., Luc Clair, Francesca Bonomini, Gaia Favero, and Rita Rezzani. (2018). "Obesity and Related Disorders: An International Perspective". *Current Research in Diabetes & Obesity Journal*. 7(5): 55721.
 
+<!--
 ## Works Submitted for Publication
-
-1.  Abo Aoun, Mohamed; Meek, Benjamin; Clair, Luc; Wikstrom, Sara; Prasad, Benjamin; Modirrousta, Mandana. "Prognostic factors in major depressive disorder: comparing responders and non-responders to Repetitive Transcranial Magnetic Stimulation (rTMS), a naturalistic retrospective chart review". Revise and Resubmit at *The Canadian Journal of Psychiatry*.
+-->
 
 ## Working Papers
+
+1. Clair, Luc. (2022). "Nonparametric Instrumental Variable Estimation Using Complex Survey Data". *University of Winnipeg Working Paper Series*.
 
 1.  Private Supplemental Insurance and Mental Health Care Utilization in Canada: An Investigation using Nonparametric Estimation Methods. Collaborative Applied Research in Economics, Department of Economics, Memorial University of Newfoundland.
 
@@ -43,27 +64,6 @@ Nonparametric econometrics, health economics, health technology assessment, surv
 
 1\. Nonparametric Kernel Estimation Methods using Complex Survey Data (2016), PhD Thesis, McMaster University.
 
-## Works in Progress
-
--   Probability-Weighted Nonparametric Conditional PDF Estimation
-
--   Nonparametric Instrumental Variable Estimation Using Complex Survey Data
-
--   Socioeconomic Impact of Pulse-Based Treatment for Peripheral Artery Disease
-
--   Nonparametric Multiple Imputation.
-
--   Writing an R package for nonparametric kernel estimation methods for survey data.
-
--   Genome 360 Phase II: Manitoba's Provincial Applied Genomics Enterprise Platform.
-
--   The effect of flax milk on arterial hypertension: Evaluation of blood pressure response by 24 hour ambulatory blood pressure monitoring. with Dr. Delfin Rodrigez-Leyva, and Dr. Grant Pierce.
-
--   Flaxseed prevents broken hearts in breast cancer (CANFLAX study). With Dr. Davinder Jassal, Dr. Grant Pierce, and Dr. Pawan Singal.
-
--   Cost-Effectiveness Analysis of the Anti-Inflammatory Effects of Flax Oil. With Dr. Grant Pierce, Dr. Carla Taylor, Dr. Peter Zahradka, and Dr. Samantha Pauls.
-
--   Effects of dietary Flaxseed on Memory and Cognition. With Dr. Ben Albensi, Dr. Mandana Modirrousta, Dr. Colleen Millikin, and Dr. Grant Pierce.
 
 ## Referee Activities
 
@@ -89,6 +89,6 @@ Nonparametric econometrics, health economics, health technology assessment, surv
 
 -   Research Policy Analyst (2012), St. John's Board of Trade, St. John's NL.
 
-&nbsp;
+ 
 
 Updated on: `r Sys.Date()`
