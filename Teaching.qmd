@@ -25,6 +25,8 @@ editor: visual
 
 -   ECON 3310, Economics of Canadian Health Care
 
+-   ECON 3316, Cost-Benefit Analysis and Program Evaluation
+
 ### Memorial University of Newfoundland
 
 -   Economics 2020, Introductory Macroeconomics
@@ -89,6 +91,6 @@ editor: visual
 
 -   English Teacher (2008-2009), Lycée Gambetta (Tourcoing, France).
 
-&nbsp;
+ 
 
 Updated on: `r Sys.Date()`
