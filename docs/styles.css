@@ -1,1 +1,11 @@
 /* css styles */
+
+/* Override navbar text color */
+.navbar-nav a {
+  color: black !important;
+}
+
+/* If you want to change the active navbar item color */
+.navbar-nav .active a {
+  color: black !important;
+}
