@@ -1,9 +1,9 @@
 ---
 title: "Curriculum Vitae"
 editor: visual
+date: today
+date-format: long
 ---
-
-*Updated*: `r Sys.Date()`
 
 PDF Version [here](docs/Curriculum_Vitae.pdf)
 
@@ -257,6 +257,7 @@ PDF Version [here](docs/Curriculum_Vitae.pdf)
 ## Work Submitted for Publication
 -->
 ```
+
 ## Working Papers
 
 -   Clair, Luc. (2022). "Nonparametric Instrumental Variable Estimation Using Complex Survey Data". *University of Winnipeg Working Paper Series*.
