@@ -1,18 +1,18 @@
 ---
 title: "Contact Infotmation"
 editor: visual
+date: today
+date-format: long
 ---
 
-{{< fa envelope >}} [l.clair@uwinnipeg.ca](mailto:l.clair@uwinnipeg.ca)
+{{< fa envelope >}} [l.clair\@uwinnipeg.ca](mailto:l.clair@uwinnipeg.ca)
 
 {{< fa phone >}} (204) 789-4216
 
-{{< fa paper-plane >}} Department of Economics   
-&nbsp;&nbsp;&nbsp;&nbsp; University of Winnipeg   
-&nbsp;&nbsp;&nbsp;&nbsp; 515 Portage Avenue   
-&nbsp;&nbsp;&nbsp;&nbsp; Winnipeg, MB, Canada   
-&nbsp;&nbsp;&nbsp;&nbsp; R3B 2E9
+{{< fa paper-plane >}} Department of Economics\
+     University of Winnipeg\
+     515 Portage Avenue\
+     Winnipeg, MB, Canada\
+     R3B 2E9
 
-&nbsp;
-
-Updated on: `r Sys.Date()`
+ 
