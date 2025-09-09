@@ -26,6 +26,10 @@ website:
       - href: workshops.qmd
         text: Workshops
       
+      - text: Courses
+        menu: 
+          - text: Econ 7201
+            href: econ_7201.qmd
         
     right:
       - href: Contact.qmd

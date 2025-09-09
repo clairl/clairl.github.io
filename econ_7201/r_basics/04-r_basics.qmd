@@ -1,0 +1,1352 @@
+---
+format: clean-revealjs
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+date: last-modified
+execute: 
+  eval: false
+  echo: true
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# R Basics {.title-slide}
+
+<hr style="width: 75%; text-align: left; margin-left: 0; border: 1px solid black;">
+
+**Luc Clair**\
+University of Winnipeg \| GECON 7201
+
+# Preliminaries
+
+## Software
+
+By now, you should have intalled the following software:
+
+1.  R (the programming language)
+2.  RStudio (the interface to work with R)
+
+# Introduction
+
+## What is R?
+
+-   R is an open-source programming language and software environment
+    designed for statistical computing, data analysis, and graphical
+    visualization
+
+> -   Offers a wide range of statistical techniques
+
+> -   Provides extensive data visualization capabilities with
+>     high-quality graphics
+
+> -   Supports data manipulation, cleaning, and transformation
+
+## What is R? (cont.)
+
+-   Highly extensible through packages
+
+    > -   There are over 20,000 packages available via CRAN
+    >     (Comprehensive R Archive Network)
+
+> -   Users can create their own custom functions and packages
+
+> -   Frequent updates and contributions from statisticians and data
+>     scientists
+
+> -   Large and active community with extensive documentation,
+>     tutorials, and forums
+
+## Community-Driven Ecosystem
+
+-   The strength and flexibility of R largely come from its vast package
+    ecosystem
+
+-   **R packages** are collections of functions, data sets, and
+    documentation bundled together to extend the functionality of base R
+
+> -   R consists of **base R** and user-contributed packages
+
+> -   Base R is the collection of core functions that are installed by
+>     default (e.g., `stats`, `graphics`, and `utils`)
+
+# Using R in R Studio
+
+## R Studio Interface
+
+![](images/fig_5.png){fig-align="center"}
+
+## Source Code Editor
+
+-   Edit our R scripts
+
+![](images/fig_3a.png){fig-align="center"}
+
+## Console
+
+-   Where the code runs and results are presented
+
+![](images/fig_3b.png){fig-align="center"}
+
+## Console (cont.)
+
+-   It acts as the direct interface between the user and the R
+    interpreter
+
+    > -   Commands entered here are run immediately
+
+::: incremental
+-   Common uses include:
+    -   Typing and running quick commands or code snippets
+    -   Viewing outputs, results, and error messages
+    -   Debugging or testing parts of your code
+    -   Re-run code by using the up and down keys to scroll through
+        history
+:::
+
+## Environment
+
+-   View objects and their structure (e.g., vectors, data frames,
+    functions)
+
+![](images/fig_3c.png){fig-align="center"}
+
+## Environment (cont.)
+
+-   Remove them with the "broom" icon or with `rm()`
+
+> -   Inspect variable contents by clicking on them
+
+## Files/Plots/Packages/Help
+
+-   Browse files, view plots, install/view packages, browse help files
+
+![](images/fig_3d.png){fig-align="center"}
+
+## Set Working Directory
+
+-   The **working directory** in R is the default folder where R looks
+    for files to read, and where it saves files you write, unless you
+    specify a different path
+
+::: fragment
+-   Common commands
+
++-------------------------+--------------------------------------------+
+| Command                 | Purpose                                    |
++=========================+============================================+
+| `getwd()`               | Get the current working directory          |
++-------------------------+--------------------------------------------+
+| `s                      | Set a new working directory                |
+| etwd("path/to/folder")` |                                            |
++-------------------------+--------------------------------------------+
+| `list.files()`          | List files in the current working          |
+|                         | directory                                  |
++-------------------------+--------------------------------------------+
+:::
+
+## Set Working Directory (cont.)
+
+-   The working directory is shown at the top of the **Console** pane
+
+::: incremental
+-   You can change it via:
+    -   **Session\>Set Working Directory**
+:::
+
+## Set Working Directory (cont.)
+
+![](images/fig_6.png){fig-align="center"}
+
+## Set Working Directory (cont.)
+
+-   Use RStudio Projects, which set the working directory automatically
+    to the project root
+
+# R Scripts
+
+## R Scripts
+
+-   Code in a console is temporary
+
+::: incremental
+-   Code in R scripts is written and saved for reuse
+    -   Avoid running only from console
+-   This makes your code reproducible and easier to update
+-   To open an R script press **File\>New Rd Document**
+-   Use meaningful script names, e.g., `regression_analysis.R`,
+    `clean_data.R`
+:::
+
+## Writing and Running R Code (cont.)
+
+-   Use `Ctrl+Enter` (or `Cmd` on Mac) to run a line of code
+
+![](images/fig_14.png){fig-align="center"}
+
+## Writing and Running R Code (cont.)
+
+-   Alternatively, you can press the ![](images/fig_16.png) button at
+    the top of the source window
+
+![](images/fig_14a.png){fig-align="center"}
+
+## Running Multiple lines of Code
+
+-   Highlight lines of code you want to run, then use `Ctrl+Enter` or
+    press the ![](images/fig_16.png) button
+
+> -   If you want to run entire code script, press
+>     ![](images/fig_15.png) at the top of the source window.
+
+# R Packages
+
+## What Are R Packages?
+
+-   A **package** is a collection of:
+
+    > -   Functions
+    > -   Data
+    > -   Documentation
+
+> -   Packages extend the capabilities of base R
+
+## What's Inside a Package?
+
+-   R functions written and grouped around a theme
+
+::: instrumental
+-   Optional:
+    -   Sample datasets
+    -   Vignettes (usage tutorials)
+-   Documentation you can access with `?function_name`
+:::
+
+## Install/Load R Packages
+
+-   R's ecosystem is community-driven
+
+::: incremental
+-   Most packages are user-written and publicly shared
+-   Use `install.packages()` to install, `library()` to load
+-   View and manage packages in RStudio’s **Packages** tab
+-   Can also access functions using `package_name::function()` syntax\
+:::
+
+# Arithmetic Operators
+
+## Arithmetic Operators
+
+-   R can perform all standard mathematical operations
+
+| Operator    | Description                 |
+|-------------|-----------------------------|
+| `+`         | Addition                    |
+| `-`         | Subtraction                 |
+| `*`         | Multiplication              |
+| `/`         | Division                    |
+| `^` or `**` | Exponentiation              |
+| `%%`        | Modulo (remainder)          |
+| `%/%`       | Integer division (quotient) |
+
+## Arithmetic Examples
+
+```{r}
+3 + 2 # Addition
+5 - 3 # Subtraction
+4 * 2 # Multiplication
+10 / 2 # Division
+3^2   # Exponentiation
+3**2  # Exponentiation
+10 %% 3  # Modulo (remainder)
+10 %/% 3 # Integer division (quotient)
+```
+
+## Order of Operations
+
+-   R follows BEDMAS (Brackets, Exponents, Division, Multiplication,
+    Addition, Subtraction) for evaluating mathematical expressions
+
+::: fragment
+-   E.g.
+
+```{r}
+result <- 3 + 4 * 2^2 / (1 + 1)
+# Evaluates as:
+# 3 + 4 * 4 / 2
+# 3 + 16 / 2
+# 3 + 8
+# [1] 11
+```
+:::
+
+# Logical Operators
+
+## Logical Operators
+
+-   Logical operators are used to compare values, filter data, and
+    control the flow of code based on logical conditions
+
+::: incremental
+-   They are essential for tasks like:
+    -   Subsetting data
+    -   Evaluating conditions in if, while, and for statements
+    -   Creating new variables based on rules
+    -   Combining multiple conditions
+-   You can read more about logical operators
+    [here](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Logic.html)
+    and
+    [here](https://stat.ethz.ch/R-manual/R-devel/library/base/html/logical.html)
+:::
+
+## Logical Operators (cont.)
+
+| Operator | Meaning                  | Example  | Result |
+|----------|--------------------------|----------|--------|
+| `==`     | Equal to                 | `5 == 5` | `TRUE` |
+| `!=`     | Not equal to             | `5 != 3` | `TRUE` |
+| `<`      | Less than                | `3 < 5`  | `TRUE` |
+| `<=`     | Less than or equal to    | `5 <= 5` | `TRUE` |
+| `>`      | Greater than             | `7 > 4`  | `TRUE` |
+| `>=`     | Greater than or equal to | `4 >= 4` | `TRUE` |
+
+## Boolean Operators
+
+-   **Boolean operators** are logical operators that work with Boolean
+    values, i.e., values that are either `TRUE` or `FALSE`
+
+::: incremental
+-   They allow you to combine, invert, or compare logical conditions in
+    programming
+-   In R, Boolean operators are essential for:
+    -   Filtering data
+    -   Creating conditional logic
+    -   Controlling program flow (e.g., in `if` statements)
+:::
+
+## Boolean Operators (cont.)
+
++-------------+-----------------+-------------------------------------+
+| Operator    | Name            | Description                         |
++=============+=================+=====================================+
+| `!`         | NOT             | Reverses a logical value (`TRUE` ⇄  |
+|             |                 | `FALSE`)                            |
++-------------+-----------------+-------------------------------------+
+| `&`         | AND             | `TRUE` only if **both** conditions  |
+|             | (vectorized)    | are `TRUE`                          |
++-------------+-----------------+-------------------------------------+
+| `|`         | OR (vectorized) | `TRUE` if **either** condition is   |
+|             |                 | `TRUE`                              |
++-------------+-----------------+-------------------------------------+
+| `&&`        | AND (first      | Evaluates only the **first          |
+|             | element only)   | element**                           |
++-------------+-----------------+-------------------------------------+
+| \`          | OR (first       | Evaluates only the **first          |
+|             | element only)   | element**                           |
++-------------+-----------------+-------------------------------------+
+
+## Boolean Operators (cont.)
+
+-   E.g.,
+
+```{r}
+1 > 2
+1 > 2 & 1 > 0.5 
+1 > 2 | 1 > 0.5 
+isTRUE (1 < 2)
+```
+
+## Negation: `!`
+
+-   We use `!` as a short hand for negation
+
+``` r
+is.na(1:10)
+!is.na(1:10)
+```
+
+> -   This will come in very handy when we start altering data objects
+>     based on non-missing (i.e. non-NA) observations
+
+## Value Matching: `%in%`
+
+-   To see whether an object is contained within (i.e. matches one of) a
+    list of items, use `%in%`
+
+``` r
+4 %in% 1:10
+4 %in% 5:10
+```
+
+## Order of Precedence
+
+-   Logical operators (`>`,`==`, etc) are evaluated before Boolean
+    operators (& and \|)
+
+> -   Be explicit about each component of your logic statement(s)
+
+::: fragment
+```{r}
+1 > 0.5 & 2 # Returns illogical result
+1 > 0.5 & 1 > 2 # Returns correct result
+```
+:::
+
+# Assignment
+
+## Assignment
+
+-   **Assignment** refers to the creation of a new object, e.g.,
+    variable, vector, matrix, data frame, or function
+
+> -   In R, we can use either `<-` or `=` to handle assignment
+
+> -   `<-` is normally read aloud as "gets"
+
+::: fragment
+``` r
+a <- 10 + 5
+a
+```
+:::
+
+## Assignment (cont.)
+
+-   Note that when a variable is created, it appears in the environment
+    tab in RStudio
+
+> -   Of course, an arrow can point in the other direction, too (i.e.,
+>     `->`), though it is less common
+
+::: fragment
+``` r
+10 + 5 -> a 
+a
+```
+:::
+
+## Assignment (cont.)
+
+-   You can also use `=` for assignment
+
+```{r}
+#| echo: true
+#| eval: false
+
+b = 10 + 10. # ## Note that the assigned object *must* be on the left with ==
+b
+```
+
+> -   Most R users seem top prefer `<-` for assignment, since `=` also
+>     has specific role for evaluation *within* functions
+
+> -   Use whichever you prefer, just be consistent
+
+## Variable Names
+
+-   A variable name must start with a letter and can be a combination of
+    letters, digits, period(.) and underscore(\_)
+
+> -   A variable name cannot start with a number or underscore
+
+> -   Reserved words cannot be used as variables (see
+>     [here](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Reserved.html)
+>     for a full list)
+
+> -   Best not to use semi-reserved words either (words that can be
+>     over-written, but best not to, e.g., `pi=2`)
+
+# Vectors
+
+## Creating a Vector
+
+-   Vectors are the most basic data structure in R, and they are
+    essential for data manipulation, mathematical operations, and
+    regression analysis
+
+> -   Vectors are created using `c()`
+
+::: fragment
+``` r
+?c
+# Combine values into a vector
+x <- c(1,2,3)
+```
+:::
+
+## Creating a Vector (cont.)
+
+-   Types of vectors:
+
+    > -   Numeric: `c(1.5, 2.8)`
+    > -   Integer: `c(1L, 2L)` (the `L` denotes integers)
+    > -   Character: `c("apple", "banana")`
+    > -   Logical: `c(TRUE, FALSE, TRUE)`
+
+> -   All elements of a vector must be the same type
+
+## Sequential Values
+
+-   To generate a variable as a sequence between two numbers, use `:`
+    between the numbers or use `seq()`
+
+``` r
+?seq
+x <- 1:5               # 1 2 3 4 5
+x <- seq(1, 10, by = 2)  # 1 3 5 7 9
+```
+
+## Repeated Values
+
+-   For repeating values, we can use `rep()`
+
+``` r
+?rep
+rep(3, times = 4)       # 3 3 3 3
+rep(c(1, 2), times = 3) # 1 2 1 2 1 2
+```
+
+## Vector Operations
+
+-   Arithmetic operations are performed element-wise
+
+``` r
+x <- c(1,2,3)
+x + 1        
+#[1] 2 3 4
+
+x * 2         
+#[1] 2 4 6
+
+x^2          
+#[1] 1 4 9
+```
+
+## Vector Operations (cont.)
+
+-   Operations with another vector (must be the same length)
+
+::: fragment
+``` r
+y <- c(10, 20, 30)
+x + y        # 11 22 33
+```
+:::
+
+## Useful Vector Functions
+
++-------------------------------+-----------------------------------+
+| Function(s)                   | Description                       |
++===============================+===================================+
+| `length(x)`                   | Number of elements                |
++-------------------------------+-----------------------------------+
+| `sum(x)`                      | Total sum                         |
++-------------------------------+-----------------------------------+
+| `mean(x)`, `median(x)`        | Average, middle value             |
++-------------------------------+-----------------------------------+
+| `var(x)`, `sd(x)`             | Variance and standard deviation   |
++-------------------------------+-----------------------------------+
+| `min(x)`, `max(x)`            | Extremes                          |
++-------------------------------+-----------------------------------+
+| `sort(x)`, `rank(x)`          | Sorting and ranking               |
++-------------------------------+-----------------------------------+
+| `which(x > 15)`               | Indices where condition is true   |
++-------------------------------+-----------------------------------+
+| `any(x > 10)`, `all(x > 10)`  | Logical checks                    |
++-------------------------------+-----------------------------------+
+
+# Data Frames
+
+## Data Frames
+
+-   A data frame is one of the most commonly used data structures in R
+    for storing and analyzing tabular data (like spreadsheets or
+    datasets)
+
+> -   Two dimensional (rows and columns)
+
+> -   Columns = variables, rows = observations
+
+> -   Each column is a vector (can be numeric, character, logic, etc.)
+
+> -   Each column can have a different data type, unlike matrices
+
+## Creating a Data Frame
+
+-   Data frames are created using the `data.frame()` command
+
+``` r
+df <- data.frame(
+  name = c("Alice", "Bob", "Carol"),
+  age = c(25, 30, 28),
+  income = c(45000, 52000, 50000)
+)
+```
+
+## Accessing Data
+
+-   To refer to a variable within a data fame by column name, use the
+    `df$varname` syntax, e.g.,
+
+``` r
+df$age
+```
+
+## Add Variables to Data Frame
+
+-   To add a variable use the `df$varname` syntax and assign the
+    variable values, e.g.,
+
+``` r
+df$education <- c("High School", "Undergrad", "Graduate") 
+```
+
+## Useful Functions
+
+| Function               | Description                 |
+|------------------------|-----------------------------|
+| `str(df)`              | Structure of the data frame |
+| `summary(df)`          | Summary statistics          |
+| `head(df)`             | First 6 rows                |
+| `nrow(df)`             | Number of rows              |
+| `ncol(df)`             | Number of columns           |
+| `names(df)`            | Column names                |
+| `df$varname`           | Access a column             |
+| `subset(df, age > 25)` | Filter rows                 |
+
+# Matrices and Arrays
+
+## Matrices
+
+-   Matrices are two-dimensional data structures that are essential for
+    representing equations, systems of linear equations, and matrix
+    algebra
+
+> -   To create a matrix in R, use the `matrix()` function
+
+::: fragment
+``` r
+?matrix
+A <- matrix(1:6, nrow = 2, ncol = 3)
+#      [,1] [,2] [,3]
+# [1,]    1    3    5
+# [2,]    2    4    6
+```
+:::
+
+## Matrix Operations
+
+-   Element-wise operations
+
+``` r
+A+1
+A*2
+```
+
+> -   Matrix multiplication is denoted by `%*%`
+
+::: fragment
+``` r
+B <- matrix(7:12, nrow=3, ncol=2)
+
+A%*%B
+     [,1] [,2]
+[1,]   76  103
+[2,]  100  136
+```
+:::
+
+## Matrix Operations (cont.)
+
+-   Transpose `t()`
+
+``` r
+t(A)
+     [,1] [,2]
+[1,]    1    2
+[2,]    3    4
+[3,]    5    6
+```
+
+> -   Inverse (for square matrices), use `solve()`
+
+::: fragment
+``` r
+?solve
+M <- matrix(c(2, 1, 1, 2), nrow = 2)
+solve(M)
+```
+:::
+
+## Matrix Operations (cont.)
+
+-   Determinant `det()`
+
+``` r
+?det
+det(M)
+```
+
+> -   Diagonal matrix `diag()`
+
+::: fragment
+``` r
+?diag
+diag(1,3) # 3x3 identity matrix
+```
+:::
+
+## Converting Data Frames to Matrices
+
+-   Use `as.matrix()` when you need to perform numerical matrix
+    operations or use functions that require matrix inputs
+
+> -   Important note: Data frames can hold different variable types,
+>     matrices cannot
+
+> -   Check the structure of a data frame using `str()`
+
+# Reading and Writing Data
+
+## Reading and Writing Data
+
+-   R is capable of reading data from numerous file types and writing
+    data to numerous file types
+
+## Reading R Data
+
+-   R data is stored as `.RData` or `.rda` files
+
+> -   Use `load()` to open a file that contains saved R objects (e.g.,
+>     data frames, vectors, models)
+
+::: fragment
+``` r
+?load
+load("my_data.RData")  # Loads all objects saved in the file
+```
+:::
+
+> -   After loading, the objects appear in your environment
+
+## Opening a `.csv` File
+
+-   Use `read.csv()` (comma-separated) or `read.table()` (more general)
+
+::: fragment
+``` r
+?read.csv
+df <- read.csv("data.csv", header = TRUE)
+```
+:::
+
+## Opening Excel, Stata, SPSS, or SAS Files
+
+-   These require external packages
+
+> -   Excel (`.xlsx`, `.xls`) requires: `readxl` (does not need Excel
+>     installed)
+
+::: fragment
+``` r
+install.packages("readxl")
+library(readxl)
+?read_excel
+
+df <- read_excel("data.xlsx", sheet = 1)
+```
+:::
+
+## Opening Excel, Stata, SPSS, or SAS Files (cont.)
+
+-   Importing Stata (`.dta`), SPSS (`.sav`), and SAS (`.sas7bdat`) data
+    into R requires the `haven` package
+
+``` r
+install.packages("haven")
+library(haven)
+
+df <- read_dta("data.dta")
+# df <- read_sav("data.sav")
+# df <- read_sas("data.sas7bdat")
+```
+
+## Saving a Data Frame as `.RData`
+
+-   Use `save()` to save one or more R objects
+
+```{r}
+save(df, 
+     file = "my_data.RData")
+
+# Save multiple objects
+save(df1, 
+     df2, 
+     model, 
+     file = "project_data.RData") 
+```
+
+## Saving a Data Frame as `.csv`
+
+-   Use `write.csv()`
+
+``` r
+write.csv(df, file = "data.csv", row.names = FALSE)
+```
+
+## Saving a Data Frame as Excel (`.xlsx`)
+
+-   Requires `writexl` or `openxlsx`
+
+``` r
+install.packages("writexl")
+library(writexl)
+
+write_xlsx(df, "data.xlsx")
+```
+
+## Saving a Data Frame as Stata, SPSS, or SAS
+
+-   Requires `haven`
+
+``` r
+write_dta(df, "data.dta")
+write_sav(df, "data.sav")
+write_sas(df, "data.sas7bdat")  # only works with certain formats
+```
+
+## Summary Table
+
++---------------+---------------+-----------------+---------------+
+| Format        | Read Function | Write Function  | Package       |
+|               |               |                 | Required      |
++===============+===============+=================+===============+
+| `.RData`      | `load ("      | `sa ve (d       | Base R        |
+|               | file.RData")` | f, file = ...)` |               |
++---------------+---------------+-----------------+---------------+
+| `.csv`        | `read.c sv    | `write.c sv (d  | Base R        |
+|               | ("file.csv")` | f, file = ...)` |               |
++---------------+---------------+-----------------+---------------+
+| Excel         | `             | `write_xlsx()`  | `readxl`,     |
+|               | read_excel()` |                 | `writexl`     |
++---------------+---------------+-----------------+---------------+
+| Stata         | `read_dta()`  | `write_dta()`   | `haven`       |
++---------------+---------------+-----------------+---------------+
+| SPSS          | `read_sav()`  | `write_sav()`   | `haven`       |
++---------------+---------------+-----------------+---------------+
+| SAS           | `read_sas()`  | `write_sas()`   | `haven`       |
++---------------+---------------+-----------------+---------------+
+
+# Indexing
+
+## Indexing
+
+-   **Indexing**: the process of accessing, extracting, or modifying
+    elements within data structures like vectors, matrices, lists, and
+    data frames
+
+> -   Allows for selecting variables or observations (e.g., filter rows
+>     by condition)
+
+> -   Enables subsetting data before running models
+
+## Indexing Syntax
+
+-   Basic syntax is `object[rows,columns]`
+
+> -   For 1D objects (e.g., vectors): `x[i]` gives the i^th^ object in
+>     the vector
+> -   For 2D objects (e.g., matrices and data frames): `df[row, col]`
+> -   Indexing is 1-based in R (first element is `x[1]`)
+
+## Indexing Vectors
+
+``` r
+x <- c(10, 20, 30, 40)
+
+x[1]        # First element (10)
+x[2:3]      # Elements 2 to 3 (20, 30)
+x[-1]       # All but the first element (20, 30, 40)
+x[c(1, 4)]  # Elements 1 and 4 (10, 40)
+
+# Logical indexing
+x[x > 25]   # Returns values greater than 25 (30, 40)
+```
+
+## Indexing Matrices
+
+-   The Syntax `df[i,j]` will select the element in the i^th^ row of the
+    j^th^ column
+
+> -   To isolate the i^th^ row, simply use `df[i,]`
+
+> -   To isolate the j^th^ column, use `df[,j]`
+
+## Indexing Matrices (cont.)
+
+-   E.g.,
+
+``` r
+m <- matrix(1:9, 
+            nrow = 3)
+
+m[1, 2]     # Element in row 1, column 2
+m[ , 2]     # Entire 2nd column
+m[2, ]      # Entire 2nd row
+```
+
+## Indexing Data Frames
+
+``` r
+df <- data.frame(name = c("Alice", "Bob"), age = c(25, 30))
+
+df[1, 2]       # Row 1, column 2 (25)
+df$age         # Column "age"
+df[["age"]]    # Also accesses column "age"
+df[ , "name"]  # Column by name
+```
+
+# Basic Graphics
+
+## Base Plotting
+
+-   The `plot()` function is a versatile command in base R for creating
+    simple visualizations, most commonly:
+
+    > -   Scatterplots
+    > -   Line plots
+    > -   Plots of single vectors (e.g., time series, categorical data)
+
+## Scatterplot of Two Numeric Vectors
+
+``` r
+?plot
+
+x <- c(1, 2, 3, 4, 5)
+y <- c(2, 4, 3, 7, 6)
+
+plot(x = x, 
+     y = y)
+```
+
+## Customize Labels and Appearance
+
++--------------+------------------------------------------------------+
+| Argument     | Description                                          |
++==============+======================================================+
+| `main`       | Title of the plot                                    |
++--------------+------------------------------------------------------+
+| `xlab`       | Label for $x$-axis                                   |
++--------------+------------------------------------------------------+
+| `ylab`       | Label for $y$-axis                                   |
++--------------+------------------------------------------------------+
+| `xlim`       | Set $x$-axis range                                   |
++--------------+------------------------------------------------------+
+| `ylim`       | Set $y$-axis range                                   |
++--------------+------------------------------------------------------+
+| `col`        | Color of points or lines                             |
++--------------+------------------------------------------------------+
+| `pch`        | Plotting character (symbol shape)                    |
++--------------+------------------------------------------------------+
+| `type`       | `"p"` for points (default), `"l"` for lines, `"b"`   |
+|              | for both                                             |
++--------------+------------------------------------------------------+
+
+## Customize Labels and Appearance
+
+-   E.g.,
+
+```{r}
+plot(x    = x, 
+     y    = y,
+     main = "My Scatterplot",
+     xlab = "X Values",
+     ylab = "Y Values",
+     col  = "blue",
+     pch  = 16)  # Point type
+
+```
+
+## Common Plot Types in Base R
+
++----------------+----------------+----------------------------------+
+| Plot Type      | Command        | Description                      |
+|                | Example        |                                  |
++================+================+==================================+
+| **Histogram**  | `hist(x)`      | Distribution of a numeric        |
+|                |                | variable                         |
++----------------+----------------+----------------------------------+
+| **Boxplot**    | `boxplot(x)`   | Summary of distribution (median, |
+|                |                | IQR)                             |
++----------------+----------------+----------------------------------+
+| **Barplot**    | `bar p         | Frequencies of categorical       |
+|                | lot(table(x))` | values                           |
++----------------+----------------+----------------------------------+
+| **Time         | `plot .        | Line plot optimized for time     |
+| Series**       | ts(ts_object)` | series                           |
++----------------+----------------+----------------------------------+
+| **QQ Plot**    | `qqnorm (      | Compares data to a normal        |
+|                | x); qqline(x)` | distribution                     |
++----------------+----------------+----------------------------------+
+| **Pairs Plot** | `pai r         | Matrix of scatterplots for       |
+|                | s(data_frame)` | multiple variables               |
++----------------+----------------+----------------------------------+
+| **Density      | `pl o          | Smoothed version of a histogram  |
+| Plot**         | t(density(x))` |                                  |
++----------------+----------------+----------------------------------+
+
+# Conditional Statements and Loops
+
+## Control Flow Constructs
+
+-   Control flow constructs are programming tools that allow your R code
+    to:
+
+    > -   Make decisions
+    > -   Repeat tasks
+    > -   Branch based on conditions
+    > -   Control the order in which code executes
+
+## Conditional Statements `if`/`else` Statements
+
+-   Conditional statements allow R to make decisions and execute code
+    selectively based on whether conditions are TRUE or FALSE
+
+> -   Most common branching tools in R are `if`/`else` statements
+
+::: fragment
+```{r}
+if (condition) {
+  # code to run if condition is TRUE
+} else {
+  # code to run if condition is FALSE
+}
+```
+:::
+
+## Conditional Statements `if`/`else` Statements (cont.)
+
+-   Use if / else when you want your program to:
+
+    > -   Do one thing if a condition is met
+    > -   Do something else if it is not
+
+::: fragment
+-   E.g.,
+
+```{r}
+x <- -5
+
+if (x > 0) {
+  print("Positive number")
+} else {
+  print("Zero or negative")
+}
+
+# [1] "Zero or negative"
+```
+:::
+
+## Conditional Statements `ifelse`
+
+-   For element-wise vectorized branching, use `ifelse()`
+
+> -   It lets you apply element-wise logic to vectors, returning one
+>     value if a condition is TRUE, and another if it’s FALSE
+
+::: incremental
+-   Syntax: `ifelse(test, yes, no)`
+    -   `test`: A logical statement
+    -   `yes`: Value of return if `test` is `TRUE`
+    -   `no`: Value if `test` is `FALSE`
+:::
+
+## Conditional Statements `ifelse` (cont.)
+
+-   E.g.,
+
+```{r}
+x <- c(-2, 0, 3)
+ifelse(x > 0, "Positive", "Not Positive")
+# [1] "Not Positive" "Not Positive" "Positive"
+
+```
+
+## Loops
+
+-   A `for` loop in R is used to repeat a block of code for each value
+    in a sequence
+
+> -   It’s a fundamental tool for automating repetitive tasks,
+>     especially in simulations, computations, or row-wise operations
+
+::: fragment
+-   Syntax:
+
+```{r}
+for (variable in sequence) {
+  # code to run for each value
+}
+
+```
+:::
+
+## Loops (cont.)
+
+-   E.g.,
+
+```{r}
+for (i in 1:5) {
+  print(i^2)
+}
+
+#> [1] 1
+#> [1] 4
+#> [1] 9
+#> [1] 16
+#> [1] 25
+```
+
+# Functions
+
+## Functions
+
+-   A function in R is a block of code designed to perform a specific
+    task
+
+> -   Functions allow you to reuse code, simplify your scripts, and make
+>     your analysis more modular and readable
+
+> -   Keep functions short and focused, should perform one task
+
+## Writing Functions
+
+-   Use the `function()` command
+
+::: fragment
+-   Syntax
+
+```{r}
+my_function <- function(arg1, arg2 = default_value) {
+  # Code to execute
+  result <- some_operation
+  return(result)
+}
+```
+:::
+
+## Fuctions Example
+
+```{r}
+square <- function(x) {
+  result <- x^2
+  return(result)
+}
+
+square(4)   
+
+#[1] 16
+
+```
+
+# Global Environment
+
+## Global Environment
+
+-   The **global environment** is the main workspace in R where all your
+    user-defined objects are stored during a session
+
+    > -   Variables
+    > -   Data frames
+    > -   Functions
+    > -   Models
+
+> -   In RStudio, we observe the global environment in the
+>     **Environment** tab
+
+## Global Environment (cont.)
+
+-   **Important**: Variables stored inside a data frame (e.g., `d$x`)
+    are not the same as variables in the global environment (e.g., `x`)
+
+> -   Even if a data frame is in the global environment, its columns are
+>     accessible only through the data frame itself, not as independent
+>     variables, unless they are also explicitly assigned to the global
+>     environment
+
+::: fragment
+-   E.g.,
+
+```{r}
+df <- data.frame(x = 1:5,
+                 y = 6:10)
+
+mean(x)
+```
+:::
+
+## Accessing Variables in a Data Frame
+
+-   We have to specify that `x` belongs to `df`
+
+> -   As above we can dollar sign operator `$`, i.e., `df$x`
+
+> -   Alternatively, we can use `with()`, e.g., `with(df, mean(x))`
+
+> -   If we are using a single data frame we can attach the dataset
+>     using `attach()`
+
+## Removing Objects from the Global Environment
+
+-   If we want to remove an object from the environment, we can use the
+    `rm()` command
+
+> -   To delete all objects, use `rm(list=ls())`
+
+# Good Coding Practices
+
+## Good Coding Practices
+
+-   Following consistent coding practices makes your code easier to
+    read, debug, and share
+
+## Variable Names
+
+-   Use clear, descriptive variable names
+
+> -   Use **lowercase** letters with **underscores**
+
+::: fragment
+``` r
+income_total <- 50000
+mean_income <- mean(income_vector)
+```
+:::
+
+> -   Avoid short, vague names like `x1`, `tmp`, or `df1`
+> -   Use names that reflect the content or purpose of the variable
+
+## Variable Names (cont.)
+
+-   Avoid hardcoding values in multiple places
+
+> -   Assign values to a variable and reuse
+
+::: fragment
+```{r}
+tax_rate <- 0.3
+after_tax_income <- income * (1 - tax_rate)
+```
+:::
+
+## Command Line
+
+-   Keep code clean and readable by avoiding long, crowded lines
+
+``` r
+result <- a + b + c
+```
+
+> -   Spaces before and after operators `+`, `-`, `*`, `/`, `==`, `<`,
+>     `>=`, etc
+> -   Improves visual structure and reduces errors during review or
+>     collaboration
+
+## Command Line (cont.)
+
++----------------------------+--------------------------------------+
+| Good Practice              | Poor Practice                        |
++============================+======================================+
+| ``` r                      | ``` r                                |
+| # Define variables         | m                                    |
+| y <- c(5, 7, 9, 11)        | s                                    |
+| x <- c(1, 2, 3, 4)         | e <- mean((y - fitted(lm(y ~ x)))^2) |
+|                            | ```                                  |
+| # Fit linear model         |                                      |
+| model <- lm(y ~ x)         |                                      |
+|                            |                                      |
+| # Extract fitted values    |                                      |
+| y_hat <- fitted(model)     |                                      |
+|                            |                                      |
+| # Calculate residuals      |                                      |
+| residuals <- y - y_hat     |                                      |
+|                            |                                      |
+| #                          |                                      |
+|                            |                                      |
+| Compute Mean Squared Error |                                      |
+| mse <- mean(residuals^2)   |                                      |
+| ```                        |                                      |
++----------------------------+--------------------------------------+
+
+## One Line per Argument
+
+-   Use one line per argument in long functions
+
+> -   For readability, especially with functions like `plot()` or `lm()`
+
+::: fragment
+```{r}
+plot(x, y,
+     main = "Scatterplot",
+     xlab = "X values",
+     ylab = "Y values",
+     col  = "blue",
+     pch  = 16)
+```
+:::
+
+## Use Comments
+
+-   Use `#` to describe what your code is doing
+
+::: fragment
+```{r}
+# Calculate average income
+mean_income <- mean(income_vector, 
+                    na.rm = TRUE)
+```
+:::
+
+> -   Keep comments concise and helpful
+
+## Use Comments (cont.)
+
+-   To write multiple lines of comments, use `#>`
+
+```{r}
+#> To write another line of code simply press enter (or return).
+#> Useful at the start of code file to explain the purpose of
+#> the R script.
+```
+
+## Use Comments
+
+-   Use sectioning comments to break up files into manageable pieces
+
+```{r}
+# Load data --------------------------------------
+
+# Plot data --------------------------------------
+```
+
+> -   RStudio provides a keyboard shortcut to create these headers
+>     `Cmd/Ctrl+Shift+R`
+
+> -   Makes it easy to navigate through code
+
+# Help
+
+## Help
+
+-   For more information on a (named) function or object in R, consult
+    the “help” documentation
+
+> -   Or, more simply, just use `?`
+
+::: fragment
+``` r
+help(plot)
+?plot
+```
+:::

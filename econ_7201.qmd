@@ -1,0 +1,9 @@
+---
+title: "ECON 7201"
+format: html
+listing: 
+  contents: econ_7201
+type: grid
+sort: "date desc"
+categories: true
+---
