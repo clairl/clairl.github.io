@@ -2,7 +2,9 @@
 title: "Workshops"
 format: html
 listing: 
-  contents: posts
+  contents: 
+    - path: posts/2025-09-08-workflow/index.qmd
+      target: _blank
 type: grid
 sort: "date desc"
 categories: true
