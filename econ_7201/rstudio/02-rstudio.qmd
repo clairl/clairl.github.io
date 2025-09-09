@@ -1,0 +1,365 @@
+---
+format: clean-revealjs
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Your Name
+    orcid: 0000-0000-0000-0000
+    email: alias@email.com
+    affiliations: Your Institution
+date: last-modified
+execute: 
+  eval: false
+  echo: true
+---
+
+# RStudio {.title-slide}
+
+<hr style="width: 75%; text-align: left; margin-left: 0; border: 1px solid black;">
+
+**Luc Clair**\
+University of Winnipeg \| ECON/GECON 3201
+
+# Preliminaries
+
+## Software
+
+To run R code and use R Studio, you need to install the following software
+
+1.  R (the programming language)
+2.  RStudio (the interface to work with R)
+
+## Installing R
+
+-   Download R: <https://cran.r-project.org>
+
++--------------------------------------------------------+-------------------------------------------------------------------------------+
+| Windows Instructions                                   | Mac Instructions                                                              |
++========================================================+===============================================================================+
+| 1.  Click **"Download R for Windows"**                 | 1.  Click **"Download R for macOS"**                                          |
+| 2.  Click **"base"**                                   | 2.  Choose the `.pkg` file that matches your OS version (usually the top one) |
+| 3.  Click the link: **"Download R x.x.x for Windows"** | 3.  Download and open the `.pkg` installer                                    |
+| 4.  Open the downloaded `.exe` file                    | 4.  Follow the prompts to install                                             |
+| 5.  Follow the installation prompts (accept defaults)  |                                                                               |
++--------------------------------------------------------+-------------------------------------------------------------------------------+
+
+## Installing RStudio
+
+-   Download RStudio: <https://posit.co/download/rstudio-desktop/>
+
++----------------------------------------------+--------------------------------------------------------+
+| Windows Instructions                         | Mac Instructions                                       |
++==============================================+========================================================+
+| 1.  Click **"Download RStudio for Windows"** | 1.  Click **"Download RStudio for macOS"**             |
+| 2.  Open the downloaded `.exe` file          | 2.  Open the downloaded `.dmg` file                    |
+| 3.  Follow the installation prompts          | 3.  Drag the RStudio icon into the Applications folder |
++----------------------------------------------+--------------------------------------------------------+
+
+# Introduction
+
+## Why RStudio?
+
+-   RStudio is an integrated development environment (IDE) for R
+
+    > -   Provides a user-friendly interface for writing code
+    > -   Visualizing data
+    > -   Managing projects
+    > -   Producing reproducible reports (Quarto, R Markdown)
+
+> -   It streamlines the process of statistical computing and data analysis, making it especially useful for research, teaching, and applied econometrics
+
+## IDE for R
+
+-   An IDE is a software application that provides a complete set of tools for writing, running, and debugging code in one place
+
+> -   RStudio combines script editing, console, workspace viewer, and plotting in one interface
+
+> -   Enables seamless development, testing, and output visualization
+
+## Projects for Organization
+
+-   Use RStudio Projects to organize coursework, datasets, scripts, and outputs in isolated environments
+
+> -   Promotes reproducibility and reduces working directory errors
+
+## Script Editor with Syntax Highlighting
+
+-   Write and run R scripts (.R), R Markdown (.Rmd), and Quarto documents
+
+> -   Features like auto-completion, function tool-tips, and real-time diagnostics boost coding efficiency
+
+# Getting Started with RStudio
+
+## First Look
+
+-   Open RStudio
+
+![](images/fig_1.png){fig-align="center"}
+
+## Opening a Source Document
+
+-   E.g., R script
+
+![](images/fig_2.png){fig-align="center"}
+
+## Opening a Source Document (cont.)
+
+![](images/fig_3.png){fig-align="center"}
+
+## RStudio Interface
+
+![](images/fig_3e.png){fig-align="center"}
+
+## RStudio Interface
+
+-   Source (Top-Left): Code scripts, R Markdown, Quarto
+
+![](images/fig_3a.png){fig-align="center"}
+
+## RStudio Interface (cont.)
+
+-   Console (Bottom-Left): Where code runs
+
+![](images/fig_3b.png){fig-align="center"}
+
+## RStudio Interface (cont.)
+
+-   Environment/History (Top-Right): View objects, data, function history
+
+![](images/fig_3c.png){fig-align="center"}
+
+## RStudio Interface (cont.)
+
+-   Files/Plots/Packages/Help (Bottom-Right): View plots, install packages, browse files, and search help files
+
+![](images/fig_3d.png){fig-align="center"}
+
+## Writing and Running R Code
+
+-   Use `.R` scripts to save and re-use code
+
+![](images/fig_13.png){fig-align="center"}
+
+## Writing and Running R Code (cont.)
+
+-   Use `Ctrl+Enter` (or `Cmd` on Mac) to run a line of code
+
+![](images/fig_14.png){fig-align="center"}
+
+## Writing and Running R Code (cont.)
+
+-   Alternatively, you can press the ![](images/fig_16.png) button at the top of the source window
+
+![](images/fig_14a.png){fig-align="center"}
+
+## Running Multiple lines of Code
+
+-   Highlight lines of code you want to run, then use `Ctrl+Enter` or press the ![](images/fig_16.png) button
+
+> -   If you want to run entire code script, press ![](images/fig_15.png) at the top of the source window.
+
+# Workflow and RStudio Projects
+
+## Workflow
+
+-   Step-by-step process you follow to complete a data analysis from raw data to final results
+
+> -   It includes data loading, cleaning, modeling, and reporting
+> -   A good workflow is organized, repeatable, and transparent
+> -   Reduces errors
+> -   Makes work reproducible and easier to follow
+
+## Workflow Example
+
+1.  Create a project folder/repository/directory
+2.  Load and inspect data
+3.  Clean data
+4.  Estimate an econometric model
+5.  Run robustness checks
+6.  Interpret and report results
+7.  Export results
+
+## RStudio Projects
+
+-   RStudio projects create a work environment within RStudio
+
+> -   Essentially, they create a folder containing all project documents, including code scripts, data, images, plots, and text files
+
+> -   Opening an .Rproj file opens all files for the project the project and automatically sets the working directory to the project directory
+
+## Benefits of RStudio Projects
+
+-   Keeps everything organized
+
+    > -   Each project has its own folder with scripts, data, and results
+
+::: incremental
+-   Reproducible workflow
+    -   Opens with the same settings, file paths, and environment every time
+-   Avoids `Setwd()` errors
+    -   Automatically sets the working directory to the project folder
+:::
+
+## Benefits of RStudio Projects (cont.)
+
+-   Manages multiple analyses cleanly
+
+    > -   Lets you separate class assignments, research papers, or datasets into distinct, self-contained units
+
+::: incremental
+-   Supports version control (Git)
+    -   Built-in Git integration makes it easy to track changes and collaborate on code
+-   Loads your workspace consistently
+    -   Automatically restores your open files, history, and environment (optional)
+:::
+
+## Create RStudio Project
+
+1.  To Create a new RStudio project press the ![](images/fig_4b.png) button
+
+![](images/fig_4a.png){fig-align="center" width="75%"}
+
+## Create RStudio Project (cont.)
+
+2.  Choose whether you want to create a new folder for your project directory, convert an existing folder into a project directory, or link the project folder to a git repository (more on this next lecture)
+
+![](images/fig_5.png){fig-align="center"}
+
+## Create RStudio Project (cont.)
+
+3.  Select the type of project you want to create
+
+![](images/fig_6.png){fig-align="center"}
+
+## Create RStudio Project (cont.)
+
+4.  Choose the location for your project directory and make sure you check the box **Create git repository**
+
+![](images/fig_7a.png){fig-align="center"}
+
+## Create RStudio Project (cont.)
+
+-   Your new project directory has been created
+
+> -   Note the .Rproj file created
+
+# Using R in RStudio
+
+## Using R in RStudio
+
+-   For this course, the main purpose of using RStudio is to facilitate the use of R statistical software
+
+> -   Most often, we will write R code in an R script
+
+> -   We can then run code from our script, which shows up in the console as seen above
+
+> -   Both the code and the results will be displayed in the console
+
+## Variables, Datasets, and Functions
+
+-   Throughout our analyses, we will store data and results as **variables**
+
+> -   We may also group related variables into **datasets**, or import datasets from external sources
+
+> -   Additionally, we can create **functions** to automate repeated tasks and simplify our code
+
+> -   All saved variables, datasets, and functions will appear in the **Environment** tab in RStudio, allowing us to view and manage the objects currently in memory
+
+## Variables, Datasets, and Functions (cont.)
+
+![](images/fig_17a.png){fig-align="center"}
+
+## Inspecting Datasets
+
+-   To view your dataset in R, simply type `View(data)`, where `data` is your dataset
+
+![](images/fig_18.png){fig-align="center"}
+
+## Inspecting Datasets (cont.)
+
+-   Other useful commands for inspecting data include `head()`, `summary()`, `str()`
+
+> -   Ideal for inspecting data sets, matrices, and model outputs
+
+## Installing and Loading R Packages
+
+-   R is a statistical software built on user written commands/functions
+
+> -   Users write functions and group them in packages, which are then made available to all users
+
+> -   To use a function, you must install the necessary package(s) using `install.packages("package_name")` and load it into your session using `library("package_name")`
+
+> -   Many of the functions that we will use in this course are available in the `base` and `stats` packages, which load automatically with every R session
+
+## Installing and Loading R Packages (cont.)
+
+-   To view your available packages and which ones are loaded into a session, click the **Packages** tab in the bottom right pane
+
+![](images/fig_19.png){fig-align="center"}
+
+## Installing and Loading R Packages (cont.)
+
+-   One can also load a package in RStudio by checking the box next to the package name in the **Packages** tab
+
+## Plotting and Output
+
+-   R is powerful tool for creating plots and graphics
+
+> -   RStudio organizes plots under the **Plots** tab in the bottom right pane
+
+> -   Allows for easy saving and exporting
+
+## Plotting and Output (cont.)
+
+-   E.g., plotting the probability density of a standard normal variable
+
+![](images/fig_20.png){fig-align="center"}
+
+# Publishing
+
+## Quarto
+
+-   Assignments for this course will be written in Quarto
+
+> -   Quarto is an open-source tool designed for creating dynamic documents, reports, presentations, and websites
+
+> -   It integrates with various programming languages and provides a unified framework for combining code, narrative text, and data visualization
+
+> -   More on Quarto in future lectures
+
+## Quarto (cont.)
+
+-   To open a Quarto document, click the ![](images/fig_21.png) button in the top-left corner and select "Quarto Document..."
+
+![](images/fig_22a.png){fig-align="center" width="80%"}
+
+## Quarto (cont.)
+
+-   Select the format for your document, HTML, PDF, or Word and click **Create**
+
+![](images/fig_22b.png){fig-align="center"}
+
+## Quarto (cont.)
+
+-   You can now edit your Quarto document
+
+![](images/fig_22c.png){fig-align="center"}
+
+## Rendering a Quarto Document
+
+-   To view the rendered document click the ![](images/fig_22d.png) button and save the file to your desired location
+
+-   The rendered document shows up under the **Viewer** tab in the bottom-right pane
+
+![](images/fig_22e.png){width="75%" fig-align="center"}
+
+# Summary
+
+## Summary
+
+-   All-in-one workspace
+
+> -   Encourages clean, reproducible code
+> -   Tools for data, models, graphics, reporting
+> -   A key skill for econometrics, data science, and research

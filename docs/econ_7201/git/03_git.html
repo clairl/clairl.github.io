@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.57">
+
+  <meta name="author" content="Your Name">
+  <meta name="dcterms.date" content="2025-09-09">
+  <title>Luc Clair – git</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+
+<section>
+<section id="git-and-github" class="title-slide slide level1 center">
+<h1>Git and GitHub</h1>
+<hr style="width: 75%; text-align: left; margin-left: 0; border: 1px solid black;">
+<p><strong>Luc Clair</strong><br>
+University of Winnipeg | ECON/GECON 3201</p>
+</section>
+<section id="preliminaries" class="slide level2">
+<h2>Preliminaries</h2>
+<ul>
+<li>The necessary software to follow this lecture are
+<ul>
+<li><a href="https://www.r-project.org/">R</a></li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/preview/">RStudio</a></li>
+<li><a href="https://git-scm.com/downloads">Git</a></li>
+<li>Created an account on <a href="https://github.com/">GitHub</a></li>
+<li><a href="https://desktop.github.com/download/">GitHub Desktop</a></li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="introduction" class="title-slide slide level1 center">
+<h1>Introduction</h1>
+
+</section>
+<section id="why-is-version-control-necessary" class="slide level2">
+<h2>Why is Version Control Necessary</h2>
+<ul>
+<li>Version control software (VCS) is a system that helps people manage and track changes to their files over time (e.g., text documents and code files)</li>
+</ul>
+<ul>
+<li class="fragment">It keeps track of every modification made to files, who made those changes, and when they were made</li>
+</ul>
+<ul>
+<li class="fragment">Changes can be reverted, previous versions of files can be restored, and conflicts between different versions can be resolved</li>
+</ul>
+</section></section>
+<section>
+<section id="git-and-github-1" class="title-slide slide level1 center">
+<h1>Git and Github</h1>
+
+</section>
+<section id="git" class="slide level2">
+<h2>Git</h2>
+
+<img data-src="images/fig_1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="what-is-git" class="slide level2">
+<h2>What is Git?</h2>
+<ul>
+<li>Git is a popular VCS</li>
+</ul>
+<ul>
+<li class="fragment">Allows multiple collaborators to work on the same project simultaneously, manage changes, and share work effectively</li>
+<li class="fragment">Git’s greatest strength is its facilitation of collaboration</li>
+<li class="fragment">It has been described as “track changes on steroids” or as “a marriage between Dropbox and Microsoft Word’s ‘Track Changes’ feature”</li>
+</ul>
+</section>
+<section id="git-repository" class="slide level2">
+<h2>Git Repository</h2>
+<ul>
+<li>Git tracks the changes of a set files in a Git enabled folder or <strong>directory</strong></li>
+</ul>
+<ul>
+<li class="fragment">The Git enabled directory is known as a <strong>repository</strong> (repo)</li>
+</ul>
+<ul>
+<li class="fragment">One uses Git to flag any saved changes made to files in the repository</li>
+</ul>
+</section>
+<section id="git-repository-contd" class="slide level2">
+<h2>Git Repository (cont’d)</h2>
+
+<img data-src="images/fig_2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="changes-and-checkpoints" class="slide level2">
+<h2>Changes and Checkpoints</h2>
+<ul>
+<li>Git can then save a version (snapshot) of repository files at a given moment in time</li>
+</ul>
+<ul>
+<li class="fragment">This is known as a <strong>commit</strong></li>
+</ul>
+<ul>
+<li class="fragment">Each commit has a message explaining what was changed, keeping track of the project’s progress</li>
+</ul>
+</section>
+<section id="branches" class="slide level2">
+<h2>Branches</h2>
+<ul>
+<li>Git allows you to create <strong>branches</strong>, which are akin to an alternate version of the repository to experiment with new ideas</li>
+</ul>
+<ul>
+<li class="fragment">Once you’re happy with the changes, you can <strong>merge</strong> these branches back into the main project</li>
+</ul>
+<ul>
+<li class="fragment">A branch is a separate line of development</li>
+</ul>
+<ul>
+<li class="fragment">The main branch is usually called main or master</li>
+</ul>
+</section>
+<section id="collaboration" class="slide level2">
+<h2>Collaboration</h2>
+<ul>
+<li>You can store your repository on a remote server (e.g., GitHub) and everyone can access it</li>
+</ul>
+<ul>
+<li class="fragment">When someone makes changes, you can <strong>pull</strong> those changes into your local repository (folder on your computer)</li>
+</ul>
+<ul>
+<li class="fragment">Similarly, when you make changes, you can push them to the remote server so your team can see and use them</li>
+</ul>
+</section>
+<section id="track-and-undo-changes" class="slide level2">
+<h2>Track and Undo Changes</h2>
+<ul>
+<li>Git tracks every change you make</li>
+</ul>
+<ul>
+<li class="fragment">If you realize you made a mistake or want to revisit an earlier version of your work, you can easily go back to previous commits</li>
+</ul>
+<ul>
+<li class="fragment">This helps ensure you don’t lose valuable work and can always correct errors</li>
+</ul>
+</section>
+<section id="github" class="slide level2">
+<h2>GitHub</h2>
+<ul>
+<li>GitHub is a web-based platform that helps researchers manage, share, and collaborate on code projects using Git</li>
+</ul>
+<ul>
+<li class="fragment">It provides a cloud-based space where you can store your Git repositories and interact with other developers’ projects</li>
+</ul>
+<ul>
+<li class="fragment">GitHub has become one of the most popular platforms for open-source and private software development, but it’s also used for data science, documentation, and more</li>
+</ul>
+<ul>
+<li class="fragment">It was used to develop R Studio</li>
+</ul>
+</section>
+<section id="github-1" class="slide level2">
+<h2>GitHub</h2>
+<h3 id="key-features">Key features</h3>
+<ol type="1">
+<li><strong>Hosting Git repositories</strong>: GitHub stores your Git repositories in the cloud, making it easy for others to collaborate on your project or for you to access it from diﬀerent locations</li>
+</ol>
+<ol start="2" type="1">
+<li class="fragment"><strong>Collaboration tools</strong>: GitHub allows multiple people to contribute to a project</li>
+</ol>
+</section>
+<section id="github-2" class="slide level2">
+<h2>GitHub</h2>
+<h3 id="key-features-contd">Key features (cont’d)</h3>
+<ol start="3" type="1">
+<li><p><strong>Pull requests</strong>: A way for contributors to suggest changes</p>
+<ul>
+<li class="fragment">The project maintainer can review the changes, discuss them, and decide whether to merge them into the project</li>
+</ul></li>
+</ol>
+<ol start="4" type="1">
+<li class="fragment"><strong>Issues</strong>: A way to track bugs, enhancements, or any tasks related to the project</li>
+</ol>
+<ol start="5" type="1">
+<li class="fragment"><strong>Code Reviews</strong>: Before accepting contributions, you can review and discuss the changes to ensure code quality</li>
+</ol>
+</section>
+<section id="github-3" class="slide level2">
+<h2>GitHub</h2>
+<h3 id="key-features-contd-1">Key features (cont’d)</h3>
+<ol start="6" type="1">
+<li><p><strong>Branching and Merging</strong>: Like Git, GitHub supports creating branches for different features or experiments</p>
+<ul>
+<li class="fragment">Team members can work on these branches and later merge them into the main codebase</li>
+</ul></li>
+</ol>
+<ol start="7" type="1">
+<li class="fragment"><strong>Version Control and History</strong>: GitHub stores a complete history of your project, so you can see what has changed over time, who made thechanges, and when</li>
+</ol>
+</section>
+<section id="github-4" class="slide level2">
+<h2>GitHub</h2>
+<h3 id="key-features-contd-2">Key features (cont’d)</h3>
+<ol start="8" type="1">
+<li><strong>GitHub Pages</strong>: GitHub provides a free hosting service for static websites, allowing you to build and deploy websites directly from your GitHub repository</li>
+</ol>
+<ol start="9" type="1">
+<li class="fragment"><strong>Documentation and Wikis</strong>: GitHub lets you include documentation for your projects, and it also supports wikis where you can add more detailed, structured information about your project</li>
+</ol>
+</section></section>
+<section>
+<section id="link-rstudio-project-to-github" class="title-slide slide level1 center">
+<h1>Link RStudio Project to GitHub</h1>
+
+</section>
+<section id="link-rstudio-project-to-github-1" class="slide level2">
+<h2>Link RStudio Project to GitHub</h2>
+<ul>
+<li><p>There are a couple of ways to start our workflow</p>
+<ol type="1">
+<li class="fragment">Create a new Git repository on GitHub, then link it to an RStudio project</li>
+<li class="fragment">Create a new RStudio project, then link it to GitHub</li>
+</ol></li>
+</ul>
+<ul>
+<li class="fragment">Focus on number 1 for now</li>
+</ul>
+</section>
+<section id="link-rstudio-project-to-github-contd" class="slide level2">
+<h2>Link RStudio Project to GitHub (cont’d)</h2>
+<ul>
+<li><p>Why do it this way?</p>
+<ul>
+<li class="fragment">The first half of this workflow is applicable to all projects, not just those in RStudio</li>
+</ul></li>
+</ul>
+</section>
+<section id="create-git-repository-on-github" class="slide level2">
+<h2>Create Git Repository on GitHub</h2>
+<ol type="1">
+<li>Go to <a href="github.com">github.com</a> and sign in</li>
+</ol>
+<ul>
+<li class="fragment">On your home page, click the <img data-src="images/fig_3.png"> button</li>
+</ul>
+</section>
+<section id="create-git-repository-on-github-contd" class="slide level2">
+<h2>Create Git Repository on GitHub (cont’d)</h2>
+<ol start="2" type="1">
+<li>Enter the name of the repository</li>
+</ol>
+
+<img data-src="images/fig_4.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="create-git-repository-on-github-contd-1" class="slide level2">
+<h2>Create Git Repository on GitHub (cont’d)</h2>
+<ol start="3" type="1">
+<li>Choose whether you want the repository to be public or private</li>
+</ol>
+
+<img data-src="images/fig_4a.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="create-git-repository-on-github-contd-2" class="slide level2">
+<h2>Create Git Repository on GitHub (cont’d)</h2>
+<ol start="4" type="1">
+<li>Add a README file, which gives a description of your project</li>
+</ol>
+
+<img data-src="images/fig_4b.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="create-git-repository-on-github-contd-3" class="slide level2">
+<h2>Create Git Repository on GitHub (cont’d)</h2>
+<ol start="5" type="1">
+<li>Choose a license, then press <strong>Create</strong></li>
+</ol>
+
+<img data-src="images/fig_4c.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="create-git-repository-on-github-contd-4" class="slide level2">
+<h2>Create Git Repository on GitHub (cont’d)</h2>
+<ul>
+<li>Your repository has been created</li>
+</ul>
+<div>
+<ul>
+<li class="fragment">Here are a few things to notice</li>
+</ul>
+</div>
+
+<img data-src="images/fig_5.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="create-git-repository-on-github-contd-5" class="slide level2">
+<h2>Create Git Repository on GitHub (cont’d)</h2>
+<ul>
+<li>Git defaults to the <code>main</code> branch</li>
+</ul>
+
+<img data-src="images/fig_5a.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="create-git-repository-on-github-contd-6" class="slide level2">
+<h2>Create Git Repository on GitHub (cont’d)</h2>
+<ul>
+<li>The commit message and commit ID</li>
+</ul>
+
+<img data-src="images/fig_5b.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="create-git-repository-on-github-contd-7" class="slide level2">
+<h2>Create Git Repository on GitHub (cont’d)</h2>
+<ul>
+<li>Two files were created: LICENSE and README.md</li>
+</ul>
+<ul>
+<li class="fragment">Note the files created have the same Git message</li>
+</ul>
+
+<img data-src="images/fig_5c.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="create-git-repository-on-github-contd-8" class="slide level2">
+<h2>Create Git Repository on GitHub (cont’d)</h2>
+<ul>
+<li>LICENSE refers to the license chosen when creating the repository</li>
+</ul>
+
+<img data-src="images/fig_5d.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="create-git-repository-on-github-contd-9" class="slide level2">
+<h2>Create Git Repository on GitHub (cont’d)</h2>
+<ul>
+<li>README.md is the landing page for your repository</li>
+</ul>
+<ul>
+<li class="fragment">It is where you describe your repository (more on this later)</li>
+</ul>
+
+<img data-src="images/fig_5e.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="clone-github-repository-in-github-desktop" class="slide level2">
+<h2>Clone GitHub Repository in GitHub Desktop</h2>
+<ul>
+<li>Open GitHub Desktop and log in (if you are currently logged out)</li>
+</ul>
+
+<img data-src="images/fig_43.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%"></section>
+<section id="clone-github-repository-in-github-desktop-contd" class="slide level2">
+<h2>Clone GitHub Repository in GitHub Desktop (cont’d)</h2>
+<ul>
+<li>On the left-hand-side, you will notice a list of your GitHub repositories</li>
+</ul>
+<ul>
+<li class="fragment">Choose the repository you wish to make a copy to your local computer</li>
+<li class="fragment">Then select “Clone <strong>username/repo</strong>”, where <strong>username/repo</strong> is your GitHub username and repo is the name of the repository</li>
+<li class="fragment">In this example it is <strong>clairl/demo</strong></li>
+</ul>
+</section>
+<section id="clone-github-repository-in-github-desktop-contd-1" class="slide level2">
+<h2>Clone GitHub Repository in GitHub Desktop (cont’d)</h2>
+<ul>
+<li>Choose the location for the clone of the GitHub repo on your local computer and click <strong>Clone</strong></li>
+</ul>
+
+<img data-src="images/fig_44.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="clone-github-repository-in-github-desktop-contd-2" class="slide level2">
+<h2>Clone GitHub Repository in GitHub Desktop (cont’d)</h2>
+
+<img data-src="images/fig_45.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="link-github-repository-to-rstudio" class="slide level2">
+<h2>Link GitHub Repository to RStudio</h2>
+<ul>
+<li>Open RStudio and create a new project</li>
+</ul>
+
+<img data-src="images/fig_8.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="link-github-repository-to-rstudio-contd" class="slide level2">
+<h2>Link GitHub Repository to RStudio (cont’d)</h2>
+<ul>
+<li>Choose <strong>Existing Directory</strong></li>
+</ul>
+
+<img data-src="images/fig_46.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="link-github-repository-to-rstudio-contd-1" class="slide level2">
+<h2>Link GitHub Repository to RStudio (cont’d)</h2>
+<ul>
+<li>Choose the location of your GitHub repo on your local machine and click <strong>Create Project</strong></li>
+</ul>
+
+<img data-src="images/fig_47.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="link-github-repository-to-rstudio-contd-2" class="slide level2">
+<h2>Link GitHub Repository to RStudio (cont’d)</h2>
+<ul>
+<li>We are now free to work on our repo files in RStudio</li>
+</ul>
+
+<img data-src="images/fig_12.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="link-github-repository-to-rstudio-contd-3" class="slide level2">
+<h2>Link GitHub Repository to RStudio (cont’d)</h2>
+<ul>
+<li>Note the two new files created: <code>.gitignore</code> and <code>demo.Rproj</code></li>
+</ul>
+
+<img data-src="images/fig_12a.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="link-github-repository-to-rstudio-contd-4" class="slide level2">
+<h2>Link GitHub Repository to RStudio (cont’d)</h2>
+<ul>
+<li><p><code>.gitignore</code> files are special files where we include a list of files we want to exclude from our GitHub repository</p>
+<ul>
+<li class="fragment">We will cover this later</li>
+</ul></li>
+</ul>
+<ul>
+<li class="fragment"><code>demo.Rproj</code> is the R project file</li>
+</ul>
+</section>
+<section id="link-github-repository-to-rstudio-contd-5" class="slide level2">
+<h2>Link GitHub Repository to RStudio (cont’d)</h2>
+<ul>
+<li>Check Github Desktop</li>
+</ul>
+
+<img data-src="images/fig_48.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="link-github-repository-to-rstudio-contd-6" class="slide level2">
+<h2>Link GitHub Repository to RStudio (cont’d)</h2>
+<ul>
+<li>We see our two newly created files listed on the left-hand-side</li>
+</ul>
+<ul>
+<li class="fragment">The green plus signs indicate that these files were added to the repo</li>
+<li class="fragment">We can click on each file to observe the changes made</li>
+<li class="fragment">New text is highlighted in green, old text is highlighted in red<br>
+</li>
+<li class="fragment">Note: LICENSE and README.md were created during the initial commit and we did not alter them</li>
+</ul>
+</section>
+<section id="link-github-repository-to-rstudio-contd-7" class="slide level2">
+<h2>Link GitHub Repository to RStudio (cont’d)</h2>
+<ul>
+<li>Add comment for the commit, e.g., “Linked RStudio project”</li>
+</ul>
+
+<img data-src="images/fig_49.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="push-to-origin" class="slide level2">
+<h2>Push to Origin</h2>
+<ul>
+<li>Origin refers to the origin repo, which is the repository hosted on GitHub.com</li>
+</ul>
+<ul>
+<li class="fragment">Press <strong>Push origin</strong> to update files on GitHub.com</li>
+</ul>
+
+<img data-src="images/fig_17.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="push-to-origin-contd" class="slide level2">
+<h2>Push to Origin (cont’d)</h2>
+<ul>
+<li><code>.gitignore</code> and <code>demo.Rproj</code> are now on GitHub.com</li>
+</ul>
+<ul>
+<li class="fragment">Note the different commit messages and commit ID</li>
+</ul>
+
+<img data-src="images/fig_50.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="make-local-changes" class="title-slide slide level1 center">
+<h1>Make Local Changes</h1>
+
+</section>
+<section id="local-changes" class="slide level2">
+<h2>Local Changes</h2>
+<ul>
+<li><strong>Local changes</strong> refer to changes made to files saved on your computer</li>
+</ul>
+<ul>
+<li class="fragment">When we make changes to project files, we want to update our GitHub repo to reflect these changes</li>
+</ul>
+<ul>
+<li class="fragment">Return to RStudio and create a new R script and add the code <code>2+2</code></li>
+</ul>
+<ul>
+<li class="fragment">Save the new R script as <code>addition.R</code></li>
+</ul>
+<ul>
+<li class="fragment">Note that the new R file is saved in the project directory</li>
+</ul>
+</section>
+<section id="local-changes-contd" class="slide level2">
+<h2>Local Changes (cont’d)</h2>
+
+<img data-src="images/fig_13.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="review-files-and-commit-contd" class="slide level2">
+<h2>Review files and Commit (cont’d)</h2>
+<ul>
+<li><code>addition.R</code> is a new file, which is why we see green plus sign</li>
+</ul>
+
+<img data-src="images/fig_51.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="review-files-and-commit-contd-1" class="slide level2">
+<h2>Review Files and Commit (cont’d)</h2>
+<ul>
+<li>Add a message, e.g., “New R Script” and press <strong>Commit to main</strong></li>
+</ul>
+<ul>
+<li class="fragment">Then, push to origin</li>
+</ul>
+</section>
+<section id="review-files-and-commit-contd-2" class="slide level2">
+<h2>Review Files and Commit (cont’d)</h2>
+
+<img data-src="images/fig_52a.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="revert-commits" class="title-slide slide level1 center">
+<h1>Revert Commits</h1>
+
+</section>
+<section id="revert-commits-1" class="slide level2">
+<h2>Revert Commits</h2>
+<ul>
+<li>Say we’ve made changes to our project, but we come to regret them</li>
+</ul>
+<ul>
+<li class="fragment">We want to revert to an older version</li>
+<li class="fragment">E.g., delete <code>addition.R</code></li>
+</ul>
+</section>
+<section id="revert-commits-contd" class="slide level2">
+<h2>Revert Commits (cont’d)</h2>
+
+<img data-src="images/fig_53.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="revert-commits-contd-1" class="slide level2">
+<h2>Revert Commits (cont’d)</h2>
+<ul>
+<li>The red minus sign indicates that the file has been deleted</li>
+</ul>
+<ul>
+<li class="fragment">Write a comment (e.g., “Delete addition.R”), commit the change, and push to origin</li>
+</ul>
+
+<img data-src="images/fig_54.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="revert-commits-contd-2" class="slide level2">
+<h2>Revert Commits (cont’d)</h2>
+<ul>
+<li><code>addition.R</code> has been removed from the origin repo</li>
+</ul>
+
+<img data-src="images/fig_57.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="revert-commits-contd-3" class="slide level2">
+<h2>Revert Commits (cont’d)</h2>
+<ul>
+<li>To revert the change, return to GitHub Desktop and click the <strong>History</strong> tab</li>
+</ul>
+<ul>
+<li class="fragment">Right click the commit you want to revert and select <strong>Revert changes in commit</strong></li>
+</ul>
+
+<img data-src="images/fig_55a.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="revert-commits-contd-4" class="slide level2">
+<h2>Revert Commits (cont’d)</h2>
+<ul>
+<li>This reverses the previous commit and creates a new one reinstating the deleted file</li>
+</ul>
+<ul>
+<li class="fragment">Push this new commit to origin</li>
+</ul>
+
+<img data-src="images/fig_56.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="revert-commits-contd-5" class="slide level2">
+<h2>Revert Commits (cont’d)</h2>
+<ul>
+<li><code>addition.R</code> is back in the repo</li>
+</ul>
+
+<img data-src="images/fig_59.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="collaboration-1" class="title-slide slide level1 center">
+<h1>Collaboration</h1>
+
+</section>
+<section id="collaboration-2" class="slide level2">
+<h2>Collaboration</h2>
+<ul>
+<li>Most real-world projects involve teamwork</li>
+</ul>
+<ul>
+<li class="fragment">Git and GitHub offer robust tools to manage shared work</li>
+</ul>
+<ul>
+<li class="fragment">Reduce errors, supports transparency, and tracks progress</li>
+</ul>
+<ul>
+<li class="fragment">There are a number of ways in which we can collaborate using Git</li>
+</ul>
+<ul>
+<li class="fragment">Most widely recommended workflow is <strong>branching</strong> and <strong>pull requests</strong></li>
+</ul>
+</section>
+<section id="collaborators" class="slide level2">
+<h2>Collaborators</h2>
+<ul>
+<li>We can invite collaborators by going to our repository on <a href="GitHub.com">GitHub.com</a> and selecting <strong>Settings &gt; Collaborators</strong></li>
+</ul>
+<ul>
+<li class="fragment">Click <strong>Add people</strong></li>
+</ul>
+
+<img data-src="images/fig_23.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="collaborators-contd" class="slide level2">
+<h2>Collaborators (cont’d)</h2>
+<ul>
+<li>Search for team members and click <strong>Add to repository</strong></li>
+</ul>
+
+<img data-src="images/fig_24.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="collaborators-contd-1" class="slide level2">
+<h2>Collaborators (cont’d)</h2>
+<ul>
+<li>As a collaborator, you can accept an invitation to join a project</li>
+</ul>
+
+<img data-src="images/fig_25.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="collaborators-contd-2" class="slide level2">
+<h2>Collaborators (cont’d)</h2>
+
+<img data-src="images/fig_25a.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="collaborators-contd-3" class="slide level2">
+<h2>Collaborators (cont’d)</h2>
+<ul>
+<li>To work on a project, follow the steps to clone a repository under <strong>Git Repository to RStudio Project</strong> above</li>
+</ul>
+</section></section>
+<section>
+<section id="branches-1" class="title-slide slide level1 center">
+<h1>Branches</h1>
+
+</section>
+<section id="what-is-a-branch" class="slide level2">
+<h2>What is a Branch?</h2>
+<ul>
+<li>A <strong>branch</strong> is an independent line of development in your project</li>
+</ul>
+<ul>
+<li class="fragment">By default, every Git repository starts with a branch named <code>main</code> (older repos may use <code>master</code>)</li>
+</ul>
+<ul>
+<li class="fragment">You can create a <em>new branch</em> to work on a feature, fix, or experiment without touching the main codebase or files.</li>
+</ul>
+</section>
+<section id="what-is-a-branch-contd" class="slide level2">
+<h2>What is a Branch? (cont’d)</h2>
+<ul>
+<li><p>Creating a new branch is akin to creating a parallel universe for your project</p>
+<ul>
+<li class="fragment">It creates a snapshot of the project from the last commit</li>
+<li class="fragment">You can make changes, commit them, and those changes will only exist on the new branch</li>
+</ul></li>
+</ul>
+<ul>
+<li class="fragment">When finished, you can merge the branch back into the <code>main</code> branch</li>
+</ul>
+</section>
+<section id="branching-and-pull-requests" class="slide level2">
+<h2>Branching and Pull Requests</h2>
+<ul>
+<li><p>Workflow:</p>
+<ol type="1">
+<li class="fragment">Each contributor creates their own branch</li>
+<li class="fragment">Make changes and commit regularly</li>
+<li class="fragment">Push branch to GitHub</li>
+<li class="fragment">Open a pull request (PR)</li>
+<li class="fragment">Review, discuss, and merge into <code>main</code></li>
+</ol></li>
+</ul>
+</section>
+<section id="how-to-create-a-branch" class="slide level2">
+<h2>How to Create a Branch</h2>
+<ul>
+<li>In GitHub Desktop, go to <strong>Branch&gt;New Branch</strong></li>
+</ul>
+
+<img data-src="images/fig_19.png" class="quarto-figure quarto-figure-center r-stretch"><ul>
+<li class="fragment">Note that the new branch will be based on the current branch, which is the <code>main</code> branch</li>
+</ul>
+</section>
+<section id="how-to-create-a-branch-contd" class="slide level2">
+<h2>How to Create a Branch (cont’d)</h2>
+<ul>
+<li>Name your branch, e.g., <code>new_branch</code> and click <strong>Create Branch</strong></li>
+</ul>
+
+<img data-src="images/fig_20.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="how-to-create-a-branch-contd-1" class="slide level2">
+<h2>How to Create a Branch (cont’d)</h2>
+<ul>
+<li>We are now working on a new branch</li>
+</ul>
+
+<img data-src="images/fig_21.png" class="quarto-figure quarto-figure-center r-stretch"><ul>
+<li class="fragment">To publish your branch on GitHub, press <strong>Publish branch</strong></li>
+</ul>
+</section>
+<section id="how-to-create-a-branch-contd-2" class="slide level2">
+<h2>How to Create a Branch (cont’d)</h2>
+
+<img data-src="images/fig_22.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="make-changes-on-branch" class="slide level2">
+<h2>Make Changes on Branch</h2>
+<ul>
+<li><p>We can now edit files without altering the main branch</p></li>
+<li><p>E.g., add a comment to your R script</p></li>
+</ul>
+
+<img data-src="images/fig_26.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="make-changes-on-branch-contd" class="slide level2">
+<h2>Make Changes on Branch (cont’d)</h2>
+<ul>
+<li>Open GitHub Desktop to review saved changes, commit, and push to origin</li>
+</ul>
+
+<img data-src="images/fig_27.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="make-changes-on-branch-contd-1" class="slide level2">
+<h2>Make Changes on Branch (cont’d)</h2>
+<ul>
+<li>On GitHub we can compare the .R file on the two branches</li>
+</ul>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/fig_28a.png"></p>
+<figcaption>Main Branch</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/fig_28b.png"></p>
+<figcaption>New Branch</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="make-a-pull-request" class="slide level2">
+<h2>Make a Pull Request</h2>
+<ul>
+<li>Now that we’ve made a change, we want to incorporate into the main branch</li>
+</ul>
+<ul>
+<li class="fragment">To do this we will make a <strong>pull request</strong>, a request to have changes reviewed, discussed, and accepted into the main branch</li>
+</ul>
+<ul>
+<li class="fragment">There are multiple ways to do a pull request, however, we will focus on using GitHub Desktop</li>
+</ul>
+</section>
+<section id="make-a-pull-request-contd" class="slide level2">
+<h2>Make a Pull Request (cont’d)</h2>
+<ul>
+<li>In GitHub Desktop, click <strong>Branch &gt; Create Pull Request</strong></li>
+</ul>
+
+<img data-src="images/fig_29.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="make-a-pull-request-contd-1" class="slide level2">
+<h2>Make a Pull Request (cont’d)</h2>
+<ul>
+<li>This will open a GitHub.com window in your browser</li>
+</ul>
+<ul>
+<li class="fragment">You can add a comment (if you want) the click <strong>Create pull request</strong></li>
+</ul>
+
+<img data-src="images/fig_30.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="make-a-pull-request-contd-2" class="slide level2">
+<h2>Make a Pull Request (cont’d)</h2>
+<ul>
+<li>Collaborators can then review changes made by looking at <strong>Files changed</strong></li>
+</ul>
+
+<img data-src="images/fig_31.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="make-a-pull-request-contd-3" class="slide level2">
+<h2>Make a Pull Request (cont’d)</h2>
+<ul>
+<li>If you want, you can comment on specific lines within the document</li>
+</ul>
+
+<img data-src="images/fig_32.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="make-a-pull-request-contd-4" class="slide level2">
+<h2>Make a Pull Request (cont’d)</h2>
+<ul>
+<li>Once reviewed, you can leave a comment, approve the changes, or request changes</li>
+</ul>
+<ul>
+<li class="fragment">Click <strong>Submit review</strong></li>
+</ul>
+
+<img data-src="images/fig_33.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="make-a-pull-request-contd-5" class="slide level2">
+<h2>Make a Pull Request (cont’d)</h2>
+<ul>
+<li>Other collaborators can review the pull request and comments made by other team members</li>
+</ul>
+
+<img data-src="images/fig_34.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="make-a-pull-request-contd-6" class="slide level2">
+<h2>Make a Pull Request (cont’d)</h2>
+<ul>
+<li>Finally, they can accept the changes once everyone is happy</li>
+</ul>
+
+<img data-src="images/fig_35.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="make-a-pull-request-contd-7" class="slide level2">
+<h2>Make a Pull Request (cont’d)</h2>
+<ul>
+<li>Once the changes are accepted, we are given the option to delete the branch</li>
+</ul>
+
+<img data-src="images/fig_36.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="forks" class="title-slide slide level1 center">
+<h1>Forks</h1>
+
+</section>
+<section id="forks-1" class="slide level2">
+<h2>Forks</h2>
+<ul>
+<li>A <strong>fork</strong> is an independent copy of someone else’s Git repository</li>
+</ul>
+<ul>
+<li class="fragment">It allows people unaffiliated with the project to make edits to project files</li>
+</ul>
+<ul>
+<li class="fragment">To perform a fork press the <img data-src="images/fig_39.png"> button on the repository page</li>
+</ul>
+<ul>
+<li class="fragment">Edit a forked repository by making a clone as before</li>
+</ul>
+</section>
+<section id="pull-requests-from-forks" class="slide level2">
+<h2>Pull Requests from Forks</h2>
+<ul>
+<li>A PR from a fork is a way of saying: “Here are my suggested changes. Would you like to include them in your project?”</li>
+</ul>
+<div>
+<ul>
+<li class="fragment">To perform a pull request from a forked repository
+<ol type="1">
+<li class="fragment">Create a branch and make changes</li>
+<li class="fragment">Push to your fork</li>
+<li class="fragment">Open a pull request to the original repository</li>
+</ol></li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="readme-files" class="title-slide slide level1 center">
+<h1>README Files</h1>
+
+</section>
+<section id="readme-files-1" class="slide level2">
+<h2>README Files</h2>
+<ul>
+<li><p>A README.md is a markdown-formatted file that serves as the main landing page for your GitHub repository</p>
+<ul>
+<li class="fragment">It’s the first thing people see</li>
+<li class="fragment">It introduces your repository to anyone who visits and explains what it is, how to use it, and why it matters</li>
+</ul></li>
+</ul>
+</section>
+<section id="readme-files-contd" class="slide level2">
+<h2>README Files (cont’d)</h2>
+<ul>
+<li><p>A good README typically answers the following:</p>
+<ol type="1">
+<li class="fragment">A short description or summary</li>
+<li class="fragment">Installation instructions, usage examples, file structure</li>
+<li class="fragment">Guidelines for collaborators, branching strategy, etc.</li>
+<li class="fragment">Author info, credits, license, links to paper or website</li>
+</ol></li>
+</ul>
+</section>
+<section id="readme-files-contd-1" class="slide level2">
+<h2>README Files (cont’d)</h2>
+<ul>
+<li>GitHub automatically renders README.md in the repo’s homepage</li>
+</ul>
+<ul>
+<li class="fragment">You can use Markdown for formatting: headers, links, lists, images</li>
+</ul>
+</section>
+<section id="readme-files-contd-2" class="slide level2">
+<h2>README Files (cont’d)</h2>
+<ul>
+<li>Many authors use GitHub repos to share code, data, and replication materials for their research papers</li>
+</ul>
+<ul>
+<li class="fragment">README files provide an overview of the project and how to use each file</li>
+</ul>
+</section>
+<section id="readme-example" class="slide level2">
+<h2>README Example</h2>
+<ul>
+<li>Can edit README files in RStudio</li>
+</ul>
+
+<img data-src="images/fig_37.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="readme-example-1" class="slide level2">
+<h2>README Example</h2>
+<ul>
+<li>Save, commit, and push to orign</li>
+</ul>
+
+<img data-src="images/fig_38.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="excluding-files" class="title-slide slide level1 center">
+<h1>Excluding Files</h1>
+
+</section>
+<section id="excluding-files-1" class="slide level2">
+<h2>Excluding Files</h2>
+<ul>
+<li><p>There may be certain files we wish to exclude from our GitHub repo</p>
+<ul>
+<li class="fragment">Unnecessary, sensitive, or large files</li>
+</ul></li>
+</ul>
+<ul>
+<li class="fragment">These files are necessary for our project, but we don’t want to make them public</li>
+</ul>
+<ul>
+<li class="fragment">In GitHub Desktop, we can exclude files from our commit by unchecking the box for that file</li>
+</ul>
+</section>
+<section id="excluding-files-contd" class="slide level2">
+<h2>Excluding Files (cont’d)</h2>
+<ul>
+<li>E.g., temp.txt</li>
+</ul>
+
+<img data-src="images/fig_60.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="excluding-files-contd-1" class="slide level2">
+<h2>Excluding Files (cont’d)</h2>
+
+<img data-src="images/fig_61.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="gitignore" class="slide level2">
+<h2>.gitignore</h2>
+<ul>
+<li>Unchecking a box for every commit can get tedious</li>
+</ul>
+<ul>
+<li class="fragment">Instead, we can add the file to our <code>.gitignore</code> file</li>
+</ul>
+<ul>
+<li class="fragment">A <code>.gitignore</code> file tells Git what files to leave out of a commit</li>
+</ul>
+</section>
+<section id="gitignore-contd" class="slide level2">
+<h2>.gitignore (cont’d)</h2>
+<ul>
+<li>In GitHub Desktop, right click the file name listed under “changes” and select ignore file (add to .gitignore)</li>
+</ul>
+
+<img data-src="images/fig_62.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="gitignore-contd-1" class="slide level2">
+<h2>.gitignore (cont’d)</h2>
+<ul>
+<li>We can now see that <code>temp.txt</code> has been added to the <code>.gitignore</code> file</li>
+</ul>
+
+<img data-src="images/fig_63.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="gitignore-contd-2" class="slide level2">
+<h2>.gitignore (cont’d)</h2>
+<ul>
+<li>If we want to ignore all files of a certain type, we can use the wildcard symbol <code>*</code></li>
+</ul>
+<ul>
+<li class="fragment">If we want to ignore all text files, we can write <code>*.txt</code> in the <code>.gitignore</code> file</li>
+</ul>
+
+<div class="quarto-auto-generated-content">
+<div class="footer footer-default">
+
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>

@@ -8,7 +8,9 @@
   {
     "listing": "/econ_7201.html",
     "items": [
-      "/econ_7201/r_basics/04-r_basics.html"
+      "/econ_7201/git/03_git.html",
+      "/econ_7201/r_basics/04-r_basics.html",
+      "/econ_7201/rstudio/02-rstudio.html"
     ]
   }
 ]
