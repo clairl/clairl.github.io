@@ -5,7 +5,7 @@ date: today
 date-format: long
 ---
 
-PDF Version [here](docs/Curriculum_Vitae.pdf)
+PDF Version [here](Curriculum_Vitae.pdf)
 
 ## Contact Information
 

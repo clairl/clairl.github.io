@@ -11,7 +11,7 @@ Development Economics, nonparametric econometrics, health economics, health tech
 
 ## Current Research Projects
 
--   "Nonparametric Instrumental Variable Estimation Using Complex Survey Data". [Latest Version](docs/WNPIV_July_16_2023.pdf)
+-   "Nonparametric Instrumental Variable Estimation Using Complex Survey Data". [Latest Version](WNPIV_July_16_2023.pdf)
 
 -   "How Important are Water and Sanitation? Investigating the Associations between Water/Sanitation and Well-being in First Nations in Manitoba", with with Melanie O'Gorman (Principal Investigator), Kerry Black, and Stewart Hill.
 

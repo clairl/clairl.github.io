@@ -158,7 +158,483 @@
     "href": "index.html#about",
     "title": "Luc Clair",
     "section": "About",
-    "text": "About\nI am an Associate Professor in the Department of Economics at the University of Winnipeg and Principal Investigator of Ag/Health Economics at the Canadian Centre for Agri-Food Research in Health and Medicine (A mouthful, I know!). My research program is broad and covers a myriad of areas in applied and theoretical economics, health policy, nutrition, chronic disease, and statistics. My current research is focused on the economic development of Canadian First Nations communities through improvements in water infrastructure, nutrition, and overall health.\n\n\n\nUpdated on: March 01, 2025"
+    "text": "About\nI am an Associate Professor in the Department of Economics at the University of Winnipeg and Principal Investigator of Ag/Health Economics at the Canadian Centre for Agri-Food Research in Health and Medicine (A mouthful, I know!). My research program is broad and covers a myriad of areas in applied and theoretical economics, health policy, nutrition, chronic disease, and statistics. My current research is focused on the economic development of Canadian First Nations communities through improvements in water infrastructure, nutrition, and overall health.\n\n\n\nUpdated on: September 08, 2025"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#preliminaries",
+    "href": "posts/2025-09-08-workflow/index.html#preliminaries",
+    "title": "Workflow",
+    "section": "Preliminaries",
+    "text": "Preliminaries\n\nThe necessary software to follow this lecture are\n\nR\nRStudio\nGit\nCreated an account on GitHub\nGitHub Desktop"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#what-is-a-workflow",
+    "href": "posts/2025-09-08-workflow/index.html#what-is-a-workflow",
+    "title": "Workflow",
+    "section": "What is a Workflow?",
+    "text": "What is a Workflow?\n\nStructured sequence of steps, tasks, and decisions that guide how a project moves from start to finish\n\n\n\nA good workflow is organized, repeatable, and transparent\n\nHelps reduce errors\nMakes work reproducible and easier to follow"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#workflow-example-applied-economic-research",
+    "href": "posts/2025-09-08-workflow/index.html#workflow-example-applied-economic-research",
+    "title": "Workflow",
+    "section": "Workflow Example: Applied Economic Research",
+    "text": "Workflow Example: Applied Economic Research"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#version-control",
+    "href": "posts/2025-09-08-workflow/index.html#version-control",
+    "title": "Workflow",
+    "section": "Version Control",
+    "text": "Version Control\n\nVersion control software (VCS) is a system that helps people manage and track changes to their files over time (e.g., text documents and code files)\n\n\nIt keeps track of every modification made to files, who made those changes, and when they were made\n\n\nChanges can be reverted, previous versions of files can be restored, and conflicts between different versions can be resolved"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#git",
+    "href": "posts/2025-09-08-workflow/index.html#git",
+    "title": "Workflow",
+    "section": "Git",
+    "text": "Git"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#what-is-git",
+    "href": "posts/2025-09-08-workflow/index.html#what-is-git",
+    "title": "Workflow",
+    "section": "What is Git?",
+    "text": "What is Git?\n\nGit is a popular VCS\n\n\nAllows multiple collaborators to work on the same project simultaneously, manage changes, and share work effectively\nGit’s greatest strength is its facilitation of collaboration\nIt has been described as “track changes on steroids” or as “a marriage between Dropbox and Microsoft Word’s ‘Track Changes’ feature”"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#git-repository",
+    "href": "posts/2025-09-08-workflow/index.html#git-repository",
+    "title": "Workflow",
+    "section": "Git Repository",
+    "text": "Git Repository\n\nGit tracks the changes of a set files in a Git enabled folder or directory\n\n\nThe Git enabled directory is known as a repository (repo)\n\n\nOne uses Git to flag any saved changes made to files in the repository"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#git-repository-contd",
+    "href": "posts/2025-09-08-workflow/index.html#git-repository-contd",
+    "title": "Workflow",
+    "section": "Git Repository (cont’d)",
+    "text": "Git Repository (cont’d)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#changes-and-checkpoints",
+    "href": "posts/2025-09-08-workflow/index.html#changes-and-checkpoints",
+    "title": "Workflow",
+    "section": "Changes and Checkpoints",
+    "text": "Changes and Checkpoints\n\nGit can then save a version (snapshot) of repository files at a given moment in time\n\n\nThis is known as a commit\n\n\nEach commit has a message explaining what was changed, keeping track of the project’s progress"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#branches",
+    "href": "posts/2025-09-08-workflow/index.html#branches",
+    "title": "Workflow",
+    "section": "Branches",
+    "text": "Branches\n\nGit allows you to create branches, which are akin to an alternate version of the repository to experiment with new ideas\n\n\nOnce you’re happy with the changes, you can merge these branches back into the main project\n\n\nA branch is a separate line of development\n\n\nThe main branch is usually called main or master"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#collaboration",
+    "href": "posts/2025-09-08-workflow/index.html#collaboration",
+    "title": "Workflow",
+    "section": "Collaboration",
+    "text": "Collaboration\n\nYou can store your repository on a remote server (e.g., GitHub) and everyone can access it\n\n\nWhen someone makes changes, you can pull those changes into your local repository (folder on your computer)\n\n\nSimilarly, when you make changes, you can push them to the remote server so your team can see and use them"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#track-and-undo-changes",
+    "href": "posts/2025-09-08-workflow/index.html#track-and-undo-changes",
+    "title": "Workflow",
+    "section": "Track and Undo Changes",
+    "text": "Track and Undo Changes\n\nGit tracks every change you make\n\n\nIf you realize you made a mistake or want to revisit an earlier version of your work, you can easily go back to previous commits\n\n\nThis helps ensure you don’t lose valuable work and can always correct errors"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github",
+    "href": "posts/2025-09-08-workflow/index.html#github",
+    "title": "Workflow",
+    "section": "GitHub",
+    "text": "GitHub\n\nGitHub is a web-based platform that helps researchers manage, share, and collaborate on code projects using Git\n\n\nIt provides a cloud-based space where you can store your Git repositories and interact with other developers’ projects\n\n\nGitHub has become one of the most popular platforms for open-source and private software development"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#git-and-workflow",
+    "href": "posts/2025-09-08-workflow/index.html#git-and-workflow",
+    "title": "Workflow",
+    "section": "Git and Workflow",
+    "text": "Git and Workflow\n\nVersion control is a critical component of a productive workflow\n\n\n\nA recommended first-step of any workflow is to set up a Git-enabled repository for your project files and link this repository to GitHub.com"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#creating-a-git-repository-1",
+    "href": "posts/2025-09-08-workflow/index.html#creating-a-git-repository-1",
+    "title": "Workflow",
+    "section": "Creating a Git Repository",
+    "text": "Creating a Git Repository\n\nThree main ways\n\nCreate repository on GitHub.com\nAdd new repository using GitHub Desktop\nCreate a new folder on your local computer and enable Git"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub",
+    "text": "Create Git Repository on GitHub\n\nGo to github.com and sign in\n\n\nOn your home page, click the  button"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nEnter the name of the repository"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-1",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-1",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nChoose whether you want the repository to be public or private"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-2",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-2",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nAdd a README file, which gives a description of your project"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-3",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-3",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nChoose a license, then press Create\n\nFor more on open source licensing, please visit ChooseALicense.com"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-4",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-4",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nYour repository has been created\n\n\n\nHere are a few things to notice"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-5",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-5",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nGit defaults to the main branch"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-6",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-6",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nThe commit message and commit ID"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-7",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-7",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nTwo files were created: LICENSE and README.md\n\n\nNote the files created have the same Git message"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-8",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-8",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nLICENSE refers to the license chosen when creating the repository"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-9",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-9",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nREADME.md is the landing page for your repository\n\n\nIt is where you describe your repository"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop",
+    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop",
+    "title": "Workflow",
+    "section": "Clone GitHub Repository in GitHub Desktop",
+    "text": "Clone GitHub Repository in GitHub Desktop\n\nOpen GitHub Desktop and log in (if you are currently logged out)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd",
+    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd",
+    "title": "Workflow",
+    "section": "Clone GitHub Repository in GitHub Desktop (cont’d)",
+    "text": "Clone GitHub Repository in GitHub Desktop (cont’d)\n\nOn the left-hand-side, you will notice a list of your GitHub repositories\n\n\nChoose the repository you wish to make a copy to your local computer\nThen select “Clone username/repo”, where username/repo is your GitHub username and repo is the name of the repository\nIn this example it is clairl/demo"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-1",
+    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-1",
+    "title": "Workflow",
+    "section": "Clone GitHub Repository in GitHub Desktop (cont’d)",
+    "text": "Clone GitHub Repository in GitHub Desktop (cont’d)\n\nChoose the location for the clone of the GitHub repo on your local computer and click Clone"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-2",
+    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-2",
+    "title": "Workflow",
+    "section": "Clone GitHub Repository in GitHub Desktop (cont’d)",
+    "text": "Clone GitHub Repository in GitHub Desktop (cont’d)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder",
+    "href": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder",
+    "title": "Workflow",
+    "section": "Create a Git Repository from Existing Folder",
+    "text": "Create a Git Repository from Existing Folder\n\nSay we already have a folder with files that we want to connect to GitHub?\n\n\nFirst, we have to enable Git\n\n\nTo do this, we have to use the Terminal"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.",
+    "title": "Workflow",
+    "section": "Create a Git Repository from Existing Folder (cont.)",
+    "text": "Create a Git Repository from Existing Folder (cont.)\n\nIn the terminal, navigate to the project folder"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.-1",
+    "title": "Workflow",
+    "section": "Create a Git Repository from Existing Folder (cont.)",
+    "text": "Create a Git Repository from Existing Folder (cont.)\n\nUse the following commands:\n\ngit init\ngit add .\n\nThe first command enables git, while the second command stages files for the next commit\n\n\nThe . means “the current directory and all its contents”"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#workflow",
+    "href": "posts/2025-09-08-workflow/index.html#workflow",
+    "title": "Workflow",
+    "section": "Workflow",
+    "text": "Workflow\n\nThe workflow we will be using to create our website is:\n\nCreate a new Quarto project in R Studio\nConnect our project directory to GitHub through Github Desktop\nPublish the newly created website via GitHub Pages\nCreate new pages for the website\nAdd a blog to the website\nCustomize the website"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-1",
+    "href": "posts/2025-09-08-workflow/index.html#r-projects-1",
+    "title": "Workflow",
+    "section": "R Projects",
+    "text": "R Projects\n\nTo begin, create a new Quarto project in R Studio\n\nClick File-&gt;New Project…"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#r-projects-cont.",
+    "title": "Workflow",
+    "section": "R Projects (cont.)",
+    "text": "R Projects (cont.)\n\nSelect New Directory"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#r-projects-cont.-1",
+    "title": "Workflow",
+    "section": "R Projects (cont.)",
+    "text": "R Projects (cont.)\n\nSelect Quarto Website"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#r-projects-cont.-2",
+    "title": "Workflow",
+    "section": "R Projects (cont.)",
+    "text": "R Projects (cont.)\n\nName the directory. I named mine demo.\nChoose a path for the new project and click Create Project"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files",
+    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files",
+    "title": "Workflow",
+    "section": "Quarto Website Files",
+    "text": "Quarto Website Files\n\nR Studio creates a project with a number of files"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.",
+    "title": "Workflow",
+    "section": "Quarto Website Files (cont.)",
+    "text": "Quarto Website Files (cont.)\n\n_quarto.yml: key configuration file for the Quarto website.\n\nDefines the overall structure and settings for the website project, project:\nDefines metadata for the website, e.g., title, author(s), and other descriptive info, title: and description:\nControls the structure of the website, navbar:\nSpecifies themes, format:, theme:, css:"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-1",
+    "title": "Workflow",
+    "section": "Quarto Website Files (cont.)",
+    "text": "Quarto Website Files (cont.)\n\nindex.qmd: home page of your Quarto website\n\nDefines the content and layout for the main landing page of the site\nCan add Markdown and Quarto-specific content\nDefined as Home in the _quarto.yml file\n\n.gitignore: configuration file used in Git repositories to specify intentionally untracked files or directories that Git should ignore."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-2",
+    "title": "Workflow",
+    "section": "Quarto Website Files (cont.)",
+    "text": "Quarto Website Files (cont.)\n\nabout.qmd: Quarto Markdown file that is typically used to create an About page for a Quarto website.\n\nThis page provides information about the website’s purpose, the author(s), or the organization behind it.\nNot mandatory\nAppears as another page on the navigation bar\n\nstyle.css: Cascading Style Sheets (CSS) file used to define and customize the visual appearance of a Quarto website or document.\n\nallows you to override or extend the default styles provided by Quarto’s themes"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#building-the-website",
+    "href": "posts/2025-09-08-workflow/index.html#building-the-website",
+    "title": "Workflow",
+    "section": "Building the Website",
+    "text": "Building the Website\n\nTo build the website, click the Render button at the top of the index.qmd file.\nAlternatively, you can also click Build, then Render Website in the top right pane."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#building-the-website-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#building-the-website-cont.",
+    "title": "Workflow",
+    "section": "Building the Website (cont.)",
+    "text": "Building the Website (cont.)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-1",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-1",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub",
+    "text": "Connecting R Project to GitHub\n\nBefore we can publish our website, we need to connect our R project to a GitHub repository\nBe sure that you are signed into your GitHub account in GitHub Desktop.\nOpen GitHub Desktop and add the R project Directory\n\nSelect Add Existing Repository\nChoose the R project directory"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-1",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nCommit changes\n\nWrite a summary (E.g., “Created Quarto website”)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-2",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nPublish repository to GitHub.com"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-3",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-3",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nGo to GitHub.com to confirm that the repository has been published."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-4",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-4",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nCheck to see that the project files are now available in your repository"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-1",
+    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-1",
+    "title": "Workflow",
+    "section": "Publishing Your Website",
+    "text": "Publishing Your Website\n\nReturn to R Studio and open the _quarto.yml file.\nUnder project: include the code output-dir: docs and render the website. This will save the website files in a newly created docs folder."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.",
+    "title": "Workflow",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nWe no longer need the _site folder, so we can delete it."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-1",
+    "title": "Workflow",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nReturn to GitHub Desktop, commit the changes, and push them to GitHub.com.\n\nRemember to leave a summary"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-2",
+    "title": "Workflow",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nReturn to GitHub.com.\n\nNote that the docs folder has replaced the _site folder."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages",
+    "title": "Workflow",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n\nClick Settings from the top menu."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.",
+    "title": "Workflow",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nChoose Pages from the menu on the left-hand-side"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-1",
+    "title": "Workflow",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nSet the branch to main"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-2",
+    "title": "Workflow",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nSet the folder to docs"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-3",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-3",
+    "title": "Workflow",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nNote the message saying that the website is being built"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-4",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-4",
+    "title": "Workflow",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nWait a about a minute, then refresh the page. You should see a message that the site is live at a given URL.\n\nThe URL is typically https://username.github.io/repository_name"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-3",
+    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-3",
+    "title": "Workflow",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nFollow the link to view your website"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-1",
+    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-1",
+    "title": "Workflow",
+    "section": "Adding Pages to Your Website",
+    "text": "Adding Pages to Your Website\n\nTo add a webpage, create a new .qmd file and save it in your project directory."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.",
+    "title": "Workflow",
+    "section": "Adding Pages to Your Website (cont.)",
+    "text": "Adding Pages to Your Website (cont.)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-1",
+    "title": "Workflow",
+    "section": "Adding Pages to Your Website (cont.)",
+    "text": "Adding Pages to Your Website (cont.)\n\nAdd the new Quarto file to the navigation bar in the _quarto.yml file\n\nhref: adds the listing page file to the navigation bar\ntext: is the text that will display on the navigation bar."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-2",
+    "title": "Workflow",
+    "section": "Adding Pages to Your Website (cont.)",
+    "text": "Adding Pages to Your Website (cont.)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-1",
+    "href": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-1",
+    "title": "Workflow",
+    "section": "Add File to a Webpage",
+    "text": "Add File to a Webpage\n\nYou may want to include downloadable file formats on your website\nAdd the file to your project directory and reference it within your Quarto document.\nIt is helpful to create sub directories to store your files,e.g.,\n\nFigures: store figures\nData: datasets\nFiles: pdf documents"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.",
+    "title": "Workflow",
+    "section": "Add File to a Webpage (cont.)",
+    "text": "Add File to a Webpage (cont.)\n\nReference the file using the syntax ![text](files/filename.pdf)\nE.g.,"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.-1",
+    "title": "Workflow",
+    "section": "Add File to a Webpage (cont.)",
+    "text": "Add File to a Webpage (cont.)"
   },
   {
     "objectID": "philosophy.html",
@@ -292,6 +768,13 @@
     "title": "Contact Infotmation",
     "section": "",
     "text": "l.clair@uwinnipeg.ca\n (204) 789-4216\n Department of Economics\n     University of Winnipeg\n     515 Portage Avenue\n     Winnipeg, MB, Canada\n     R3B 2E9"
+  },
+  {
+    "objectID": "workshops.html",
+    "href": "workshops.html",
+    "title": "Workshops",
+    "section": "",
+    "text": "Workflow\n\n\n\n\n\nAn Introduction to Git, GitHub, and GitHub Desktop\n\n\n\n\n\nSep 8, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",

@@ -23,6 +23,9 @@ website:
       - href: Research.qmd
         text: "{{< fa book >}} Research"
       
+      - href: workshops.qmd
+        text: Workshops
+      
         
     right:
       - href: Contact.qmd
