@@ -158,7 +158,1372 @@
     "href": "index.html#about",
     "title": "Luc Clair",
     "section": "About",
-    "text": "About\nI am an Associate Professor in the Department of Economics at the University of Winnipeg and Principal Investigator of Ag/Health Economics at the Canadian Centre for Agri-Food Research in Health and Medicine (A mouthful, I know!). My research program is broad and covers a myriad of areas in applied and theoretical economics, health policy, nutrition, chronic disease, and statistics. My current research is focused on the economic development of Canadian First Nations communities through improvements in water infrastructure, nutrition, and overall health.\n\n\n\nUpdated on: September 09, 2025"
+    "text": "About\nI am an Associate Professor in the Department of Economics at the University of Winnipeg and Principal Investigator of Ag/Health Economics at the Canadian Centre for Agri-Food Research in Health and Medicine (A mouthful, I know!). My research program is broad and covers a myriad of areas in applied and theoretical economics, health policy, nutrition, chronic disease, and statistics. My current research is focused on the economic development of Canadian First Nations communities through improvements in water infrastructure, nutrition, and overall health.\n\n\n\nUpdated on: September 12, 2025"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#software",
+    "href": "econ_7201/quarto/05-quarto.html#software",
+    "title": "Luc Clair",
+    "section": "Software",
+    "text": "Software\n\nInstallation order:\n\nR: https://cran.r-project.org\nR Studio: https://posit.co/download/rstudio-desktop/\nTeX (Follow Quarto’s guide for TeX installation: https://quarto.org/docs/output-formats/pdf-engine.html])\n\n\n\nQuarto is automatically installed when you install R Studio"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#introduction-1",
+    "href": "econ_7201/quarto/05-quarto.html#introduction-1",
+    "title": "Luc Clair",
+    "section": "Introduction",
+    "text": "Introduction\n\nQuarto is an open-source tool designed for creating dynamic documents, reports, presentations, and websites\n\n\nIt integrates with various programming languages and provides a unified framework for combining code, narrative text, and data visualization\nQuarto is particularly useful for data science, research, and technical communication"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#scientific-reports",
+    "href": "econ_7201/quarto/05-quarto.html#scientific-reports",
+    "title": "Luc Clair",
+    "section": "Scientific Reports",
+    "text": "Scientific Reports\n\nWhat makes a report scientific?\n\nStructured format\nEvidence-based, relies on empirical data, experiments, or observational data\nUses quatitative or qualitative analysis to support claims\nReplicability\nUse of figures, tables, and equations\nCitations and References"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#document-preparation-systems",
+    "href": "econ_7201/quarto/05-quarto.html#document-preparation-systems",
+    "title": "Luc Clair",
+    "section": "Document Preparation Systems",
+    "text": "Document Preparation Systems\n\n\n\n\n\nSoftware\nType\nPrimary Use\nOutput Formats\n\n\n\n\nLaTeX\nTypesetting System\nHigh-quality academic documents\nPDF, Beamer\n\n\nSweave\nLiterate Programming Tool\nEmbedding R code in LaTeX\nPDF, Beamer\n\n\nR Markdown\nReproducible Reporting System\nDynamic reports with R\nHTML, PDF, Word, Beamer, PPTX\n\n\nBookdown\nReproducible Publishing System\nWriting books, theses, and long-form documents\nHTML, PDF, Word, Beamer, PPTX, EPUB, etc.\n\n\nQuarto\nReproducible Publishing System\nMulti-language scientific publishing (reports, books, blogs, presentations)\nHTML, PDF, Word, Beamer, PPTX, EPUB, etc."
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#quarto-output-formats",
+    "href": "econ_7201/quarto/05-quarto.html#quarto-output-formats",
+    "title": "Luc Clair",
+    "section": "Quarto Output Formats",
+    "text": "Quarto Output Formats\n\nQuarto documents can be rendered into multiple formats:\n\nDocuments: Hypertext Markup Language (HTML), PDF, and Word\nPresentations: Reveal.js, Beamer, and PowerPoint\nInteractive: Shiny, Observable JS\n\n\n\nYou can refine the look of your document based on the format chosen\nToday’s talk will focus on PDF output and how it compares to LaTeX, however, much of the syntax will translate to the other formats"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#output-formats-cont.",
+    "href": "econ_7201/quarto/05-quarto.html#output-formats-cont.",
+    "title": "Luc Clair",
+    "section": "Output Formats (cont.)",
+    "text": "Output Formats (cont.)\n\n\n\n\n\nPDF\nHTML\nWord"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#yaml-metadata",
+    "href": "econ_7201/quarto/05-quarto.html#yaml-metadata",
+    "title": "Luc Clair",
+    "section": "YAML Metadata",
+    "text": "YAML Metadata\n\nMetadata: data about data\n\n\n\nThe header at the top of the document contains metadata settings\nDefines title, author, date, format, options, and more"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#common-metadata-fields",
+    "href": "econ_7201/quarto/05-quarto.html#common-metadata-fields",
+    "title": "Luc Clair",
+    "section": "Common Metadata Fields",
+    "text": "Common Metadata Fields\n\n\n\n\n\n\n\nField\nDescription\n\n\n\n\ntitle\nTitle of the document\n\n\nsubtitle\nSubtitle displayed below the title\n\n\nauthor\nName(s) of the document author(s)\n\n\ndate\nDate of the document\n\n\nformat\nOutput format (e.g., html, pdf, revealjs, etc.)\n\n\neditor\nEditor options like visual or source\n\n\nexecute\nCode execution options (e.g., echo, eval, warning)\n\n\ntheme\nVisual theme (for html or revealjs documents)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#common-metadata-fields-cont.",
+    "href": "econ_7201/quarto/05-quarto.html#common-metadata-fields-cont.",
+    "title": "Luc Clair",
+    "section": "Common Metadata Fields (cont.)",
+    "text": "Common Metadata Fields (cont.)\n\n\n\n\n\n\n\nField\nDescription\n\n\n\n\ntoc\nBoolean to include a Table of Contents\n\n\nnumber-sections\nBoolean to number section headers\n\n\nhighlight-style\nSyntax highlighting style for code blocks\n\n\nbibliography\nPath to bibliography file for citations\n\n\ncsl\nPath to CSL file to format citations and references\n\n\nfilters\nList of Pandoc filters to apply\n\n\nlang\nDocument language (e.g., en, fr, etc.)\n\n\ncomments\nEnable commenting system (e.g., hypothesis, utterances)\n\n\ntitle-block-style.\nControls title page style (default, none, minimal, etc.)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#text-content",
+    "href": "econ_7201/quarto/05-quarto.html#text-content",
+    "title": "Luc Clair",
+    "section": "Text Content",
+    "text": "Text Content\n\nThe body of the document is written using Markdown\n\n\n\nSupports headings, lists, bold/italic text, links, images, and equations\n\nMore on equations later"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#section-headings",
+    "href": "econ_7201/quarto/05-quarto.html#section-headings",
+    "title": "Luc Clair",
+    "section": "Section Headings",
+    "text": "Section Headings\n\nSection headings are denoted using # in Quarto\n\n\n\nE.g.,\n\n\n\n\n\n\n\n\nQuarto Syntax\nOutput\n\n\n\n\n# Heading 1\n\n\n\n## Heading 2\n\n\n\n### Heading 3"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#lists",
+    "href": "econ_7201/quarto/05-quarto.html#lists",
+    "title": "Luc Clair",
+    "section": "Lists",
+    "text": "Lists\n\n\n\n\n\n\n\nQuarto Syntax\nOutput\n\n\n\n\n- Item 1\n- Item 2\n\n  - Sub-item 1\n\n  - Sub-item 2\n- Item 3\n\nItem 1\nItem 2\n\nSub-item 1\nSub-item 2\n\nItem 3"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#text-formatting",
+    "href": "econ_7201/quarto/05-quarto.html#text-formatting",
+    "title": "Luc Clair",
+    "section": "Text formatting",
+    "text": "Text formatting\n\n\n\n\n\n\n\nQuarto Syntax\nOutput\n\n\n\n\n*italic s*, **bold**, ***bold italics***\nitalics, bold, bold italics\n\n\nsuperscripts^2^/subscripts~2~\nsuperscripts2 / subscripts2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#call-out-blocks",
+    "href": "econ_7201/quarto/05-quarto.html#call-out-blocks",
+    "title": "Luc Clair",
+    "section": "Call-Out Blocks",
+    "text": "Call-Out Blocks\n\nCreate call-out blocks for notes, tips, definitions, theorems, lemmas, warnings, etc.\nE.g., Definition\n\n::: {.callout-tip}\n## Definition\n\n**Quarto** is an open-source, multi-language scientific publishing system that allows users to create dynamic, reproducible documents, presentations, books, and websites using code and markdown.\n:::"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#call-out-blocks-cont.",
+    "href": "econ_7201/quarto/05-quarto.html#call-out-blocks-cont.",
+    "title": "Luc Clair",
+    "section": "Call-Out Blocks (cont.)",
+    "text": "Call-Out Blocks (cont.)\n\n\n\n\n\n\nDefinition\n\n\nQuarto is an open-source, multi-language scientific publishing system that allows users to create dynamic, reproducible documents, presentations, books, and websites using code and markdown."
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#code-chunks",
+    "href": "econ_7201/quarto/05-quarto.html#code-chunks",
+    "title": "Luc Clair",
+    "section": "Code Chunks",
+    "text": "Code Chunks\n\nCode chunks allow running R, Python, Julia, or other languages inside the document\nTwo ways to insert an R code chunk:\n\nBegin with triple backticks ```{r} and end with ```\nAdd a chunk using the tool in R Studio"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#code-chunks-cont.",
+    "href": "econ_7201/quarto/05-quarto.html#code-chunks-cont.",
+    "title": "Luc Clair",
+    "section": "Code Chunks (cont.)",
+    "text": "Code Chunks (cont.)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#code-chunks-cont.-1",
+    "href": "econ_7201/quarto/05-quarto.html#code-chunks-cont.-1",
+    "title": "Luc Clair",
+    "section": "Code Chunks (cont.)",
+    "text": "Code Chunks (cont.)\n\nE.g., producing a histogram of a standard normal variable \\(X\\)\n\n```{r}\n#| echo: false\n#| eval: true\n#| fig-cap: \"Histogram of $X$\"\n#| dev: 'tikz'\n\n# For nice looking figures LaTeX figures install tikzDevice\n# install.packages(\"tikzDevice\")\n\nset.seed(42) # sets the seed so that the results will stay the same\n\nx &lt;- rnorm(1000,0,1) # Generate a standard normal variable\n\n# Create a histogram\nhist(x,\n     freq = FALSE,\n     ylab = \"Probability\",\n     xlab = \"$X$\",\n     main = \"\")\n```"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#code-chunks-cont.-2",
+    "href": "econ_7201/quarto/05-quarto.html#code-chunks-cont.-2",
+    "title": "Luc Clair",
+    "section": "Code Chunks (cont.)",
+    "text": "Code Chunks (cont.)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#latex",
+    "href": "econ_7201/quarto/05-quarto.html#latex",
+    "title": "Luc Clair",
+    "section": "LaTeX",
+    "text": "LaTeX\n\nEquations are written using LaTeX syntax i.e.,\n\nWrapping equations in $ for in-line equations, e.g., $y=f(x)$ gives \\(y=f(x)\\)\nWrapping equations in $$ for display math, e.g., $$y=f(x)$$ gives \\[y=f(x)\\]"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#greek-letters",
+    "href": "econ_7201/quarto/05-quarto.html#greek-letters",
+    "title": "Luc Clair",
+    "section": "Greek Letters",
+    "text": "Greek Letters\n\n\n\nName\nSyntax\nOutput\n\n\n\n\nAlpha\n\\alpha\n\\(\\alpha\\)\n\n\nBeta\n\\beta\n\\(\\beta\\)\n\n\nGamma\n\\gamma\n\\(\\gamma\\)\n\n\nDelta\n\\delta\n\\(\\delta\\)\n\n\nSigma\n\\sigma\n\\(\\sigma\\)\n\n\nPi\n\\pi\n\\(\\pi\\)\n\n\nTheta\n\\theta\n\\(\\theta\\)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#arithmetic-operations",
+    "href": "econ_7201/quarto/05-quarto.html#arithmetic-operations",
+    "title": "Luc Clair",
+    "section": "Arithmetic Operations",
+    "text": "Arithmetic Operations\n\n\n\nName\nSyntax\nOutput\n\n\n\n\nAddition\n+\n\\(+\\)\n\n\nSubtraction\n-\n\\(-\\)\n\n\nMultiplication\n\\times\n\\(\\times\\)\n\n\nDivision\n/\n\\(/\\)\n\n\nSummation\n\\sum\n\\(\\sum\\)\n\n\nProduct\n\\prod\n\\(\\prod\\)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#subscripts-and-superscripts",
+    "href": "econ_7201/quarto/05-quarto.html#subscripts-and-superscripts",
+    "title": "Luc Clair",
+    "section": "Subscripts and Superscripts",
+    "text": "Subscripts and Superscripts\n\n\n\nPurpose\nSyntax\nOutput\n\n\n\n\nSubscript\nx_i\n\\(x_i\\)\n\n\nExponent\nx^2\n\\(x^2\\)\n\n\nCombined\nx_i^2\n\\(x_i^2\\)\n\n\nGrouped\nx^{n+1}\n\\(x^{n+1}\\)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#subscripts-and-superscripts-1",
+    "href": "econ_7201/quarto/05-quarto.html#subscripts-and-superscripts-1",
+    "title": "Luc Clair",
+    "section": "Subscripts and Superscripts",
+    "text": "Subscripts and Superscripts\n\nE.g.,\n\n\n\n\n\n\n\n\nLaTeX Syntax\nOutput\n\n\n\n\n$$\n\\\ns\num_{i=1}^n x_i\n$$\n$$\\sum_{i=1}^n x_i $$"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#fractions-roots-and-powers",
+    "href": "econ_7201/quarto/05-quarto.html#fractions-roots-and-powers",
+    "title": "Luc Clair",
+    "section": "Fractions, Roots, and Powers",
+    "text": "Fractions, Roots, and Powers\n\n\n\nPurpose\nSyntax\nOutput\n\n\n\n\nFraction\n\\frac{a}{b}\n\\(\\frac{a}{b}\\)\n\n\nSquare root\n\\sqrt{x}\n\\(\\sqrt{x}\\)\n\n\nn-th root\n\\sqrt[n]{x}\n\\(\\sqrt[n]{x}\\)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#advanced-symbols",
+    "href": "econ_7201/quarto/05-quarto.html#advanced-symbols",
+    "title": "Luc Clair",
+    "section": "Advanced Symbols",
+    "text": "Advanced Symbols\n\n\n\nName\nSyntax\nOutput\n\n\n\n\nIntegral\n\\int\n\\(\\int\\)\n\n\nPartial diff\n\\partial\n\\(\\partial\\)\n\n\nInfinity\n\\infty\n\\(\\infty\\)\n\n\nApproximate\n\\approx\n\\(\\approx\\)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#advanced-symbols-cont.",
+    "href": "econ_7201/quarto/05-quarto.html#advanced-symbols-cont.",
+    "title": "Luc Clair",
+    "section": "Advanced Symbols (cont.)",
+    "text": "Advanced Symbols (cont.)\n\nE.g.,\n\n\n\n\n\n\n\n\nLaTeX Syntax\nOutput\n\n\n\n\n$$\n\\\nint_0^1 f(x)dx\n$$\n$$\\int_0^1 f(x) dx$$"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#relational-and-logical-symbols",
+    "href": "econ_7201/quarto/05-quarto.html#relational-and-logical-symbols",
+    "title": "Luc Clair",
+    "section": "Relational and Logical Symbols",
+    "text": "Relational and Logical Symbols\n\n\n\n\n\n\n\n\nPurpose\nSyntax\nOutput\n\n\n\n\nEquals\n=\n=\n\n\nNot equal\n\\neq\n≠\n\n\nGreater than\n&gt;\n&gt;\n\n\nLess than\n&lt;\n&lt;\n\n\nGreater or equal\n\\geq\n≥\n\n\nLess or equal\n\\leq\n≤\n\n\nImplies\n\\ R i ghtarrow\n⇒\n\n\nIf and only if\n\\iff\n⇔"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#text-in-math",
+    "href": "econ_7201/quarto/05-quarto.html#text-in-math",
+    "title": "Luc Clair",
+    "section": "Text in Math",
+    "text": "Text in Math\n\nInsert text into an equation using \\text{}\n\n\n\nE.g.,\n\n\n\n\n\n\n\n\nLaTeX Syntax\nOutput\n\n\n\n\n$$\nf\n(\nx\n) = \\begin{cases}\n1\n\n&\n\n\\\nt\next{if } x &gt; 0 \\\\\n0\n\n&\n \\text{otherwise}\n\\end{cases}\n$$\n$$ f(x) =\n\\[\\begin{cases}\n1\n\n&\n\n\\\nt\next{if } x &gt; 0 \\\\\n0\n\n&\n\\text{otherwise}\n\\end{cases}\\]\nrwise} \\end{cases}\nerwise} \\end{cases}\n$$"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#matrices",
+    "href": "econ_7201/quarto/05-quarto.html#matrices",
+    "title": "Luc Clair",
+    "section": "Matrices",
+    "text": "Matrices\n\n\n\nLaTeX Syntax\nOutput\n\n\n\n\n\\begin{bmatrix} ... \\end{bmatrix}\nBracket matrix\n\n\n\\begin{pmatrix} ... \\end{pmatrix}\nParenthesis matrix"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#matrices-cont.",
+    "href": "econ_7201/quarto/05-quarto.html#matrices-cont.",
+    "title": "Luc Clair",
+    "section": "Matrices (cont.)",
+    "text": "Matrices (cont.)\n\nE.g.,\n\n\n\n\n\n\n\n\nLaTeX Syntax\nOutput\n\n\n\n\n$$\n\\\nbegin{bmatrix}\n1 & 2 \\\\\n3 & 4\n\\end{bmatrix}\n$$\n\\[\n\\\nbegin{bmatrix}\n1 & 2 \\\\\n3 & 4\n\\end{bmatrix}\n\\]"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#alignment",
+    "href": "econ_7201/quarto/05-quarto.html#alignment",
+    "title": "Luc Clair",
+    "section": "Alignment",
+    "text": "Alignment\n\nFor multi-step equations, use \\begin{aligned}...\\end{aligned}\n\n\nUse the & to mark the alignment point (typically around the equals sign =)\n\n\nUse \\\\ to mark a new line"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#alignment-cont.",
+    "href": "econ_7201/quarto/05-quarto.html#alignment-cont.",
+    "title": "Luc Clair",
+    "section": "Alignment (cont.)",
+    "text": "Alignment (cont.)\n\nE.g.,\n\n\n\n\n\n\n\n\nCol1\nCol2\n\n\n\n\n$$\n\\begin{aligned}\ny\n\n&\n=\n\nX\n\\beta + \\varepsilon \\\\\n\\\nh\na\nt\n{\n\\\nbeta} &= (X'X)^{-1}X'y\n\\end{aligned}\n$$\n$$\n\\[\\begin{aligned}\ny\n\n&\n=\n\nX\n\\beta + \\varepsilon \\\\\n\\\nh\na\nt\n{\n\\\nbeta} &= (X'X)^{-1}X'y\n\\end{aligned}\\]\nbeta} &= (X’X)^{-1}X’y \\end{aligned}\nX)^{-1}X’y \\end{aligned}\n’X)^{-1}X’y \\end{aligned}\nX’X)^{-1}X’y \\end{aligned}\n(X’X)^{-1}X’y \\end{aligned} $$"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#equations-1",
+    "href": "econ_7201/quarto/05-quarto.html#equations-1",
+    "title": "Luc Clair",
+    "section": "Equations",
+    "text": "Equations\n\nNote: Math mode is only denoted by $ or $$\n\n\nLaTeX commands (e.g., \\begin{equation}...\\end{equation}) still work, however, they will only appear in PDF output\n\n\nFor numbered equations in Quarto, you have to add a label, which is then used for cross-referencing"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#equations-cont.",
+    "href": "econ_7201/quarto/05-quarto.html#equations-cont.",
+    "title": "Luc Clair",
+    "section": "Equations (cont.)",
+    "text": "Equations (cont.)\n\nTo add a label, add {#eq-label} after an equation in display mode\n\nIt is important to remember the eq- prefix\n\n\n\n\nTo reference the equation, simply use @eq-label\nE.g., “@eq-demo defines the model: $$y=f(x)$$ {#eq-demo}” gives Equation 1 defines the model: \\[y=f(x) \\qquad(1)\\]"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\n\nQuarto supports dynamic figures and tables\n\n\nI could devote entire seminars to figures and tables, so here are some of the basics\n\n\n\nFor more info, please see Quarto’s guide:\n\nFigures: https://quarto.org/docs/authoring/figures.html\nTables: https://quarto.org/docs/authoring/tables.html"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-1",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-1",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nFigures\n\nTwo (of many) ways to insert images/figures into a Quarto document\n\nMarkdown syntax\nR code (Knitr)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-2",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-2",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nMarkdown Figures Syntax\n\nThe markdown syntax for adding an image is ![caption](FilePath)\n\n\nE.g., ![University of Winnipeg Logo](logo.png)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-3",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-3",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nMarkdown Figures Syntax (cont.)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-4",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-4",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nInserting Images Using knitr\n\nknitr is the R package that allows us to combine computer languages (statistical software code) and output markup languages (e.g., LaTeX, HTML).\n\n\nknitr has a built-in command for including images called include_graphics(\"path\").\n\n\nInputting images using a code chunk allows for greater customization of the image output."
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-5",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-5",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nInserting Images Using knitr (cont.)\n\nFor example, we can input the UW Logo .png file using knitr\n\n```{r}\n#| echo: false\n#| eval: true\n#| fig-cap: \"University of Winnipeg Logo\" \n\n#&gt; We can call a command from a package using \n#&gt; package.name::command\n\nknitr::include_graphics(\"logo.png\")\n```"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-6",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-6",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nTables\n\nThere are two types of tables we want to consider.\n\nTables summarizing information in the text.\n\nSimple tables and grid tables.\n\nTables summarizing R output within R chunks.\n\nkable() is available in the knit package. To use it, we can use knitr::kable()."
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-7",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-7",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nCreating Tables Using R Studio’s Visual Editor\n\nR Studio Visual editor facilitates the creation of grid tables.\nTo create a table using the Visual editor, click “Table” and select “Insert table” from the drop-down menu on the top of the Quarto document.\n\n\nVisual Editor Menu"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-8",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-8",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nCreating Tables Using R Studio’s Visual Editor (cont.)\n\nNow you have a table that you can edit similar to a Word table. Right click your mouse over any cell to see your options\n\n\nTable Options"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-9",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-9",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nCreating Tables Using R Studio’s Visual Editor (cont.)\n\nNote the Align Column option for simple alignment\nMake Col 2 center aligned\n\n\nSetting Table Column Alignment"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-10",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-10",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nCreating Tables Using R Studio’s Visual Editor (cont.)\n\nYou can add longer texts to each cell, including bulleted and numbered lists\n\n\nHowever, we must still use some caution as editing markdown tables is not as straightforward as editing word tables\n\n\nAnother editor is TablesGenerator, which allows you to edit tables in your browser"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-11",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-11",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nProducing Tables using R Packages\n\nThe R package we will be using is knitr, specifically, the command kable()\n\n\nkable() converts any data frame in R into a pipe table\n\n\nA data frame is another word for dataset; however, some output from our analyses will be saved as a data frame\n\n\nkable() makes it easy to print this output"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-12",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-12",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nProducing Tables using R Packages (cont.)\n\nE.g.,\n\n```{r}\n#| echo: false\n#| tbl-cap: \"`kable()` Table\"\n\nd &lt;- data.frame(\"Header 1\" = c(\"Left\",1),\n                \"Header 2\" = c(\"Center\",2), \n                \"Header 3\" = c(\"Right\",3),\n                check.names = FALSE) # check.names makes sure that the headers don't change\n\nknitr::kable(d,\n             format = \"pipe\",\n             booktabs = T,\n             escape = FALSE,\n             align = c(\"l\",\"c\",\"r\"), # Set column alignment\n             longtable= T) # Keeps the table where you want it in the document \n```"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-13",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-13",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nProducing Tables using R Packages (cont.)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#figures-and-tables-14",
+    "href": "econ_7201/quarto/05-quarto.html#figures-and-tables-14",
+    "title": "Luc Clair",
+    "section": "Figures and Tables",
+    "text": "Figures and Tables\nCross Referencing\n\nAdd labels to figures using the #fig- prefix and add labels to tables using the #tbl- prefix\n\n\nE.g., ![caption](FilePath){#fig-label} can then be referenced by @fig-label.\n\n\nAlternatively, if you are adding a figure or table using R, add the execution command label to your code chunk, i.e., #| label: \"fig-label\""
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#referencing-and-citations",
+    "href": "econ_7201/quarto/05-quarto.html#referencing-and-citations",
+    "title": "Luc Clair",
+    "section": "Referencing and Citations",
+    "text": "Referencing and Citations\n\nAn important aspect of academic writing is citing work that is not your own.\n\n\nQuarto documents can generate citations and bibliographies using BibLaTeX .bib or BibTeX .bibtex files.\n\n\nNote, do not use a “:” in your citation key for a reference. Only use “-” or “_”. For example smith_2024."
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#bibliography",
+    "href": "econ_7201/quarto/05-quarto.html#bibliography",
+    "title": "Luc Clair",
+    "section": "Bibliography",
+    "text": "Bibliography\n\nOnce you have created a .bib file with your references, you can add a bibliography to your Quarto document using the bibliography: YAML metadata field. E.g.,\n\n---\ntitle: \"demo\"\nformat: pdf\nbibliography: refs.bib\n---"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#citation-syntax",
+    "href": "econ_7201/quarto/05-quarto.html#citation-syntax",
+    "title": "Luc Clair",
+    "section": "Citation Syntax",
+    "text": "Citation Syntax\n\nTo cite a reference saved in your .bib file, use the syntax [@cite-key].\n\n\nNote that the citation is in a square bracket. If you have more than one citation, separate each cite key by a semi-colon."
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#citation-syntax-1",
+    "href": "econ_7201/quarto/05-quarto.html#citation-syntax-1",
+    "title": "Luc Clair",
+    "section": "Citation Syntax",
+    "text": "Citation Syntax\n\n\n\n\n\n\n\nMarkdown Format\nOutput\n\n\n\n\nSample text [see @bravo_2011, pp. 130-135]\nSample text (see Bravo, Huynh, and Jacho-Chávez 2011, 130–35)\n\n\nSample text [@bravo_2011; @li_racine_2007]\nSample text (Bravo, Huynh, and Jacho-Chávez 2011; Li and Racine 2007)"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#citation-syntax-2",
+    "href": "econ_7201/quarto/05-quarto.html#citation-syntax-2",
+    "title": "Luc Clair",
+    "section": "Citation Syntax",
+    "text": "Citation Syntax\nFor in-text citations, simply write @cite-key.\n\n\n\n\n\n\n\nMarkdown Format\nOutput\n\n\n\n\n@aitchison_aitken_1976 developed…\nAitchison and Aitken (1976) developed…\n\n\n@aitchison_aitken_1976 [p.413] developed…\nAitchison and Aitken (1976, 413) developed…"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#citation-style",
+    "href": "econ_7201/quarto/05-quarto.html#citation-style",
+    "title": "Luc Clair",
+    "section": "Citation Style",
+    "text": "Citation Style\n\nThe default citation style is the Chicago Manual of Style\nCan change the style of your citation using the csl: metadata field in the YAML header\nYou may want to change the citation style based on personal preference or based on specified requirements (e.g., academic journal, class project, etc.)\nE.g.,\n\n---\ntitle: \"demo\"\nformat: pdf\nbibliography: refs.bib\ncsl: nature.csl\n---"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#citation-style-1",
+    "href": "econ_7201/quarto/05-quarto.html#citation-style-1",
+    "title": "Luc Clair",
+    "section": "Citation Style",
+    "text": "Citation Style\nFor more citation styles, please visit: https://www.zotero.org/styles"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#bibliography-generation",
+    "href": "econ_7201/quarto/05-quarto.html#bibliography-generation",
+    "title": "Luc Clair",
+    "section": "Bibliography Generation",
+    "text": "Bibliography Generation\n\nTo insert a bibliography, simply insert a section with the title References\nIf you want to include an appendix after the references include the following in your reference section:\n\n# References\n\n::: {#refs}\n:::"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#advantages-of-quarto",
+    "href": "econ_7201/quarto/05-quarto.html#advantages-of-quarto",
+    "title": "Luc Clair",
+    "section": "Advantages of Quarto",
+    "text": "Advantages of Quarto\n\nSimplified syntax\n\n\n\nIntegration with R, Python, and Julia\nAutomated Citations and Bibliographies\nMulti-format output from a single source\nAutomatic cross-referencing for figures, tables and equations\nEasy table creation"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#when-to-use-latex-directly",
+    "href": "econ_7201/quarto/05-quarto.html#when-to-use-latex-directly",
+    "title": "Luc Clair",
+    "section": "When to Use LaTeX Directly?",
+    "text": "When to Use LaTeX Directly?\n\nJournal specific LaTeX formatting\n\nCan instruct quarto to use a custom template\nOr extract .tex file using keep-tex: true in YAML heading\n\n\n\n\nFine-tuned LaTeX customization"
+  },
+  {
+    "objectID": "econ_7201/quarto/05-quarto.html#references",
+    "href": "econ_7201/quarto/05-quarto.html#references",
+    "title": "Luc Clair",
+    "section": "References",
+    "text": "References\n\n\nAitchison, J., and C. G. G Aitken. 1976. “Multivariate Binary Discrimination by the Kernel Method.” Biometrica 63: 413–20.\n\n\nBravo, F., K. P. Huynh, and D. T. Jacho-Chávez. 2011. “Average Derivative Estimation with Missing Responses.” In Missing Data Methods: Cross-Sectional Methods and Applications, edited by D. M. Drukker, 1st ed., 27A:129–54. Emerald Group Publishing Limited.\n\n\nLi, Qi, and Jeffrey S. Racine. 2007. Nonparametric Econometrics. Princeton, NJ: Princeton University Press.\n\n\nPosit. 2025. “Quarto Guide.” https://quarto.org/docs/guide/.\n\n\nRacine, Jeffrey. 2017. “Energy, Economics & Replication.” Department of Economics Working Papers 2017-02. McMaster University. https://ideas.repec.org/p/mcm/deptwp/2017-02.html.\n\n\nYihui Xie, Emily Riederer, Christophe Dervieux. 2024. “10.1 the Function Knitr::kable() | r Markdown Cookbook.” https://bookdown.org/yihui/rmarkdown-cookbook/kable.html.\n\n\nZhu, Hao. 2024a. “Create Awesome LaTeX Table with Knitr::kable and kableExtra.” 2024. https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf.\n\n\n———. 2024b. “Create Awesome HTML Table with Knitr::kable and kableExtra.” https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html."
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#software",
+    "href": "econ_7201/rstudio/02-rstudio.html#software",
+    "title": "Luc Clair",
+    "section": "Software",
+    "text": "Software\nTo run R code and use R Studio, you need to install the following software\n\nR (the programming language)\nRStudio (the interface to work with R)"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#installing-r",
+    "href": "econ_7201/rstudio/02-rstudio.html#installing-r",
+    "title": "Luc Clair",
+    "section": "Installing R",
+    "text": "Installing R\n\nDownload R: https://cran.r-project.org\n\n\n\n\n\n\n\n\nWindows Instructions\nMac Instructions\n\n\n\n\n\nClick “Download R for Windows”\nClick “base”\nClick the link: “Download R x.x.x for Windows”\nOpen the downloaded .exe file\nFollow the installation prompts (accept defaults)\n\n\nClick “Download R for macOS”\nChoose the .pkg file that matches your OS version (usually the top one)\nDownload and open the .pkg installer\nFollow the prompts to install"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#installing-rstudio",
+    "href": "econ_7201/rstudio/02-rstudio.html#installing-rstudio",
+    "title": "Luc Clair",
+    "section": "Installing RStudio",
+    "text": "Installing RStudio\n\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\n\n\n\n\n\n\n\nWindows Instructions\nMac Instructions\n\n\n\n\n\nClick “Download RStudio for Windows”\nOpen the downloaded .exe file\nFollow the installation prompts\n\n\nClick “Download RStudio for macOS”\nOpen the downloaded .dmg file\nDrag the RStudio icon into the Applications folder"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#why-rstudio",
+    "href": "econ_7201/rstudio/02-rstudio.html#why-rstudio",
+    "title": "Luc Clair",
+    "section": "Why RStudio?",
+    "text": "Why RStudio?\n\nRStudio is an integrated development environment (IDE) for R\n\nProvides a user-friendly interface for writing code\nVisualizing data\nManaging projects\nProducing reproducible reports (Quarto, R Markdown)\n\n\n\nIt streamlines the process of statistical computing and data analysis, making it especially useful for research, teaching, and applied econometrics"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#ide-for-r",
+    "href": "econ_7201/rstudio/02-rstudio.html#ide-for-r",
+    "title": "Luc Clair",
+    "section": "IDE for R",
+    "text": "IDE for R\n\nAn IDE is a software application that provides a complete set of tools for writing, running, and debugging code in one place\n\n\nRStudio combines script editing, console, workspace viewer, and plotting in one interface\n\n\nEnables seamless development, testing, and output visualization"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#projects-for-organization",
+    "href": "econ_7201/rstudio/02-rstudio.html#projects-for-organization",
+    "title": "Luc Clair",
+    "section": "Projects for Organization",
+    "text": "Projects for Organization\n\nUse RStudio Projects to organize coursework, datasets, scripts, and outputs in isolated environments\n\n\nPromotes reproducibility and reduces working directory errors"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#script-editor-with-syntax-highlighting",
+    "href": "econ_7201/rstudio/02-rstudio.html#script-editor-with-syntax-highlighting",
+    "title": "Luc Clair",
+    "section": "Script Editor with Syntax Highlighting",
+    "text": "Script Editor with Syntax Highlighting\n\nWrite and run R scripts (.R), R Markdown (.Rmd), and Quarto documents\n\n\nFeatures like auto-completion, function tool-tips, and real-time diagnostics boost coding efficiency"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#first-look",
+    "href": "econ_7201/rstudio/02-rstudio.html#first-look",
+    "title": "Luc Clair",
+    "section": "First Look",
+    "text": "First Look\n\nOpen RStudio"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#opening-a-source-document",
+    "href": "econ_7201/rstudio/02-rstudio.html#opening-a-source-document",
+    "title": "Luc Clair",
+    "section": "Opening a Source Document",
+    "text": "Opening a Source Document\n\nE.g., R script"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#opening-a-source-document-cont.",
+    "href": "econ_7201/rstudio/02-rstudio.html#opening-a-source-document-cont.",
+    "title": "Luc Clair",
+    "section": "Opening a Source Document (cont.)",
+    "text": "Opening a Source Document (cont.)"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-interface",
+    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-interface",
+    "title": "Luc Clair",
+    "section": "RStudio Interface",
+    "text": "RStudio Interface"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-1",
+    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-1",
+    "title": "Luc Clair",
+    "section": "RStudio Interface",
+    "text": "RStudio Interface\n\nSource (Top-Left): Code scripts, R Markdown, Quarto"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.",
+    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.",
+    "title": "Luc Clair",
+    "section": "RStudio Interface (cont.)",
+    "text": "RStudio Interface (cont.)\n\nConsole (Bottom-Left): Where code runs"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.-1",
+    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.-1",
+    "title": "Luc Clair",
+    "section": "RStudio Interface (cont.)",
+    "text": "RStudio Interface (cont.)\n\nEnvironment/History (Top-Right): View objects, data, function history"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.-2",
+    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.-2",
+    "title": "Luc Clair",
+    "section": "RStudio Interface (cont.)",
+    "text": "RStudio Interface (cont.)\n\nFiles/Plots/Packages/Help (Bottom-Right): View plots, install packages, browse files, and search help files"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code",
+    "href": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code",
+    "title": "Luc Clair",
+    "section": "Writing and Running R Code",
+    "text": "Writing and Running R Code\n\nUse .R scripts to save and re-use code"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code-cont.",
+    "href": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code-cont.",
+    "title": "Luc Clair",
+    "section": "Writing and Running R Code (cont.)",
+    "text": "Writing and Running R Code (cont.)\n\nUse Ctrl+Enter (or Cmd on Mac) to run a line of code"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code-cont.-1",
+    "href": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code-cont.-1",
+    "title": "Luc Clair",
+    "section": "Writing and Running R Code (cont.)",
+    "text": "Writing and Running R Code (cont.)\n\nAlternatively, you can press the  button at the top of the source window"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#running-multiple-lines-of-code",
+    "href": "econ_7201/rstudio/02-rstudio.html#running-multiple-lines-of-code",
+    "title": "Luc Clair",
+    "section": "Running Multiple lines of Code",
+    "text": "Running Multiple lines of Code\n\nHighlight lines of code you want to run, then use Ctrl+Enter or press the  button\n\n\nIf you want to run entire code script, press  at the top of the source window."
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#workflow",
+    "href": "econ_7201/rstudio/02-rstudio.html#workflow",
+    "title": "Luc Clair",
+    "section": "Workflow",
+    "text": "Workflow\n\nStep-by-step process you follow to complete a data analysis from raw data to final results\n\n\nIt includes data loading, cleaning, modeling, and reporting\nA good workflow is organized, repeatable, and transparent\nReduces errors\nMakes work reproducible and easier to follow"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#workflow-example",
+    "href": "econ_7201/rstudio/02-rstudio.html#workflow-example",
+    "title": "Luc Clair",
+    "section": "Workflow Example",
+    "text": "Workflow Example\n\nCreate a project folder/repository/directory\nLoad and inspect data\nClean data\nEstimate an econometric model\nRun robustness checks\nInterpret and report results\nExport results"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-projects",
+    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-projects",
+    "title": "Luc Clair",
+    "section": "RStudio Projects",
+    "text": "RStudio Projects\n\nRStudio projects create a work environment within RStudio\n\n\nEssentially, they create a folder containing all project documents, including code scripts, data, images, plots, and text files\n\n\nOpening an .Rproj file opens all files for the project the project and automatically sets the working directory to the project directory"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#benefits-of-rstudio-projects",
+    "href": "econ_7201/rstudio/02-rstudio.html#benefits-of-rstudio-projects",
+    "title": "Luc Clair",
+    "section": "Benefits of RStudio Projects",
+    "text": "Benefits of RStudio Projects\n\nKeeps everything organized\n\nEach project has its own folder with scripts, data, and results\n\n\n\n\nReproducible workflow\n\nOpens with the same settings, file paths, and environment every time\n\nAvoids Setwd() errors\n\nAutomatically sets the working directory to the project folder"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#benefits-of-rstudio-projects-cont.",
+    "href": "econ_7201/rstudio/02-rstudio.html#benefits-of-rstudio-projects-cont.",
+    "title": "Luc Clair",
+    "section": "Benefits of RStudio Projects (cont.)",
+    "text": "Benefits of RStudio Projects (cont.)\n\nManages multiple analyses cleanly\n\nLets you separate class assignments, research papers, or datasets into distinct, self-contained units\n\n\n\n\nSupports version control (Git)\n\nBuilt-in Git integration makes it easy to track changes and collaborate on code\n\nLoads your workspace consistently\n\nAutomatically restores your open files, history, and environment (optional)"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project",
+    "href": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project",
+    "title": "Luc Clair",
+    "section": "Create RStudio Project",
+    "text": "Create RStudio Project\n\nTo Create a new RStudio project press the  button"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.",
+    "href": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.",
+    "title": "Luc Clair",
+    "section": "Create RStudio Project (cont.)",
+    "text": "Create RStudio Project (cont.)\n\nChoose whether you want to create a new folder for your project directory, convert an existing folder into a project directory, or link the project folder to a git repository (more on this next lecture)"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-1",
+    "href": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-1",
+    "title": "Luc Clair",
+    "section": "Create RStudio Project (cont.)",
+    "text": "Create RStudio Project (cont.)\n\nSelect the type of project you want to create"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-2",
+    "href": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-2",
+    "title": "Luc Clair",
+    "section": "Create RStudio Project (cont.)",
+    "text": "Create RStudio Project (cont.)\n\nChoose the location for your project directory and make sure you check the box Create git repository"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-3",
+    "href": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-3",
+    "title": "Luc Clair",
+    "section": "Create RStudio Project (cont.)",
+    "text": "Create RStudio Project (cont.)\n\nYour new project directory has been created\n\n\nNote the .Rproj file created"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#using-r-in-rstudio-1",
+    "href": "econ_7201/rstudio/02-rstudio.html#using-r-in-rstudio-1",
+    "title": "Luc Clair",
+    "section": "Using R in RStudio",
+    "text": "Using R in RStudio\n\nFor this course, the main purpose of using RStudio is to facilitate the use of R statistical software\n\n\nMost often, we will write R code in an R script\n\n\nWe can then run code from our script, which shows up in the console as seen above\n\n\nBoth the code and the results will be displayed in the console"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#variables-datasets-and-functions",
+    "href": "econ_7201/rstudio/02-rstudio.html#variables-datasets-and-functions",
+    "title": "Luc Clair",
+    "section": "Variables, Datasets, and Functions",
+    "text": "Variables, Datasets, and Functions\n\nThroughout our analyses, we will store data and results as variables\n\n\nWe may also group related variables into datasets, or import datasets from external sources\n\n\nAdditionally, we can create functions to automate repeated tasks and simplify our code\n\n\nAll saved variables, datasets, and functions will appear in the Environment tab in RStudio, allowing us to view and manage the objects currently in memory"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#variables-datasets-and-functions-cont.",
+    "href": "econ_7201/rstudio/02-rstudio.html#variables-datasets-and-functions-cont.",
+    "title": "Luc Clair",
+    "section": "Variables, Datasets, and Functions (cont.)",
+    "text": "Variables, Datasets, and Functions (cont.)"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#inspecting-datasets",
+    "href": "econ_7201/rstudio/02-rstudio.html#inspecting-datasets",
+    "title": "Luc Clair",
+    "section": "Inspecting Datasets",
+    "text": "Inspecting Datasets\n\nTo view your dataset in R, simply type View(data), where data is your dataset"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#inspecting-datasets-cont.",
+    "href": "econ_7201/rstudio/02-rstudio.html#inspecting-datasets-cont.",
+    "title": "Luc Clair",
+    "section": "Inspecting Datasets (cont.)",
+    "text": "Inspecting Datasets (cont.)\n\nOther useful commands for inspecting data include head(), summary(), str()\n\n\nIdeal for inspecting data sets, matrices, and model outputs"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages",
+    "href": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages",
+    "title": "Luc Clair",
+    "section": "Installing and Loading R Packages",
+    "text": "Installing and Loading R Packages\n\nR is a statistical software built on user written commands/functions\n\n\nUsers write functions and group them in packages, which are then made available to all users\n\n\nTo use a function, you must install the necessary package(s) using install.packages(\"package_name\") and load it into your session using library(\"package_name\")\n\n\nMany of the functions that we will use in this course are available in the base and stats packages, which load automatically with every R session"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages-cont.",
+    "href": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages-cont.",
+    "title": "Luc Clair",
+    "section": "Installing and Loading R Packages (cont.)",
+    "text": "Installing and Loading R Packages (cont.)\n\nTo view your available packages and which ones are loaded into a session, click the Packages tab in the bottom right pane"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages-cont.-1",
+    "href": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages-cont.-1",
+    "title": "Luc Clair",
+    "section": "Installing and Loading R Packages (cont.)",
+    "text": "Installing and Loading R Packages (cont.)\n\nOne can also load a package in RStudio by checking the box next to the package name in the Packages tab"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#plotting-and-output",
+    "href": "econ_7201/rstudio/02-rstudio.html#plotting-and-output",
+    "title": "Luc Clair",
+    "section": "Plotting and Output",
+    "text": "Plotting and Output\n\nR is powerful tool for creating plots and graphics\n\n\nRStudio organizes plots under the Plots tab in the bottom right pane\n\n\nAllows for easy saving and exporting"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#plotting-and-output-cont.",
+    "href": "econ_7201/rstudio/02-rstudio.html#plotting-and-output-cont.",
+    "title": "Luc Clair",
+    "section": "Plotting and Output (cont.)",
+    "text": "Plotting and Output (cont.)\n\nE.g., plotting the probability density of a standard normal variable"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#quarto",
+    "href": "econ_7201/rstudio/02-rstudio.html#quarto",
+    "title": "Luc Clair",
+    "section": "Quarto",
+    "text": "Quarto\n\nAssignments for this course will be written in Quarto\n\n\nQuarto is an open-source tool designed for creating dynamic documents, reports, presentations, and websites\n\n\nIt integrates with various programming languages and provides a unified framework for combining code, narrative text, and data visualization\n\n\nMore on Quarto in future lectures"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#quarto-cont.",
+    "href": "econ_7201/rstudio/02-rstudio.html#quarto-cont.",
+    "title": "Luc Clair",
+    "section": "Quarto (cont.)",
+    "text": "Quarto (cont.)\n\nTo open a Quarto document, click the  button in the top-left corner and select “Quarto Document…”"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#quarto-cont.-1",
+    "href": "econ_7201/rstudio/02-rstudio.html#quarto-cont.-1",
+    "title": "Luc Clair",
+    "section": "Quarto (cont.)",
+    "text": "Quarto (cont.)\n\nSelect the format for your document, HTML, PDF, or Word and click Create"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#quarto-cont.-2",
+    "href": "econ_7201/rstudio/02-rstudio.html#quarto-cont.-2",
+    "title": "Luc Clair",
+    "section": "Quarto (cont.)",
+    "text": "Quarto (cont.)\n\nYou can now edit your Quarto document"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#rendering-a-quarto-document",
+    "href": "econ_7201/rstudio/02-rstudio.html#rendering-a-quarto-document",
+    "title": "Luc Clair",
+    "section": "Rendering a Quarto Document",
+    "text": "Rendering a Quarto Document\n\nTo view the rendered document click the  button and save the file to your desired location\nThe rendered document shows up under the Viewer tab in the bottom-right pane"
+  },
+  {
+    "objectID": "econ_7201/rstudio/02-rstudio.html#summary-1",
+    "href": "econ_7201/rstudio/02-rstudio.html#summary-1",
+    "title": "Luc Clair",
+    "section": "Summary",
+    "text": "Summary\n\nAll-in-one workspace\n\n\nEncourages clean, reproducible code\nTools for data, models, graphics, reporting\nA key skill for econometrics, data science, and research"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#preliminaries",
+    "href": "posts/2025-09-08-workflow/index.html#preliminaries",
+    "title": "Workflow",
+    "section": "Preliminaries",
+    "text": "Preliminaries\n\nThe necessary software to follow this lecture are\n\nR\nRStudio\nGit\nCreated an account on GitHub\nGitHub Desktop"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#what-is-a-workflow",
+    "href": "posts/2025-09-08-workflow/index.html#what-is-a-workflow",
+    "title": "Workflow",
+    "section": "What is a Workflow?",
+    "text": "What is a Workflow?\n\nStructured sequence of steps, tasks, and decisions that guide how a project moves from start to finish\n\n\n\nA good workflow is organized, repeatable, and transparent\n\nHelps reduce errors\nMakes work reproducible and easier to follow"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#workflow-example-applied-economic-research",
+    "href": "posts/2025-09-08-workflow/index.html#workflow-example-applied-economic-research",
+    "title": "Workflow",
+    "section": "Workflow Example: Applied Economic Research",
+    "text": "Workflow Example: Applied Economic Research"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#version-control",
+    "href": "posts/2025-09-08-workflow/index.html#version-control",
+    "title": "Workflow",
+    "section": "Version Control",
+    "text": "Version Control\n\nVersion control software (VCS) is a system that helps people manage and track changes to their files over time (e.g., text documents and code files)\n\n\nIt keeps track of every modification made to files, who made those changes, and when they were made\n\n\nChanges can be reverted, previous versions of files can be restored, and conflicts between different versions can be resolved"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#git",
+    "href": "posts/2025-09-08-workflow/index.html#git",
+    "title": "Workflow",
+    "section": "Git",
+    "text": "Git"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#what-is-git",
+    "href": "posts/2025-09-08-workflow/index.html#what-is-git",
+    "title": "Workflow",
+    "section": "What is Git?",
+    "text": "What is Git?\n\nGit is a popular VCS\n\n\nAllows multiple collaborators to work on the same project simultaneously, manage changes, and share work effectively\nGit’s greatest strength is its facilitation of collaboration\nIt has been described as “track changes on steroids” or as “a marriage between Dropbox and Microsoft Word’s ‘Track Changes’ feature”"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#git-repository",
+    "href": "posts/2025-09-08-workflow/index.html#git-repository",
+    "title": "Workflow",
+    "section": "Git Repository",
+    "text": "Git Repository\n\nGit tracks the changes of a set files in a Git enabled folder or directory\n\n\nThe Git enabled directory is known as a repository (repo)\n\n\nOne uses Git to flag any saved changes made to files in the repository"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#git-repository-contd",
+    "href": "posts/2025-09-08-workflow/index.html#git-repository-contd",
+    "title": "Workflow",
+    "section": "Git Repository (cont’d)",
+    "text": "Git Repository (cont’d)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#changes-and-checkpoints",
+    "href": "posts/2025-09-08-workflow/index.html#changes-and-checkpoints",
+    "title": "Workflow",
+    "section": "Changes and Checkpoints",
+    "text": "Changes and Checkpoints\n\nGit can then save a version (snapshot) of repository files at a given moment in time\n\n\nThis is known as a commit\n\n\nEach commit has a message explaining what was changed, keeping track of the project’s progress"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#branches",
+    "href": "posts/2025-09-08-workflow/index.html#branches",
+    "title": "Workflow",
+    "section": "Branches",
+    "text": "Branches\n\nGit allows you to create branches, which are akin to an alternate version of the repository to experiment with new ideas\n\n\nOnce you’re happy with the changes, you can merge these branches back into the main project\n\n\nA branch is a separate line of development\n\n\nThe main branch is usually called main or master"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#collaboration",
+    "href": "posts/2025-09-08-workflow/index.html#collaboration",
+    "title": "Workflow",
+    "section": "Collaboration",
+    "text": "Collaboration\n\nYou can store your repository on a remote server (e.g., GitHub) and everyone can access it\n\n\nWhen someone makes changes, you can pull those changes into your local repository (folder on your computer)\n\n\nSimilarly, when you make changes, you can push them to the remote server so your team can see and use them"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#track-and-undo-changes",
+    "href": "posts/2025-09-08-workflow/index.html#track-and-undo-changes",
+    "title": "Workflow",
+    "section": "Track and Undo Changes",
+    "text": "Track and Undo Changes\n\nGit tracks every change you make\n\n\nIf you realize you made a mistake or want to revisit an earlier version of your work, you can easily go back to previous commits\n\n\nThis helps ensure you don’t lose valuable work and can always correct errors"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github",
+    "href": "posts/2025-09-08-workflow/index.html#github",
+    "title": "Workflow",
+    "section": "GitHub",
+    "text": "GitHub\n\nGitHub is a web-based platform that helps researchers manage, share, and collaborate on code projects using Git\n\n\nIt provides a cloud-based space where you can store your Git repositories and interact with other developers’ projects\n\n\nGitHub has become one of the most popular platforms for open-source and private software development"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#git-and-workflow",
+    "href": "posts/2025-09-08-workflow/index.html#git-and-workflow",
+    "title": "Workflow",
+    "section": "Git and Workflow",
+    "text": "Git and Workflow\n\nVersion control is a critical component of a productive workflow\n\n\n\nA recommended first-step of any workflow is to set up a Git-enabled repository for your project files and link this repository to GitHub.com"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#creating-a-git-repository-1",
+    "href": "posts/2025-09-08-workflow/index.html#creating-a-git-repository-1",
+    "title": "Workflow",
+    "section": "Creating a Git Repository",
+    "text": "Creating a Git Repository\n\nThree main ways\n\nCreate repository on GitHub.com\nAdd new repository using GitHub Desktop\nCreate a new folder on your local computer and enable Git"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub",
+    "text": "Create Git Repository on GitHub\n\nGo to github.com and sign in\n\n\nOn your home page, click the  button"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nEnter the name of the repository"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-1",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-1",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nChoose whether you want the repository to be public or private"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-2",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-2",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nAdd a README file, which gives a description of your project"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-3",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-3",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nChoose a license, then press Create\n\nFor more on open source licensing, please visit ChooseALicense.com"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-4",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-4",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nYour repository has been created\n\n\n\nHere are a few things to notice"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-5",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-5",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nGit defaults to the main branch"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-6",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-6",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nThe commit message and commit ID"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-7",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-7",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nTwo files were created: LICENSE and README.md\n\n\nNote the files created have the same Git message"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-8",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-8",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nLICENSE refers to the license chosen when creating the repository"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-9",
+    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-9",
+    "title": "Workflow",
+    "section": "Create Git Repository on GitHub (cont’d)",
+    "text": "Create Git Repository on GitHub (cont’d)\n\nREADME.md is the landing page for your repository\n\n\nIt is where you describe your repository"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop",
+    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop",
+    "title": "Workflow",
+    "section": "Clone GitHub Repository in GitHub Desktop",
+    "text": "Clone GitHub Repository in GitHub Desktop\n\nOpen GitHub Desktop and log in (if you are currently logged out)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd",
+    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd",
+    "title": "Workflow",
+    "section": "Clone GitHub Repository in GitHub Desktop (cont’d)",
+    "text": "Clone GitHub Repository in GitHub Desktop (cont’d)\n\nOn the left-hand-side, you will notice a list of your GitHub repositories\n\n\nChoose the repository you wish to make a copy to your local computer\nThen select “Clone username/repo”, where username/repo is your GitHub username and repo is the name of the repository\nIn this example it is clairl/demo"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-1",
+    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-1",
+    "title": "Workflow",
+    "section": "Clone GitHub Repository in GitHub Desktop (cont’d)",
+    "text": "Clone GitHub Repository in GitHub Desktop (cont’d)\n\nChoose the location for the clone of the GitHub repo on your local computer and click Clone"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-2",
+    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-2",
+    "title": "Workflow",
+    "section": "Clone GitHub Repository in GitHub Desktop (cont’d)",
+    "text": "Clone GitHub Repository in GitHub Desktop (cont’d)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder",
+    "href": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder",
+    "title": "Workflow",
+    "section": "Create a Git Repository from Existing Folder",
+    "text": "Create a Git Repository from Existing Folder\n\nSay we already have a folder with files that we want to connect to GitHub?\n\n\nFirst, we have to enable Git\n\n\nTo do this, we have to use the Terminal"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.",
+    "title": "Workflow",
+    "section": "Create a Git Repository from Existing Folder (cont.)",
+    "text": "Create a Git Repository from Existing Folder (cont.)\n\nIn the terminal, navigate to the project folder"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.-1",
+    "title": "Workflow",
+    "section": "Create a Git Repository from Existing Folder (cont.)",
+    "text": "Create a Git Repository from Existing Folder (cont.)\n\nUse the following commands:\n\ngit init\ngit add .\n\nThe first command enables git, while the second command stages files for the next commit\n\n\nThe . means “the current directory and all its contents”"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#workflow",
+    "href": "posts/2025-09-08-workflow/index.html#workflow",
+    "title": "Workflow",
+    "section": "Workflow",
+    "text": "Workflow\n\nThe workflow we will be using to create our website is:\n\nCreate a new Quarto project in R Studio\nConnect our project directory to GitHub through Github Desktop\nPublish the newly created website via GitHub Pages\nCreate new pages for the website\nAdd a blog to the website\nCustomize the website"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-1",
+    "href": "posts/2025-09-08-workflow/index.html#r-projects-1",
+    "title": "Workflow",
+    "section": "R Projects",
+    "text": "R Projects\n\nTo begin, create a new Quarto project in R Studio\n\nClick File-&gt;New Project…"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#r-projects-cont.",
+    "title": "Workflow",
+    "section": "R Projects (cont.)",
+    "text": "R Projects (cont.)\n\nSelect New Directory"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#r-projects-cont.-1",
+    "title": "Workflow",
+    "section": "R Projects (cont.)",
+    "text": "R Projects (cont.)\n\nSelect Quarto Website"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#r-projects-cont.-2",
+    "title": "Workflow",
+    "section": "R Projects (cont.)",
+    "text": "R Projects (cont.)\n\nName the directory. I named mine demo.\nChoose a path for the new project and click Create Project"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files",
+    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files",
+    "title": "Workflow",
+    "section": "Quarto Website Files",
+    "text": "Quarto Website Files\n\nR Studio creates a project with a number of files"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.",
+    "title": "Workflow",
+    "section": "Quarto Website Files (cont.)",
+    "text": "Quarto Website Files (cont.)\n\n_quarto.yml: key configuration file for the Quarto website.\n\nDefines the overall structure and settings for the website project, project:\nDefines metadata for the website, e.g., title, author(s), and other descriptive info, title: and description:\nControls the structure of the website, navbar:\nSpecifies themes, format:, theme:, css:"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-1",
+    "title": "Workflow",
+    "section": "Quarto Website Files (cont.)",
+    "text": "Quarto Website Files (cont.)\n\nindex.qmd: home page of your Quarto website\n\nDefines the content and layout for the main landing page of the site\nCan add Markdown and Quarto-specific content\nDefined as Home in the _quarto.yml file\n\n.gitignore: configuration file used in Git repositories to specify intentionally untracked files or directories that Git should ignore."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-2",
+    "title": "Workflow",
+    "section": "Quarto Website Files (cont.)",
+    "text": "Quarto Website Files (cont.)\n\nabout.qmd: Quarto Markdown file that is typically used to create an About page for a Quarto website.\n\nThis page provides information about the website’s purpose, the author(s), or the organization behind it.\nNot mandatory\nAppears as another page on the navigation bar\n\nstyle.css: Cascading Style Sheets (CSS) file used to define and customize the visual appearance of a Quarto website or document.\n\nallows you to override or extend the default styles provided by Quarto’s themes"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#building-the-website",
+    "href": "posts/2025-09-08-workflow/index.html#building-the-website",
+    "title": "Workflow",
+    "section": "Building the Website",
+    "text": "Building the Website\n\nTo build the website, click the Render button at the top of the index.qmd file.\nAlternatively, you can also click Build, then Render Website in the top right pane."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#building-the-website-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#building-the-website-cont.",
+    "title": "Workflow",
+    "section": "Building the Website (cont.)",
+    "text": "Building the Website (cont.)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-1",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-1",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub",
+    "text": "Connecting R Project to GitHub\n\nBefore we can publish our website, we need to connect our R project to a GitHub repository\nBe sure that you are signed into your GitHub account in GitHub Desktop.\nOpen GitHub Desktop and add the R project Directory\n\nSelect Add Existing Repository\nChoose the R project directory"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-1",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nCommit changes\n\nWrite a summary (E.g., “Created Quarto website”)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-2",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nPublish repository to GitHub.com"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-3",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-3",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nGo to GitHub.com to confirm that the repository has been published."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-4",
+    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-4",
+    "title": "Workflow",
+    "section": "Connecting R Project to GitHub (cont.)",
+    "text": "Connecting R Project to GitHub (cont.)\n\nCheck to see that the project files are now available in your repository"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-1",
+    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-1",
+    "title": "Workflow",
+    "section": "Publishing Your Website",
+    "text": "Publishing Your Website\n\nReturn to R Studio and open the _quarto.yml file.\nUnder project: include the code output-dir: docs and render the website. This will save the website files in a newly created docs folder."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.",
+    "title": "Workflow",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nWe no longer need the _site folder, so we can delete it."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-1",
+    "title": "Workflow",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nReturn to GitHub Desktop, commit the changes, and push them to GitHub.com.\n\nRemember to leave a summary"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-2",
+    "title": "Workflow",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nReturn to GitHub.com.\n\nNote that the docs folder has replaced the _site folder."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages",
+    "title": "Workflow",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n\nClick Settings from the top menu."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.",
+    "title": "Workflow",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nChoose Pages from the menu on the left-hand-side"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-1",
+    "title": "Workflow",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nSet the branch to main"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-2",
+    "title": "Workflow",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nSet the folder to docs"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-3",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-3",
+    "title": "Workflow",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nNote the message saying that the website is being built"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-4",
+    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-4",
+    "title": "Workflow",
+    "section": "GitHub Pages (cont.)",
+    "text": "GitHub Pages (cont.)\n\nWait a about a minute, then refresh the page. You should see a message that the site is live at a given URL.\n\nThe URL is typically https://username.github.io/repository_name"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-3",
+    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-3",
+    "title": "Workflow",
+    "section": "Publishing Your Website (cont.)",
+    "text": "Publishing Your Website (cont.)\n\nFollow the link to view your website"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-1",
+    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-1",
+    "title": "Workflow",
+    "section": "Adding Pages to Your Website",
+    "text": "Adding Pages to Your Website\n\nTo add a webpage, create a new .qmd file and save it in your project directory."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.",
+    "title": "Workflow",
+    "section": "Adding Pages to Your Website (cont.)",
+    "text": "Adding Pages to Your Website (cont.)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-1",
+    "title": "Workflow",
+    "section": "Adding Pages to Your Website (cont.)",
+    "text": "Adding Pages to Your Website (cont.)\n\nAdd the new Quarto file to the navigation bar in the _quarto.yml file\n\nhref: adds the listing page file to the navigation bar\ntext: is the text that will display on the navigation bar."
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-2",
+    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-2",
+    "title": "Workflow",
+    "section": "Adding Pages to Your Website (cont.)",
+    "text": "Adding Pages to Your Website (cont.)"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-1",
+    "href": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-1",
+    "title": "Workflow",
+    "section": "Add File to a Webpage",
+    "text": "Add File to a Webpage\n\nYou may want to include downloadable file formats on your website\nAdd the file to your project directory and reference it within your Quarto document.\nIt is helpful to create sub directories to store your files,e.g.,\n\nFigures: store figures\nData: datasets\nFiles: pdf documents"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.",
+    "href": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.",
+    "title": "Workflow",
+    "section": "Add File to a Webpage (cont.)",
+    "text": "Add File to a Webpage (cont.)\n\nReference the file using the syntax ![text](files/filename.pdf)\nE.g.,"
+  },
+  {
+    "objectID": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.-1",
+    "href": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.-1",
+    "title": "Workflow",
+    "section": "Add File to a Webpage (cont.)",
+    "text": "Add File to a Webpage (cont.)"
+  },
+  {
+    "objectID": "philosophy.html",
+    "href": "philosophy.html",
+    "title": "Teaching Philosophy",
+    "section": "",
+    "text": "I have been fortunate in my life to have studied under great professors who conveyed both simple and complex materials in a lucid and compelling manner. I base my own brand of teaching on a mixture of my most favoured pedagogical characteristics from past instructors. While these instructors differed in many ways, they all demonstrated a high level of preparation, which I believe to be a key to their success as an effective educator. When it comes to teaching, being prepared not only translates to a full understanding of the material but also how best to teach the material in a logical order and the correct medium for presenting the material (e.g. seminar, lecture, PowerPoint, blackboard, video, and/or discussion). Economic theory encompasses a myriad of topics, which may require different approaches to effectively deliver the appropriate message to students.  Being prepared promotes an open learning environment as it allows students to ask a broad range of questions, leading to engaging discussions. Questioning the material provides feedback and a method for auditing one’s understanding. A prepared teacher is more flexible and presents topics in ways that facilitate student engagement.\nOther aspects of teaching I incorporate are student engagement, assessments that stimulate independent thinking, and review of pre-requisite concepts. Teaching also provides external benefits for understanding economic theory, which can be translated to students through collaboration."
+  },
+  {
+    "objectID": "philosophy.html#student-engagement",
+    "href": "philosophy.html#student-engagement",
+    "title": "Teaching Philosophy",
+    "section": "Student Engagement",
+    "text": "Student Engagement\nStudent engagement cultivates learning as the students’ attention will be focused on the coursework and, by increasing interest in a topic, will encourage independent study. Engagement is nurtured by forming a connection between economic theory and the student. At the University of Winnipeg, I teach video-on-demand courses for introductory microeconomic and macroeconomic theory. For these courses, I teach one section in a classroom equipped with audiovisual equipment and the lectures are filmed and posted later to the University’s distance education portal for two online sections. This has posed a challenge to engage students who are viewing the lectures on their own, at different times, and without direct interaction with their instructor. I have found success; however, by presenting as many real-world examples as possible. By incorporating real-world examples into lesson plans, students can relate to economic theory and develop an intuitive understanding of the principle ideas. Health economics offers a variety of case studies to draw from when presenting economic theory, especially in introductory courses. Health care markets suffer from every source of market failure, providing an example for most topics in introductory microeconomic theory. Furthermore, health economic topics can be used to reinforce concepts in macroeconomics. For example, health insurance can be used to help explain risk pooling when discussing the benefits of financial institutions and investment diversification. \nAlso, by connecting students with practitioners in the community, from government officials to business leaders to civil society leaders, students get a better sense of the application of economic concepts in the real world. This is easier to achieve in small classes as the types of assignments and discussions can better accommodate student participation and examples can be tailored to that particular audience.  As I build my network in Winnipeg, I am always searching for potential guest speakers for my classes."
+  },
+  {
+    "objectID": "philosophy.html#assessments-for-independent-thinking",
+    "href": "philosophy.html#assessments-for-independent-thinking",
+    "title": "Teaching Philosophy",
+    "section": "Assessments for Independent Thinking",
+    "text": "Assessments for Independent Thinking\nCarefully designed assessments encourage independent thinking and provide experience for the real word. As educators, we wish not to develop economists who can simply restate theory but can apply these concepts to research that benefits all of society. I organize my assessments such that students show (1) they understand the basics; (2) they understand more complex material; and (3) they can apply what they have learned to a new problem. Challenging students to synthesize the concepts they have learned in order to solve a problem fosters creativity and resourcefulness. Furthermore, assessments that mirror real-world assignments help prepare students for employment in all areas, including government, private sector, and academia."
+  },
+  {
+    "objectID": "philosophy.html#review-of-pre-requisite-concepts",
+    "href": "philosophy.html#review-of-pre-requisite-concepts",
+    "title": "Teaching Philosophy",
+    "section": "Review of Pre-requisite Concepts",
+    "text": "Review of Pre-requisite Concepts\nMy approach to learning is sometimes similar to my search for a lost item: I start with the last place I had it. “It” in this case is an understanding; I go to where I last had a solid understanding of the material work my way forward. In my experience, many students lack an understanding of the underlying mathematical methods or do not possess the foundational concepts in economics to properly solve problems. I find reviewing the supporting material provides these students with the ability to better solve problems in a variety of cases. It helps to clarify the logical connection between the theoretical concepts in economics and the quantitative tools used to support them. Some students who have strong quantitative skills have trouble grasping normative concepts, while other students may possess economic intuition but struggle with mathematics. In a classroom setting, reviewing the pre-requisite concepts allows students to start with a more equal distribution of knowledge."
+  },
+  {
+    "objectID": "philosophy.html#external-benefit-from-teaching",
+    "href": "philosophy.html#external-benefit-from-teaching",
+    "title": "Teaching Philosophy",
+    "section": "External Benefit from Teaching",
+    "text": "External Benefit from Teaching\nI truly enjoy teaching. I derive a great deal of fulfillment from helping others gain new knowledge and providing them with the tools to solve future problems. Teaching often results in a positive externality as helping others navigate through material has the added benefit of giving the instructor a better understanding of economic theory. Many revelations I have had in my own studies came from tutoring other students. For example, by drawing on lessons of different concepts to help others understand a particular problem, as the teacher, you begin to form connections between topics and develop a greater understanding of economic theory. These connections are then passed on to others through teaching. It is for this reason, I believe teaching is an important aspect of academia. These same benefits can be achieved through collaboration. By grouping students with varying economic knowledge, students can help fill the gaps in each other’s understandings, offer new insights, and identify underlying connections between economic concepts."
+  },
+  {
+    "objectID": "Research.html",
+    "href": "Research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Development Economics, nonparametric econometrics, health economics, health technology assessment, survey statistics."
+  },
+  {
+    "objectID": "Research.html#research-interests",
+    "href": "Research.html#research-interests",
+    "title": "Research",
+    "section": "",
+    "text": "Development Economics, nonparametric econometrics, health economics, health technology assessment, survey statistics."
+  },
+  {
+    "objectID": "Research.html#current-research-projects",
+    "href": "Research.html#current-research-projects",
+    "title": "Research",
+    "section": "Current Research Projects",
+    "text": "Current Research Projects\n\n“Nonparametric Instrumental Variable Estimation Using Complex Survey Data”. Latest Version\n“How Important are Water and Sanitation? Investigating the Associations between Water/Sanitation and Well-being in First Nations in Manitoba”, with with Melanie O’Gorman (Principal Investigator), Kerry Black, and Stewart Hill.\n“Smart Vertical Farm for Health in Northern Communities”, with Miyoung Suh (Principal Investigator), Champa Wijekoon, Glen Ross, James House, and Joan Niquanicappo.\n“Probability-Weighted Nonparametric Conditional PDF Estimation”\n“Least-Squares Cross-Validation for Selecting the Bandwidths for Design-Based Kernel Density Estimator”\n“Socioeconomic Impact of Pulse-Based Treatment for Peripheral Artery Disease”, with Angela Tan.\n“Nonparametric Multiple Imputation”."
+  },
+  {
+    "objectID": "Research.html#peer-reviewed-publications",
+    "href": "Research.html#peer-reviewed-publications",
+    "title": "Research",
+    "section": "Peer-Reviewed Publications",
+    "text": "Peer-Reviewed Publications\n\nAbo Aoun, Mohamed; Meek, Benjamin; Clair, Luc; Wikstrom, Sara; Prasad, Benjamin; Modirrousta, Mandana. (2023). “Prognostic factors in major depressive disorder: comparing responders and non-responders to Repetitive Transcranial Magnetic Stimulation (rTMS), a naturalistic retrospective chart review”. Psychiatry and Clinical Neuroscience.\nClair, Luc, Hope Anderson, Christopher Anderson, Okechukwu Ekuma, and Heather Prior. (2022). “Cardiovascular Disease and the Risk of Dementia: A Survival Analysis Using Administrative Data from Canada”. Canadian Journal of Public Health. https://doi.org/10.17269/s41997-021-00589-2\nRiediger, Natalie, Laplante, Jeffrey, Mudryj, Adriana, and Clair, Luc. (2022). “Examining differences in diet quality between Canadian Indigenous and non-Indigenous adults: results from the 2004 and 2015 Canadian Community Health Survey Nutrition Surveys”. The Canadian Journal of Public Health. DOI: 10.17269/s41997-021-00580-x.\nRiediger, Natalie, Laplante, Jeffrey, Mudryj, Adriana, and Clair, Luc. (2021). “Diet quality among Indigenous and non-Indigenous children and youth in Canada in 2004 and 2015: a repeated cross-sectional design”. Public Health Nutrition. Jun 10:1-10. DOI: 10.1017/S1368980021002561\nMahon KN, SN Garland, G Eaton, K Chalifour, BE Lane, K Fowler, L Gambin, and L Clair. (2021). “The Financial Impact of Cancer on Canadian Young Adults”. Journal of Cancer Survivorship : Research and Practice.\nPauls, Samantha, Youjia Du, Luc Clair, Tanja Winter, Harold M. Aukema, Carla G. Taylor, Peter Zahradka. (2020). “Impact of Age, Menopause, and Obesity on Oxylipins Linked to Vascular Health”. Arteriosclerosis, Thrombosis, and Vascular Biology, 41(2): 883-897.\nGibson, Grant and Luc Clair. (2019). “Oh Brother How Art Thou? Differential Reporting of Unmet Need - Evidence from Ontario”. Social Science and Medicine. 243. 112632.\nClair, Luc. (2019). “Nonparametric Kernel Regression Using Complex Survey Data”. Advances in Econometrics. Vol. 39.\nMoghadasian, Mohammed H., Luc Clair, Francesca Bonomini, Gaia Favero, and Rita Rezzani. (2018). “Obesity and Related Disorders: An International Perspective”. Current Research in Diabetes & Obesity Journal. 7(5): 55721."
+  },
+  {
+    "objectID": "Research.html#working-papers",
+    "href": "Research.html#working-papers",
+    "title": "Research",
+    "section": "Working Papers",
+    "text": "Working Papers\n\nClair, Luc. (2022). “Nonparametric Instrumental Variable Estimation Using Complex Survey Data”. University of Winnipeg Working Paper Series.\nPrivate Supplemental Insurance and Mental Health Care Utilization in Canada: An Investigation using Nonparametric Estimation Methods. Collaborative Applied Research in Economics, Department of Economics, Memorial University of Newfoundland."
+  },
+  {
+    "objectID": "Research.html#technical-reports",
+    "href": "Research.html#technical-reports",
+    "title": "Research",
+    "section": "Technical Reports",
+    "text": "Technical Reports\n\nClair, Luc, Angela Tan, Carla Taylor, and Peter Zahradka. “Estimating the Additional Health Care Costs Associated with Peripheral Artery Disease in Manitoba.” Prepared for Manitoba Agriculture on October 31, 2021.\nClair, Luc. “Estimating the Economic Impact of Agri-Food-Based Health Care Interventions”. Prepared for Manitoba Agriculture on March 31, 2021."
+  },
+  {
+    "objectID": "Research.html#unpublished-manuscripts",
+    "href": "Research.html#unpublished-manuscripts",
+    "title": "Research",
+    "section": "Unpublished Manuscripts",
+    "text": "Unpublished Manuscripts\n1. Nonparametric Kernel Estimation Methods using Complex Survey Data (2016), PhD Thesis, McMaster University."
+  },
+  {
+    "objectID": "Research.html#referee-activities",
+    "href": "Research.html#referee-activities",
+    "title": "Research",
+    "section": "Referee Activities",
+    "text": "Referee Activities\n\nAcademic Journals\n\nAlzheimer’s and Dementia\nReviewed chapters in “Macroeconomics: Canada in the Global Economy, 11the Edition” for Pearson Publishing.\nQuality of Life Research\nAdvances in Econometrics\n\n\n\nTextbooks\n\nReviewed chapters in “Macroeconomics: Canada in the Global Economy, 11the Edition” for Pearson Publishing."
+  },
+  {
+    "objectID": "Research.html#research-experience",
+    "href": "Research.html#research-experience",
+    "title": "Research",
+    "section": "Research Experience",
+    "text": "Research Experience\n\nResearch Assistant (2016), Dr. Jeremiah Hurley, Dean, Faculty of Social Science, McMaster University.\nResearch Assistant (2014-2015), Dr. Rick Audas, Associate Professor, Faculty of Medicine, Memorial University of Newfoundland.\nResearch Policy Analyst (2012), St. John’s Board of Trade, St. John’s NL.\n\n \nUpdated on: r Sys.Date()"
+  },
+  {
+    "objectID": "Teaching.html",
+    "href": "Teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "GECON 7000, M.A. in Applied Economics Research Project\nGECON 7003, Cost-Benefit Analysis\n\n\n\n\n\nECON 1102, Intro: Microeconomics\nECON 1103, Intro: Macroeconomics\nECON 1201, Quantitative Methods for Business and Economics\nECON 3201, Introduction to Econometrics\nECON 3310, Economics of Canadian Health Care\nECON 3316, Cost-Benefit Analysis and Program Evaluation\n\n\n\n\n\n\nEconomics 2020, Introductory Macroeconomics"
+  },
+  {
+    "objectID": "Teaching.html#courses-taught",
+    "href": "Teaching.html#courses-taught",
+    "title": "Teaching",
+    "section": "",
+    "text": "GECON 7000, M.A. in Applied Economics Research Project\nGECON 7003, Cost-Benefit Analysis\n\n\n\n\n\nECON 1102, Intro: Microeconomics\nECON 1103, Intro: Macroeconomics\nECON 1201, Quantitative Methods for Business and Economics\nECON 3201, Introduction to Econometrics\nECON 3310, Economics of Canadian Health Care\nECON 3316, Cost-Benefit Analysis and Program Evaluation\n\n\n\n\n\n\nEconomics 2020, Introductory Macroeconomics"
+  },
+  {
+    "objectID": "Teaching.html#student-supervision-and-training",
+    "href": "Teaching.html#student-supervision-and-training",
+    "title": "Teaching",
+    "section": "Student Supervision and Training",
+    "text": "Student Supervision and Training\n\nThesis Supervisor\n\nDhingra, Vaishali (2022, M.A. in Applied Economics, University of Winnipeg)\n\nThesis Committee Member:\n\nKhawar, Hibah (2018, M.Sc Food and Human Nutritional Sciences, University of Manitoba)\n\nResearch Assistants:\n\nKashton, Jared (2021-present, M.A. Economics, York University)\nAhmed, Jamil (2020-2021, M.A. in Applied Economics, University of Winnipeg)\nEpp, Tiffani (2020, B.A. University of Manitoba)\nGoulet-Kilgor, Callum (2020, B.B.A. University of Winnipeg)\nEze, Nkiruka (2019-2020, M.A. Economics, University of Lancaster)\nAwowole, Olusegun (2018, M.A. Economics, University of Winnipeg)\nEzeani, Chukwudi (2018, M.A. Economics, University of Winnipeg)\n\nTeaching Assistants\n\nCharlotte Belbas, Lab instructor for Econ 3201 Introduction to Econometrics, September 7 - December 6, 2021.\nSadia Zohaib (MAE, University of Winnipeg), TA for Econ 1201 Quantitative Methods for Economics and Business, September 8 - December 4, 2020.\nJoy Dakil (MAEP, University of Winnipeg), TA for Econ 1201 Quantitative Methods for Economics and Business, January 6 - April 4, 2020.\n\nMentorship:\n\n2021 CRDCN Policy challenge mentor for Adelia Jacobs, MSc Human Nutrition, University of British Columbia"
+  },
+  {
+    "objectID": "Teaching.html#teaching-assistantships",
+    "href": "Teaching.html#teaching-assistantships",
+    "title": "Teaching",
+    "section": "Teaching Assistantships",
+    "text": "Teaching Assistantships\n\nGraduate:\n\nEconometrics I, McMaster University.\nMicroeconomics Theory for Public Policy, McMaster University.\n\n\n\nUndergraduate:\n\nPublic Sector Economics, McMaster University.\nIntroductory Macroeconomics, McMaster University.\nIntermediated Microeconomics, McMaster University.\nEconomics Clinic, McMaster University.\nIntroductory Macroeconomics, McMaster University.\nIntroduction to Game Theory, McMaster University.\nIntroductory Macroeconomics, McMaster University.\nInternational Monetary Economics, McMaster University.\n\n\n\nOther:\n\nEnglish Teacher (2008-2009), Lycée Gambetta (Tourcoing, France).\n\n \nUpdated on: r Sys.Date()"
+  },
+  {
+    "objectID": "econ_7201.html",
+    "href": "econ_7201.html",
+    "title": "ECON 7201",
+    "section": "",
+    "text": "Git and GitHub\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2025\n\n\nYour Name\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nR Basics\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRStudio\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2025\n\n\nYour Name\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Contact.html",
+    "href": "Contact.html",
+    "title": "Contact Infotmation",
+    "section": "",
+    "text": "l.clair@uwinnipeg.ca\n (204) 789-4216\n Department of Economics\n     University of Winnipeg\n     515 Portage Avenue\n     Winnipeg, MB, Canada\n     R3B 2E9"
+  },
+  {
+    "objectID": "workshops.html",
+    "href": "workshops.html",
+    "title": "Workshops",
+    "section": "",
+    "text": "Workflow\n\n\n\n\n\nAn Introduction to Git, GitHub, and GitHub Desktop\n\n\n\n\n\nSep 8, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "econ_7201/r_basics/04-r_basics.html#software",
@@ -852,944 +2217,6 @@
     "title": "Luc Clair",
     "section": "Help",
     "text": "Help\n\nFor more information on a (named) function or object in R, consult the “help” documentation\n\n\nOr, more simply, just use ?\n\n\nhelp(plot)\n?plot"
-  },
-  {
-    "objectID": "workshops.html",
-    "href": "workshops.html",
-    "title": "Workshops",
-    "section": "",
-    "text": "Workflow\n\n\n\n\n\nAn Introduction to Git, GitHub, and GitHub Desktop\n\n\n\n\n\nSep 8, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "Contact.html",
-    "href": "Contact.html",
-    "title": "Contact Infotmation",
-    "section": "",
-    "text": "l.clair@uwinnipeg.ca\n (204) 789-4216\n Department of Economics\n     University of Winnipeg\n     515 Portage Avenue\n     Winnipeg, MB, Canada\n     R3B 2E9"
-  },
-  {
-    "objectID": "econ_7201.html",
-    "href": "econ_7201.html",
-    "title": "ECON 7201",
-    "section": "",
-    "text": "Git and GitHub\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2025\n\n\nYour Name\n\n\n\n\n\n\n\n\n\n\n\n\nR Basics\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRStudio\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2025\n\n\nYour Name\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "Teaching.html",
-    "href": "Teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "GECON 7000, M.A. in Applied Economics Research Project\nGECON 7003, Cost-Benefit Analysis\n\n\n\n\n\nECON 1102, Intro: Microeconomics\nECON 1103, Intro: Macroeconomics\nECON 1201, Quantitative Methods for Business and Economics\nECON 3201, Introduction to Econometrics\nECON 3310, Economics of Canadian Health Care\nECON 3316, Cost-Benefit Analysis and Program Evaluation\n\n\n\n\n\n\nEconomics 2020, Introductory Macroeconomics"
-  },
-  {
-    "objectID": "Teaching.html#courses-taught",
-    "href": "Teaching.html#courses-taught",
-    "title": "Teaching",
-    "section": "",
-    "text": "GECON 7000, M.A. in Applied Economics Research Project\nGECON 7003, Cost-Benefit Analysis\n\n\n\n\n\nECON 1102, Intro: Microeconomics\nECON 1103, Intro: Macroeconomics\nECON 1201, Quantitative Methods for Business and Economics\nECON 3201, Introduction to Econometrics\nECON 3310, Economics of Canadian Health Care\nECON 3316, Cost-Benefit Analysis and Program Evaluation\n\n\n\n\n\n\nEconomics 2020, Introductory Macroeconomics"
-  },
-  {
-    "objectID": "Teaching.html#student-supervision-and-training",
-    "href": "Teaching.html#student-supervision-and-training",
-    "title": "Teaching",
-    "section": "Student Supervision and Training",
-    "text": "Student Supervision and Training\n\nThesis Supervisor\n\nDhingra, Vaishali (2022, M.A. in Applied Economics, University of Winnipeg)\n\nThesis Committee Member:\n\nKhawar, Hibah (2018, M.Sc Food and Human Nutritional Sciences, University of Manitoba)\n\nResearch Assistants:\n\nKashton, Jared (2021-present, M.A. Economics, York University)\nAhmed, Jamil (2020-2021, M.A. in Applied Economics, University of Winnipeg)\nEpp, Tiffani (2020, B.A. University of Manitoba)\nGoulet-Kilgor, Callum (2020, B.B.A. University of Winnipeg)\nEze, Nkiruka (2019-2020, M.A. Economics, University of Lancaster)\nAwowole, Olusegun (2018, M.A. Economics, University of Winnipeg)\nEzeani, Chukwudi (2018, M.A. Economics, University of Winnipeg)\n\nTeaching Assistants\n\nCharlotte Belbas, Lab instructor for Econ 3201 Introduction to Econometrics, September 7 - December 6, 2021.\nSadia Zohaib (MAE, University of Winnipeg), TA for Econ 1201 Quantitative Methods for Economics and Business, September 8 - December 4, 2020.\nJoy Dakil (MAEP, University of Winnipeg), TA for Econ 1201 Quantitative Methods for Economics and Business, January 6 - April 4, 2020.\n\nMentorship:\n\n2021 CRDCN Policy challenge mentor for Adelia Jacobs, MSc Human Nutrition, University of British Columbia"
-  },
-  {
-    "objectID": "Teaching.html#teaching-assistantships",
-    "href": "Teaching.html#teaching-assistantships",
-    "title": "Teaching",
-    "section": "Teaching Assistantships",
-    "text": "Teaching Assistantships\n\nGraduate:\n\nEconometrics I, McMaster University.\nMicroeconomics Theory for Public Policy, McMaster University.\n\n\n\nUndergraduate:\n\nPublic Sector Economics, McMaster University.\nIntroductory Macroeconomics, McMaster University.\nIntermediated Microeconomics, McMaster University.\nEconomics Clinic, McMaster University.\nIntroductory Macroeconomics, McMaster University.\nIntroduction to Game Theory, McMaster University.\nIntroductory Macroeconomics, McMaster University.\nInternational Monetary Economics, McMaster University.\n\n\n\nOther:\n\nEnglish Teacher (2008-2009), Lycée Gambetta (Tourcoing, France).\n\n \nUpdated on: r Sys.Date()"
-  },
-  {
-    "objectID": "Research.html",
-    "href": "Research.html",
-    "title": "Research",
-    "section": "",
-    "text": "Development Economics, nonparametric econometrics, health economics, health technology assessment, survey statistics."
-  },
-  {
-    "objectID": "Research.html#research-interests",
-    "href": "Research.html#research-interests",
-    "title": "Research",
-    "section": "",
-    "text": "Development Economics, nonparametric econometrics, health economics, health technology assessment, survey statistics."
-  },
-  {
-    "objectID": "Research.html#current-research-projects",
-    "href": "Research.html#current-research-projects",
-    "title": "Research",
-    "section": "Current Research Projects",
-    "text": "Current Research Projects\n\n“Nonparametric Instrumental Variable Estimation Using Complex Survey Data”. Latest Version\n“How Important are Water and Sanitation? Investigating the Associations between Water/Sanitation and Well-being in First Nations in Manitoba”, with with Melanie O’Gorman (Principal Investigator), Kerry Black, and Stewart Hill.\n“Smart Vertical Farm for Health in Northern Communities”, with Miyoung Suh (Principal Investigator), Champa Wijekoon, Glen Ross, James House, and Joan Niquanicappo.\n“Probability-Weighted Nonparametric Conditional PDF Estimation”\n“Least-Squares Cross-Validation for Selecting the Bandwidths for Design-Based Kernel Density Estimator”\n“Socioeconomic Impact of Pulse-Based Treatment for Peripheral Artery Disease”, with Angela Tan.\n“Nonparametric Multiple Imputation”."
-  },
-  {
-    "objectID": "Research.html#peer-reviewed-publications",
-    "href": "Research.html#peer-reviewed-publications",
-    "title": "Research",
-    "section": "Peer-Reviewed Publications",
-    "text": "Peer-Reviewed Publications\n\nAbo Aoun, Mohamed; Meek, Benjamin; Clair, Luc; Wikstrom, Sara; Prasad, Benjamin; Modirrousta, Mandana. (2023). “Prognostic factors in major depressive disorder: comparing responders and non-responders to Repetitive Transcranial Magnetic Stimulation (rTMS), a naturalistic retrospective chart review”. Psychiatry and Clinical Neuroscience.\nClair, Luc, Hope Anderson, Christopher Anderson, Okechukwu Ekuma, and Heather Prior. (2022). “Cardiovascular Disease and the Risk of Dementia: A Survival Analysis Using Administrative Data from Canada”. Canadian Journal of Public Health. https://doi.org/10.17269/s41997-021-00589-2\nRiediger, Natalie, Laplante, Jeffrey, Mudryj, Adriana, and Clair, Luc. (2022). “Examining differences in diet quality between Canadian Indigenous and non-Indigenous adults: results from the 2004 and 2015 Canadian Community Health Survey Nutrition Surveys”. The Canadian Journal of Public Health. DOI: 10.17269/s41997-021-00580-x.\nRiediger, Natalie, Laplante, Jeffrey, Mudryj, Adriana, and Clair, Luc. (2021). “Diet quality among Indigenous and non-Indigenous children and youth in Canada in 2004 and 2015: a repeated cross-sectional design”. Public Health Nutrition. Jun 10:1-10. DOI: 10.1017/S1368980021002561\nMahon KN, SN Garland, G Eaton, K Chalifour, BE Lane, K Fowler, L Gambin, and L Clair. (2021). “The Financial Impact of Cancer on Canadian Young Adults”. Journal of Cancer Survivorship : Research and Practice.\nPauls, Samantha, Youjia Du, Luc Clair, Tanja Winter, Harold M. Aukema, Carla G. Taylor, Peter Zahradka. (2020). “Impact of Age, Menopause, and Obesity on Oxylipins Linked to Vascular Health”. Arteriosclerosis, Thrombosis, and Vascular Biology, 41(2): 883-897.\nGibson, Grant and Luc Clair. (2019). “Oh Brother How Art Thou? Differential Reporting of Unmet Need - Evidence from Ontario”. Social Science and Medicine. 243. 112632.\nClair, Luc. (2019). “Nonparametric Kernel Regression Using Complex Survey Data”. Advances in Econometrics. Vol. 39.\nMoghadasian, Mohammed H., Luc Clair, Francesca Bonomini, Gaia Favero, and Rita Rezzani. (2018). “Obesity and Related Disorders: An International Perspective”. Current Research in Diabetes & Obesity Journal. 7(5): 55721."
-  },
-  {
-    "objectID": "Research.html#working-papers",
-    "href": "Research.html#working-papers",
-    "title": "Research",
-    "section": "Working Papers",
-    "text": "Working Papers\n\nClair, Luc. (2022). “Nonparametric Instrumental Variable Estimation Using Complex Survey Data”. University of Winnipeg Working Paper Series.\nPrivate Supplemental Insurance and Mental Health Care Utilization in Canada: An Investigation using Nonparametric Estimation Methods. Collaborative Applied Research in Economics, Department of Economics, Memorial University of Newfoundland."
-  },
-  {
-    "objectID": "Research.html#technical-reports",
-    "href": "Research.html#technical-reports",
-    "title": "Research",
-    "section": "Technical Reports",
-    "text": "Technical Reports\n\nClair, Luc, Angela Tan, Carla Taylor, and Peter Zahradka. “Estimating the Additional Health Care Costs Associated with Peripheral Artery Disease in Manitoba.” Prepared for Manitoba Agriculture on October 31, 2021.\nClair, Luc. “Estimating the Economic Impact of Agri-Food-Based Health Care Interventions”. Prepared for Manitoba Agriculture on March 31, 2021."
-  },
-  {
-    "objectID": "Research.html#unpublished-manuscripts",
-    "href": "Research.html#unpublished-manuscripts",
-    "title": "Research",
-    "section": "Unpublished Manuscripts",
-    "text": "Unpublished Manuscripts\n1. Nonparametric Kernel Estimation Methods using Complex Survey Data (2016), PhD Thesis, McMaster University."
-  },
-  {
-    "objectID": "Research.html#referee-activities",
-    "href": "Research.html#referee-activities",
-    "title": "Research",
-    "section": "Referee Activities",
-    "text": "Referee Activities\n\nAcademic Journals\n\nAlzheimer’s and Dementia\nReviewed chapters in “Macroeconomics: Canada in the Global Economy, 11the Edition” for Pearson Publishing.\nQuality of Life Research\nAdvances in Econometrics\n\n\n\nTextbooks\n\nReviewed chapters in “Macroeconomics: Canada in the Global Economy, 11the Edition” for Pearson Publishing."
-  },
-  {
-    "objectID": "Research.html#research-experience",
-    "href": "Research.html#research-experience",
-    "title": "Research",
-    "section": "Research Experience",
-    "text": "Research Experience\n\nResearch Assistant (2016), Dr. Jeremiah Hurley, Dean, Faculty of Social Science, McMaster University.\nResearch Assistant (2014-2015), Dr. Rick Audas, Associate Professor, Faculty of Medicine, Memorial University of Newfoundland.\nResearch Policy Analyst (2012), St. John’s Board of Trade, St. John’s NL.\n\n \nUpdated on: r Sys.Date()"
-  },
-  {
-    "objectID": "philosophy.html",
-    "href": "philosophy.html",
-    "title": "Teaching Philosophy",
-    "section": "",
-    "text": "I have been fortunate in my life to have studied under great professors who conveyed both simple and complex materials in a lucid and compelling manner. I base my own brand of teaching on a mixture of my most favoured pedagogical characteristics from past instructors. While these instructors differed in many ways, they all demonstrated a high level of preparation, which I believe to be a key to their success as an effective educator. When it comes to teaching, being prepared not only translates to a full understanding of the material but also how best to teach the material in a logical order and the correct medium for presenting the material (e.g. seminar, lecture, PowerPoint, blackboard, video, and/or discussion). Economic theory encompasses a myriad of topics, which may require different approaches to effectively deliver the appropriate message to students.  Being prepared promotes an open learning environment as it allows students to ask a broad range of questions, leading to engaging discussions. Questioning the material provides feedback and a method for auditing one’s understanding. A prepared teacher is more flexible and presents topics in ways that facilitate student engagement.\nOther aspects of teaching I incorporate are student engagement, assessments that stimulate independent thinking, and review of pre-requisite concepts. Teaching also provides external benefits for understanding economic theory, which can be translated to students through collaboration."
-  },
-  {
-    "objectID": "philosophy.html#student-engagement",
-    "href": "philosophy.html#student-engagement",
-    "title": "Teaching Philosophy",
-    "section": "Student Engagement",
-    "text": "Student Engagement\nStudent engagement cultivates learning as the students’ attention will be focused on the coursework and, by increasing interest in a topic, will encourage independent study. Engagement is nurtured by forming a connection between economic theory and the student. At the University of Winnipeg, I teach video-on-demand courses for introductory microeconomic and macroeconomic theory. For these courses, I teach one section in a classroom equipped with audiovisual equipment and the lectures are filmed and posted later to the University’s distance education portal for two online sections. This has posed a challenge to engage students who are viewing the lectures on their own, at different times, and without direct interaction with their instructor. I have found success; however, by presenting as many real-world examples as possible. By incorporating real-world examples into lesson plans, students can relate to economic theory and develop an intuitive understanding of the principle ideas. Health economics offers a variety of case studies to draw from when presenting economic theory, especially in introductory courses. Health care markets suffer from every source of market failure, providing an example for most topics in introductory microeconomic theory. Furthermore, health economic topics can be used to reinforce concepts in macroeconomics. For example, health insurance can be used to help explain risk pooling when discussing the benefits of financial institutions and investment diversification. \nAlso, by connecting students with practitioners in the community, from government officials to business leaders to civil society leaders, students get a better sense of the application of economic concepts in the real world. This is easier to achieve in small classes as the types of assignments and discussions can better accommodate student participation and examples can be tailored to that particular audience.  As I build my network in Winnipeg, I am always searching for potential guest speakers for my classes."
-  },
-  {
-    "objectID": "philosophy.html#assessments-for-independent-thinking",
-    "href": "philosophy.html#assessments-for-independent-thinking",
-    "title": "Teaching Philosophy",
-    "section": "Assessments for Independent Thinking",
-    "text": "Assessments for Independent Thinking\nCarefully designed assessments encourage independent thinking and provide experience for the real word. As educators, we wish not to develop economists who can simply restate theory but can apply these concepts to research that benefits all of society. I organize my assessments such that students show (1) they understand the basics; (2) they understand more complex material; and (3) they can apply what they have learned to a new problem. Challenging students to synthesize the concepts they have learned in order to solve a problem fosters creativity and resourcefulness. Furthermore, assessments that mirror real-world assignments help prepare students for employment in all areas, including government, private sector, and academia."
-  },
-  {
-    "objectID": "philosophy.html#review-of-pre-requisite-concepts",
-    "href": "philosophy.html#review-of-pre-requisite-concepts",
-    "title": "Teaching Philosophy",
-    "section": "Review of Pre-requisite Concepts",
-    "text": "Review of Pre-requisite Concepts\nMy approach to learning is sometimes similar to my search for a lost item: I start with the last place I had it. “It” in this case is an understanding; I go to where I last had a solid understanding of the material work my way forward. In my experience, many students lack an understanding of the underlying mathematical methods or do not possess the foundational concepts in economics to properly solve problems. I find reviewing the supporting material provides these students with the ability to better solve problems in a variety of cases. It helps to clarify the logical connection between the theoretical concepts in economics and the quantitative tools used to support them. Some students who have strong quantitative skills have trouble grasping normative concepts, while other students may possess economic intuition but struggle with mathematics. In a classroom setting, reviewing the pre-requisite concepts allows students to start with a more equal distribution of knowledge."
-  },
-  {
-    "objectID": "philosophy.html#external-benefit-from-teaching",
-    "href": "philosophy.html#external-benefit-from-teaching",
-    "title": "Teaching Philosophy",
-    "section": "External Benefit from Teaching",
-    "text": "External Benefit from Teaching\nI truly enjoy teaching. I derive a great deal of fulfillment from helping others gain new knowledge and providing them with the tools to solve future problems. Teaching often results in a positive externality as helping others navigate through material has the added benefit of giving the instructor a better understanding of economic theory. Many revelations I have had in my own studies came from tutoring other students. For example, by drawing on lessons of different concepts to help others understand a particular problem, as the teacher, you begin to form connections between topics and develop a greater understanding of economic theory. These connections are then passed on to others through teaching. It is for this reason, I believe teaching is an important aspect of academia. These same benefits can be achieved through collaboration. By grouping students with varying economic knowledge, students can help fill the gaps in each other’s understandings, offer new insights, and identify underlying connections between economic concepts."
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#preliminaries",
-    "href": "posts/2025-09-08-workflow/index.html#preliminaries",
-    "title": "Workflow",
-    "section": "Preliminaries",
-    "text": "Preliminaries\n\nThe necessary software to follow this lecture are\n\nR\nRStudio\nGit\nCreated an account on GitHub\nGitHub Desktop"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#what-is-a-workflow",
-    "href": "posts/2025-09-08-workflow/index.html#what-is-a-workflow",
-    "title": "Workflow",
-    "section": "What is a Workflow?",
-    "text": "What is a Workflow?\n\nStructured sequence of steps, tasks, and decisions that guide how a project moves from start to finish\n\n\n\nA good workflow is organized, repeatable, and transparent\n\nHelps reduce errors\nMakes work reproducible and easier to follow"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#workflow-example-applied-economic-research",
-    "href": "posts/2025-09-08-workflow/index.html#workflow-example-applied-economic-research",
-    "title": "Workflow",
-    "section": "Workflow Example: Applied Economic Research",
-    "text": "Workflow Example: Applied Economic Research"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#version-control",
-    "href": "posts/2025-09-08-workflow/index.html#version-control",
-    "title": "Workflow",
-    "section": "Version Control",
-    "text": "Version Control\n\nVersion control software (VCS) is a system that helps people manage and track changes to their files over time (e.g., text documents and code files)\n\n\nIt keeps track of every modification made to files, who made those changes, and when they were made\n\n\nChanges can be reverted, previous versions of files can be restored, and conflicts between different versions can be resolved"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#git",
-    "href": "posts/2025-09-08-workflow/index.html#git",
-    "title": "Workflow",
-    "section": "Git",
-    "text": "Git"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#what-is-git",
-    "href": "posts/2025-09-08-workflow/index.html#what-is-git",
-    "title": "Workflow",
-    "section": "What is Git?",
-    "text": "What is Git?\n\nGit is a popular VCS\n\n\nAllows multiple collaborators to work on the same project simultaneously, manage changes, and share work effectively\nGit’s greatest strength is its facilitation of collaboration\nIt has been described as “track changes on steroids” or as “a marriage between Dropbox and Microsoft Word’s ‘Track Changes’ feature”"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#git-repository",
-    "href": "posts/2025-09-08-workflow/index.html#git-repository",
-    "title": "Workflow",
-    "section": "Git Repository",
-    "text": "Git Repository\n\nGit tracks the changes of a set files in a Git enabled folder or directory\n\n\nThe Git enabled directory is known as a repository (repo)\n\n\nOne uses Git to flag any saved changes made to files in the repository"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#git-repository-contd",
-    "href": "posts/2025-09-08-workflow/index.html#git-repository-contd",
-    "title": "Workflow",
-    "section": "Git Repository (cont’d)",
-    "text": "Git Repository (cont’d)"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#changes-and-checkpoints",
-    "href": "posts/2025-09-08-workflow/index.html#changes-and-checkpoints",
-    "title": "Workflow",
-    "section": "Changes and Checkpoints",
-    "text": "Changes and Checkpoints\n\nGit can then save a version (snapshot) of repository files at a given moment in time\n\n\nThis is known as a commit\n\n\nEach commit has a message explaining what was changed, keeping track of the project’s progress"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#branches",
-    "href": "posts/2025-09-08-workflow/index.html#branches",
-    "title": "Workflow",
-    "section": "Branches",
-    "text": "Branches\n\nGit allows you to create branches, which are akin to an alternate version of the repository to experiment with new ideas\n\n\nOnce you’re happy with the changes, you can merge these branches back into the main project\n\n\nA branch is a separate line of development\n\n\nThe main branch is usually called main or master"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#collaboration",
-    "href": "posts/2025-09-08-workflow/index.html#collaboration",
-    "title": "Workflow",
-    "section": "Collaboration",
-    "text": "Collaboration\n\nYou can store your repository on a remote server (e.g., GitHub) and everyone can access it\n\n\nWhen someone makes changes, you can pull those changes into your local repository (folder on your computer)\n\n\nSimilarly, when you make changes, you can push them to the remote server so your team can see and use them"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#track-and-undo-changes",
-    "href": "posts/2025-09-08-workflow/index.html#track-and-undo-changes",
-    "title": "Workflow",
-    "section": "Track and Undo Changes",
-    "text": "Track and Undo Changes\n\nGit tracks every change you make\n\n\nIf you realize you made a mistake or want to revisit an earlier version of your work, you can easily go back to previous commits\n\n\nThis helps ensure you don’t lose valuable work and can always correct errors"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#github",
-    "href": "posts/2025-09-08-workflow/index.html#github",
-    "title": "Workflow",
-    "section": "GitHub",
-    "text": "GitHub\n\nGitHub is a web-based platform that helps researchers manage, share, and collaborate on code projects using Git\n\n\nIt provides a cloud-based space where you can store your Git repositories and interact with other developers’ projects\n\n\nGitHub has become one of the most popular platforms for open-source and private software development"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#git-and-workflow",
-    "href": "posts/2025-09-08-workflow/index.html#git-and-workflow",
-    "title": "Workflow",
-    "section": "Git and Workflow",
-    "text": "Git and Workflow\n\nVersion control is a critical component of a productive workflow\n\n\n\nA recommended first-step of any workflow is to set up a Git-enabled repository for your project files and link this repository to GitHub.com"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#creating-a-git-repository-1",
-    "href": "posts/2025-09-08-workflow/index.html#creating-a-git-repository-1",
-    "title": "Workflow",
-    "section": "Creating a Git Repository",
-    "text": "Creating a Git Repository\n\nThree main ways\n\nCreate repository on GitHub.com\nAdd new repository using GitHub Desktop\nCreate a new folder on your local computer and enable Git"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github",
-    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github",
-    "title": "Workflow",
-    "section": "Create Git Repository on GitHub",
-    "text": "Create Git Repository on GitHub\n\nGo to github.com and sign in\n\n\nOn your home page, click the  button"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd",
-    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd",
-    "title": "Workflow",
-    "section": "Create Git Repository on GitHub (cont’d)",
-    "text": "Create Git Repository on GitHub (cont’d)\n\nEnter the name of the repository"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-1",
-    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-1",
-    "title": "Workflow",
-    "section": "Create Git Repository on GitHub (cont’d)",
-    "text": "Create Git Repository on GitHub (cont’d)\n\nChoose whether you want the repository to be public or private"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-2",
-    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-2",
-    "title": "Workflow",
-    "section": "Create Git Repository on GitHub (cont’d)",
-    "text": "Create Git Repository on GitHub (cont’d)\n\nAdd a README file, which gives a description of your project"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-3",
-    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-3",
-    "title": "Workflow",
-    "section": "Create Git Repository on GitHub (cont’d)",
-    "text": "Create Git Repository on GitHub (cont’d)\n\nChoose a license, then press Create\n\nFor more on open source licensing, please visit ChooseALicense.com"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-4",
-    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-4",
-    "title": "Workflow",
-    "section": "Create Git Repository on GitHub (cont’d)",
-    "text": "Create Git Repository on GitHub (cont’d)\n\nYour repository has been created\n\n\n\nHere are a few things to notice"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-5",
-    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-5",
-    "title": "Workflow",
-    "section": "Create Git Repository on GitHub (cont’d)",
-    "text": "Create Git Repository on GitHub (cont’d)\n\nGit defaults to the main branch"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-6",
-    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-6",
-    "title": "Workflow",
-    "section": "Create Git Repository on GitHub (cont’d)",
-    "text": "Create Git Repository on GitHub (cont’d)\n\nThe commit message and commit ID"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-7",
-    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-7",
-    "title": "Workflow",
-    "section": "Create Git Repository on GitHub (cont’d)",
-    "text": "Create Git Repository on GitHub (cont’d)\n\nTwo files were created: LICENSE and README.md\n\n\nNote the files created have the same Git message"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-8",
-    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-8",
-    "title": "Workflow",
-    "section": "Create Git Repository on GitHub (cont’d)",
-    "text": "Create Git Repository on GitHub (cont’d)\n\nLICENSE refers to the license chosen when creating the repository"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-9",
-    "href": "posts/2025-09-08-workflow/index.html#create-git-repository-on-github-contd-9",
-    "title": "Workflow",
-    "section": "Create Git Repository on GitHub (cont’d)",
-    "text": "Create Git Repository on GitHub (cont’d)\n\nREADME.md is the landing page for your repository\n\n\nIt is where you describe your repository"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop",
-    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop",
-    "title": "Workflow",
-    "section": "Clone GitHub Repository in GitHub Desktop",
-    "text": "Clone GitHub Repository in GitHub Desktop\n\nOpen GitHub Desktop and log in (if you are currently logged out)"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd",
-    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd",
-    "title": "Workflow",
-    "section": "Clone GitHub Repository in GitHub Desktop (cont’d)",
-    "text": "Clone GitHub Repository in GitHub Desktop (cont’d)\n\nOn the left-hand-side, you will notice a list of your GitHub repositories\n\n\nChoose the repository you wish to make a copy to your local computer\nThen select “Clone username/repo”, where username/repo is your GitHub username and repo is the name of the repository\nIn this example it is clairl/demo"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-1",
-    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-1",
-    "title": "Workflow",
-    "section": "Clone GitHub Repository in GitHub Desktop (cont’d)",
-    "text": "Clone GitHub Repository in GitHub Desktop (cont’d)\n\nChoose the location for the clone of the GitHub repo on your local computer and click Clone"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-2",
-    "href": "posts/2025-09-08-workflow/index.html#clone-github-repository-in-github-desktop-contd-2",
-    "title": "Workflow",
-    "section": "Clone GitHub Repository in GitHub Desktop (cont’d)",
-    "text": "Clone GitHub Repository in GitHub Desktop (cont’d)"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder",
-    "href": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder",
-    "title": "Workflow",
-    "section": "Create a Git Repository from Existing Folder",
-    "text": "Create a Git Repository from Existing Folder\n\nSay we already have a folder with files that we want to connect to GitHub?\n\n\nFirst, we have to enable Git\n\n\nTo do this, we have to use the Terminal"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.",
-    "href": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.",
-    "title": "Workflow",
-    "section": "Create a Git Repository from Existing Folder (cont.)",
-    "text": "Create a Git Repository from Existing Folder (cont.)\n\nIn the terminal, navigate to the project folder"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.-1",
-    "href": "posts/2025-09-08-workflow/index.html#create-a-git-repository-from-existing-folder-cont.-1",
-    "title": "Workflow",
-    "section": "Create a Git Repository from Existing Folder (cont.)",
-    "text": "Create a Git Repository from Existing Folder (cont.)\n\nUse the following commands:\n\ngit init\ngit add .\n\nThe first command enables git, while the second command stages files for the next commit\n\n\nThe . means “the current directory and all its contents”"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#workflow",
-    "href": "posts/2025-09-08-workflow/index.html#workflow",
-    "title": "Workflow",
-    "section": "Workflow",
-    "text": "Workflow\n\nThe workflow we will be using to create our website is:\n\nCreate a new Quarto project in R Studio\nConnect our project directory to GitHub through Github Desktop\nPublish the newly created website via GitHub Pages\nCreate new pages for the website\nAdd a blog to the website\nCustomize the website"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-1",
-    "href": "posts/2025-09-08-workflow/index.html#r-projects-1",
-    "title": "Workflow",
-    "section": "R Projects",
-    "text": "R Projects\n\nTo begin, create a new Quarto project in R Studio\n\nClick File-&gt;New Project…"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-cont.",
-    "href": "posts/2025-09-08-workflow/index.html#r-projects-cont.",
-    "title": "Workflow",
-    "section": "R Projects (cont.)",
-    "text": "R Projects (cont.)\n\nSelect New Directory"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-cont.-1",
-    "href": "posts/2025-09-08-workflow/index.html#r-projects-cont.-1",
-    "title": "Workflow",
-    "section": "R Projects (cont.)",
-    "text": "R Projects (cont.)\n\nSelect Quarto Website"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#r-projects-cont.-2",
-    "href": "posts/2025-09-08-workflow/index.html#r-projects-cont.-2",
-    "title": "Workflow",
-    "section": "R Projects (cont.)",
-    "text": "R Projects (cont.)\n\nName the directory. I named mine demo.\nChoose a path for the new project and click Create Project"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files",
-    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files",
-    "title": "Workflow",
-    "section": "Quarto Website Files",
-    "text": "Quarto Website Files\n\nR Studio creates a project with a number of files"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.",
-    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.",
-    "title": "Workflow",
-    "section": "Quarto Website Files (cont.)",
-    "text": "Quarto Website Files (cont.)\n\n_quarto.yml: key configuration file for the Quarto website.\n\nDefines the overall structure and settings for the website project, project:\nDefines metadata for the website, e.g., title, author(s), and other descriptive info, title: and description:\nControls the structure of the website, navbar:\nSpecifies themes, format:, theme:, css:"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-1",
-    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-1",
-    "title": "Workflow",
-    "section": "Quarto Website Files (cont.)",
-    "text": "Quarto Website Files (cont.)\n\nindex.qmd: home page of your Quarto website\n\nDefines the content and layout for the main landing page of the site\nCan add Markdown and Quarto-specific content\nDefined as Home in the _quarto.yml file\n\n.gitignore: configuration file used in Git repositories to specify intentionally untracked files or directories that Git should ignore."
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-2",
-    "href": "posts/2025-09-08-workflow/index.html#quarto-website-files-cont.-2",
-    "title": "Workflow",
-    "section": "Quarto Website Files (cont.)",
-    "text": "Quarto Website Files (cont.)\n\nabout.qmd: Quarto Markdown file that is typically used to create an About page for a Quarto website.\n\nThis page provides information about the website’s purpose, the author(s), or the organization behind it.\nNot mandatory\nAppears as another page on the navigation bar\n\nstyle.css: Cascading Style Sheets (CSS) file used to define and customize the visual appearance of a Quarto website or document.\n\nallows you to override or extend the default styles provided by Quarto’s themes"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#building-the-website",
-    "href": "posts/2025-09-08-workflow/index.html#building-the-website",
-    "title": "Workflow",
-    "section": "Building the Website",
-    "text": "Building the Website\n\nTo build the website, click the Render button at the top of the index.qmd file.\nAlternatively, you can also click Build, then Render Website in the top right pane."
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#building-the-website-cont.",
-    "href": "posts/2025-09-08-workflow/index.html#building-the-website-cont.",
-    "title": "Workflow",
-    "section": "Building the Website (cont.)",
-    "text": "Building the Website (cont.)"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-1",
-    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-1",
-    "title": "Workflow",
-    "section": "Connecting R Project to GitHub",
-    "text": "Connecting R Project to GitHub\n\nBefore we can publish our website, we need to connect our R project to a GitHub repository\nBe sure that you are signed into your GitHub account in GitHub Desktop.\nOpen GitHub Desktop and add the R project Directory\n\nSelect Add Existing Repository\nChoose the R project directory"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.",
-    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.",
-    "title": "Workflow",
-    "section": "Connecting R Project to GitHub (cont.)",
-    "text": "Connecting R Project to GitHub (cont.)"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-1",
-    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-1",
-    "title": "Workflow",
-    "section": "Connecting R Project to GitHub (cont.)",
-    "text": "Connecting R Project to GitHub (cont.)\n\nCommit changes\n\nWrite a summary (E.g., “Created Quarto website”)"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-2",
-    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-2",
-    "title": "Workflow",
-    "section": "Connecting R Project to GitHub (cont.)",
-    "text": "Connecting R Project to GitHub (cont.)\n\nPublish repository to GitHub.com"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-3",
-    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-3",
-    "title": "Workflow",
-    "section": "Connecting R Project to GitHub (cont.)",
-    "text": "Connecting R Project to GitHub (cont.)\n\nGo to GitHub.com to confirm that the repository has been published."
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-4",
-    "href": "posts/2025-09-08-workflow/index.html#connecting-r-project-to-github-cont.-4",
-    "title": "Workflow",
-    "section": "Connecting R Project to GitHub (cont.)",
-    "text": "Connecting R Project to GitHub (cont.)\n\nCheck to see that the project files are now available in your repository"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-1",
-    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-1",
-    "title": "Workflow",
-    "section": "Publishing Your Website",
-    "text": "Publishing Your Website\n\nReturn to R Studio and open the _quarto.yml file.\nUnder project: include the code output-dir: docs and render the website. This will save the website files in a newly created docs folder."
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.",
-    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.",
-    "title": "Workflow",
-    "section": "Publishing Your Website (cont.)",
-    "text": "Publishing Your Website (cont.)\n\nWe no longer need the _site folder, so we can delete it."
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-1",
-    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-1",
-    "title": "Workflow",
-    "section": "Publishing Your Website (cont.)",
-    "text": "Publishing Your Website (cont.)\n\nReturn to GitHub Desktop, commit the changes, and push them to GitHub.com.\n\nRemember to leave a summary"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-2",
-    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-2",
-    "title": "Workflow",
-    "section": "Publishing Your Website (cont.)",
-    "text": "Publishing Your Website (cont.)\n\nReturn to GitHub.com.\n\nNote that the docs folder has replaced the _site folder."
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#github-pages",
-    "href": "posts/2025-09-08-workflow/index.html#github-pages",
-    "title": "Workflow",
-    "section": "GitHub Pages",
-    "text": "GitHub Pages\n\nClick Settings from the top menu."
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.",
-    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.",
-    "title": "Workflow",
-    "section": "GitHub Pages (cont.)",
-    "text": "GitHub Pages (cont.)\n\nChoose Pages from the menu on the left-hand-side"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-1",
-    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-1",
-    "title": "Workflow",
-    "section": "GitHub Pages (cont.)",
-    "text": "GitHub Pages (cont.)\n\nSet the branch to main"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-2",
-    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-2",
-    "title": "Workflow",
-    "section": "GitHub Pages (cont.)",
-    "text": "GitHub Pages (cont.)\n\nSet the folder to docs"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-3",
-    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-3",
-    "title": "Workflow",
-    "section": "GitHub Pages (cont.)",
-    "text": "GitHub Pages (cont.)\n\nNote the message saying that the website is being built"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#github-pages-cont.-4",
-    "href": "posts/2025-09-08-workflow/index.html#github-pages-cont.-4",
-    "title": "Workflow",
-    "section": "GitHub Pages (cont.)",
-    "text": "GitHub Pages (cont.)\n\nWait a about a minute, then refresh the page. You should see a message that the site is live at a given URL.\n\nThe URL is typically https://username.github.io/repository_name"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-3",
-    "href": "posts/2025-09-08-workflow/index.html#publishing-your-website-cont.-3",
-    "title": "Workflow",
-    "section": "Publishing Your Website (cont.)",
-    "text": "Publishing Your Website (cont.)\n\nFollow the link to view your website"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-1",
-    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-1",
-    "title": "Workflow",
-    "section": "Adding Pages to Your Website",
-    "text": "Adding Pages to Your Website\n\nTo add a webpage, create a new .qmd file and save it in your project directory."
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.",
-    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.",
-    "title": "Workflow",
-    "section": "Adding Pages to Your Website (cont.)",
-    "text": "Adding Pages to Your Website (cont.)"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-1",
-    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-1",
-    "title": "Workflow",
-    "section": "Adding Pages to Your Website (cont.)",
-    "text": "Adding Pages to Your Website (cont.)\n\nAdd the new Quarto file to the navigation bar in the _quarto.yml file\n\nhref: adds the listing page file to the navigation bar\ntext: is the text that will display on the navigation bar."
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-2",
-    "href": "posts/2025-09-08-workflow/index.html#adding-pages-to-your-website-cont.-2",
-    "title": "Workflow",
-    "section": "Adding Pages to Your Website (cont.)",
-    "text": "Adding Pages to Your Website (cont.)"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-1",
-    "href": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-1",
-    "title": "Workflow",
-    "section": "Add File to a Webpage",
-    "text": "Add File to a Webpage\n\nYou may want to include downloadable file formats on your website\nAdd the file to your project directory and reference it within your Quarto document.\nIt is helpful to create sub directories to store your files,e.g.,\n\nFigures: store figures\nData: datasets\nFiles: pdf documents"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.",
-    "href": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.",
-    "title": "Workflow",
-    "section": "Add File to a Webpage (cont.)",
-    "text": "Add File to a Webpage (cont.)\n\nReference the file using the syntax ![text](files/filename.pdf)\nE.g.,"
-  },
-  {
-    "objectID": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.-1",
-    "href": "posts/2025-09-08-workflow/index.html#add-file-to-a-webpage-cont.-1",
-    "title": "Workflow",
-    "section": "Add File to a Webpage (cont.)",
-    "text": "Add File to a Webpage (cont.)"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#software",
-    "href": "econ_7201/rstudio/02-rstudio.html#software",
-    "title": "Luc Clair",
-    "section": "Software",
-    "text": "Software\nTo run R code and use R Studio, you need to install the following software\n\nR (the programming language)\nRStudio (the interface to work with R)"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#installing-r",
-    "href": "econ_7201/rstudio/02-rstudio.html#installing-r",
-    "title": "Luc Clair",
-    "section": "Installing R",
-    "text": "Installing R\n\nDownload R: https://cran.r-project.org\n\n\n\n\n\n\n\n\nWindows Instructions\nMac Instructions\n\n\n\n\n\nClick “Download R for Windows”\nClick “base”\nClick the link: “Download R x.x.x for Windows”\nOpen the downloaded .exe file\nFollow the installation prompts (accept defaults)\n\n\nClick “Download R for macOS”\nChoose the .pkg file that matches your OS version (usually the top one)\nDownload and open the .pkg installer\nFollow the prompts to install"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#installing-rstudio",
-    "href": "econ_7201/rstudio/02-rstudio.html#installing-rstudio",
-    "title": "Luc Clair",
-    "section": "Installing RStudio",
-    "text": "Installing RStudio\n\nDownload RStudio: https://posit.co/download/rstudio-desktop/\n\n\n\n\n\n\n\n\nWindows Instructions\nMac Instructions\n\n\n\n\n\nClick “Download RStudio for Windows”\nOpen the downloaded .exe file\nFollow the installation prompts\n\n\nClick “Download RStudio for macOS”\nOpen the downloaded .dmg file\nDrag the RStudio icon into the Applications folder"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#why-rstudio",
-    "href": "econ_7201/rstudio/02-rstudio.html#why-rstudio",
-    "title": "Luc Clair",
-    "section": "Why RStudio?",
-    "text": "Why RStudio?\n\nRStudio is an integrated development environment (IDE) for R\n\nProvides a user-friendly interface for writing code\nVisualizing data\nManaging projects\nProducing reproducible reports (Quarto, R Markdown)\n\n\n\nIt streamlines the process of statistical computing and data analysis, making it especially useful for research, teaching, and applied econometrics"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#ide-for-r",
-    "href": "econ_7201/rstudio/02-rstudio.html#ide-for-r",
-    "title": "Luc Clair",
-    "section": "IDE for R",
-    "text": "IDE for R\n\nAn IDE is a software application that provides a complete set of tools for writing, running, and debugging code in one place\n\n\nRStudio combines script editing, console, workspace viewer, and plotting in one interface\n\n\nEnables seamless development, testing, and output visualization"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#projects-for-organization",
-    "href": "econ_7201/rstudio/02-rstudio.html#projects-for-organization",
-    "title": "Luc Clair",
-    "section": "Projects for Organization",
-    "text": "Projects for Organization\n\nUse RStudio Projects to organize coursework, datasets, scripts, and outputs in isolated environments\n\n\nPromotes reproducibility and reduces working directory errors"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#script-editor-with-syntax-highlighting",
-    "href": "econ_7201/rstudio/02-rstudio.html#script-editor-with-syntax-highlighting",
-    "title": "Luc Clair",
-    "section": "Script Editor with Syntax Highlighting",
-    "text": "Script Editor with Syntax Highlighting\n\nWrite and run R scripts (.R), R Markdown (.Rmd), and Quarto documents\n\n\nFeatures like auto-completion, function tool-tips, and real-time diagnostics boost coding efficiency"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#first-look",
-    "href": "econ_7201/rstudio/02-rstudio.html#first-look",
-    "title": "Luc Clair",
-    "section": "First Look",
-    "text": "First Look\n\nOpen RStudio"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#opening-a-source-document",
-    "href": "econ_7201/rstudio/02-rstudio.html#opening-a-source-document",
-    "title": "Luc Clair",
-    "section": "Opening a Source Document",
-    "text": "Opening a Source Document\n\nE.g., R script"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#opening-a-source-document-cont.",
-    "href": "econ_7201/rstudio/02-rstudio.html#opening-a-source-document-cont.",
-    "title": "Luc Clair",
-    "section": "Opening a Source Document (cont.)",
-    "text": "Opening a Source Document (cont.)"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-interface",
-    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-interface",
-    "title": "Luc Clair",
-    "section": "RStudio Interface",
-    "text": "RStudio Interface"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-1",
-    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-1",
-    "title": "Luc Clair",
-    "section": "RStudio Interface",
-    "text": "RStudio Interface\n\nSource (Top-Left): Code scripts, R Markdown, Quarto"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.",
-    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.",
-    "title": "Luc Clair",
-    "section": "RStudio Interface (cont.)",
-    "text": "RStudio Interface (cont.)\n\nConsole (Bottom-Left): Where code runs"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.-1",
-    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.-1",
-    "title": "Luc Clair",
-    "section": "RStudio Interface (cont.)",
-    "text": "RStudio Interface (cont.)\n\nEnvironment/History (Top-Right): View objects, data, function history"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.-2",
-    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-interface-cont.-2",
-    "title": "Luc Clair",
-    "section": "RStudio Interface (cont.)",
-    "text": "RStudio Interface (cont.)\n\nFiles/Plots/Packages/Help (Bottom-Right): View plots, install packages, browse files, and search help files"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code",
-    "href": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code",
-    "title": "Luc Clair",
-    "section": "Writing and Running R Code",
-    "text": "Writing and Running R Code\n\nUse .R scripts to save and re-use code"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code-cont.",
-    "href": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code-cont.",
-    "title": "Luc Clair",
-    "section": "Writing and Running R Code (cont.)",
-    "text": "Writing and Running R Code (cont.)\n\nUse Ctrl+Enter (or Cmd on Mac) to run a line of code"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code-cont.-1",
-    "href": "econ_7201/rstudio/02-rstudio.html#writing-and-running-r-code-cont.-1",
-    "title": "Luc Clair",
-    "section": "Writing and Running R Code (cont.)",
-    "text": "Writing and Running R Code (cont.)\n\nAlternatively, you can press the  button at the top of the source window"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#running-multiple-lines-of-code",
-    "href": "econ_7201/rstudio/02-rstudio.html#running-multiple-lines-of-code",
-    "title": "Luc Clair",
-    "section": "Running Multiple lines of Code",
-    "text": "Running Multiple lines of Code\n\nHighlight lines of code you want to run, then use Ctrl+Enter or press the  button\n\n\nIf you want to run entire code script, press  at the top of the source window."
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#workflow",
-    "href": "econ_7201/rstudio/02-rstudio.html#workflow",
-    "title": "Luc Clair",
-    "section": "Workflow",
-    "text": "Workflow\n\nStep-by-step process you follow to complete a data analysis from raw data to final results\n\n\nIt includes data loading, cleaning, modeling, and reporting\nA good workflow is organized, repeatable, and transparent\nReduces errors\nMakes work reproducible and easier to follow"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#workflow-example",
-    "href": "econ_7201/rstudio/02-rstudio.html#workflow-example",
-    "title": "Luc Clair",
-    "section": "Workflow Example",
-    "text": "Workflow Example\n\nCreate a project folder/repository/directory\nLoad and inspect data\nClean data\nEstimate an econometric model\nRun robustness checks\nInterpret and report results\nExport results"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#rstudio-projects",
-    "href": "econ_7201/rstudio/02-rstudio.html#rstudio-projects",
-    "title": "Luc Clair",
-    "section": "RStudio Projects",
-    "text": "RStudio Projects\n\nRStudio projects create a work environment within RStudio\n\n\nEssentially, they create a folder containing all project documents, including code scripts, data, images, plots, and text files\n\n\nOpening an .Rproj file opens all files for the project the project and automatically sets the working directory to the project directory"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#benefits-of-rstudio-projects",
-    "href": "econ_7201/rstudio/02-rstudio.html#benefits-of-rstudio-projects",
-    "title": "Luc Clair",
-    "section": "Benefits of RStudio Projects",
-    "text": "Benefits of RStudio Projects\n\nKeeps everything organized\n\nEach project has its own folder with scripts, data, and results\n\n\n\n\nReproducible workflow\n\nOpens with the same settings, file paths, and environment every time\n\nAvoids Setwd() errors\n\nAutomatically sets the working directory to the project folder"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#benefits-of-rstudio-projects-cont.",
-    "href": "econ_7201/rstudio/02-rstudio.html#benefits-of-rstudio-projects-cont.",
-    "title": "Luc Clair",
-    "section": "Benefits of RStudio Projects (cont.)",
-    "text": "Benefits of RStudio Projects (cont.)\n\nManages multiple analyses cleanly\n\nLets you separate class assignments, research papers, or datasets into distinct, self-contained units\n\n\n\n\nSupports version control (Git)\n\nBuilt-in Git integration makes it easy to track changes and collaborate on code\n\nLoads your workspace consistently\n\nAutomatically restores your open files, history, and environment (optional)"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project",
-    "href": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project",
-    "title": "Luc Clair",
-    "section": "Create RStudio Project",
-    "text": "Create RStudio Project\n\nTo Create a new RStudio project press the  button"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.",
-    "href": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.",
-    "title": "Luc Clair",
-    "section": "Create RStudio Project (cont.)",
-    "text": "Create RStudio Project (cont.)\n\nChoose whether you want to create a new folder for your project directory, convert an existing folder into a project directory, or link the project folder to a git repository (more on this next lecture)"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-1",
-    "href": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-1",
-    "title": "Luc Clair",
-    "section": "Create RStudio Project (cont.)",
-    "text": "Create RStudio Project (cont.)\n\nSelect the type of project you want to create"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-2",
-    "href": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-2",
-    "title": "Luc Clair",
-    "section": "Create RStudio Project (cont.)",
-    "text": "Create RStudio Project (cont.)\n\nChoose the location for your project directory and make sure you check the box Create git repository"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-3",
-    "href": "econ_7201/rstudio/02-rstudio.html#create-rstudio-project-cont.-3",
-    "title": "Luc Clair",
-    "section": "Create RStudio Project (cont.)",
-    "text": "Create RStudio Project (cont.)\n\nYour new project directory has been created\n\n\nNote the .Rproj file created"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#using-r-in-rstudio-1",
-    "href": "econ_7201/rstudio/02-rstudio.html#using-r-in-rstudio-1",
-    "title": "Luc Clair",
-    "section": "Using R in RStudio",
-    "text": "Using R in RStudio\n\nFor this course, the main purpose of using RStudio is to facilitate the use of R statistical software\n\n\nMost often, we will write R code in an R script\n\n\nWe can then run code from our script, which shows up in the console as seen above\n\n\nBoth the code and the results will be displayed in the console"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#variables-datasets-and-functions",
-    "href": "econ_7201/rstudio/02-rstudio.html#variables-datasets-and-functions",
-    "title": "Luc Clair",
-    "section": "Variables, Datasets, and Functions",
-    "text": "Variables, Datasets, and Functions\n\nThroughout our analyses, we will store data and results as variables\n\n\nWe may also group related variables into datasets, or import datasets from external sources\n\n\nAdditionally, we can create functions to automate repeated tasks and simplify our code\n\n\nAll saved variables, datasets, and functions will appear in the Environment tab in RStudio, allowing us to view and manage the objects currently in memory"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#variables-datasets-and-functions-cont.",
-    "href": "econ_7201/rstudio/02-rstudio.html#variables-datasets-and-functions-cont.",
-    "title": "Luc Clair",
-    "section": "Variables, Datasets, and Functions (cont.)",
-    "text": "Variables, Datasets, and Functions (cont.)"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#inspecting-datasets",
-    "href": "econ_7201/rstudio/02-rstudio.html#inspecting-datasets",
-    "title": "Luc Clair",
-    "section": "Inspecting Datasets",
-    "text": "Inspecting Datasets\n\nTo view your dataset in R, simply type View(data), where data is your dataset"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#inspecting-datasets-cont.",
-    "href": "econ_7201/rstudio/02-rstudio.html#inspecting-datasets-cont.",
-    "title": "Luc Clair",
-    "section": "Inspecting Datasets (cont.)",
-    "text": "Inspecting Datasets (cont.)\n\nOther useful commands for inspecting data include head(), summary(), str()\n\n\nIdeal for inspecting data sets, matrices, and model outputs"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages",
-    "href": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages",
-    "title": "Luc Clair",
-    "section": "Installing and Loading R Packages",
-    "text": "Installing and Loading R Packages\n\nR is a statistical software built on user written commands/functions\n\n\nUsers write functions and group them in packages, which are then made available to all users\n\n\nTo use a function, you must install the necessary package(s) using install.packages(\"package_name\") and load it into your session using library(\"package_name\")\n\n\nMany of the functions that we will use in this course are available in the base and stats packages, which load automatically with every R session"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages-cont.",
-    "href": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages-cont.",
-    "title": "Luc Clair",
-    "section": "Installing and Loading R Packages (cont.)",
-    "text": "Installing and Loading R Packages (cont.)\n\nTo view your available packages and which ones are loaded into a session, click the Packages tab in the bottom right pane"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages-cont.-1",
-    "href": "econ_7201/rstudio/02-rstudio.html#installing-and-loading-r-packages-cont.-1",
-    "title": "Luc Clair",
-    "section": "Installing and Loading R Packages (cont.)",
-    "text": "Installing and Loading R Packages (cont.)\n\nOne can also load a package in RStudio by checking the box next to the package name in the Packages tab"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#plotting-and-output",
-    "href": "econ_7201/rstudio/02-rstudio.html#plotting-and-output",
-    "title": "Luc Clair",
-    "section": "Plotting and Output",
-    "text": "Plotting and Output\n\nR is powerful tool for creating plots and graphics\n\n\nRStudio organizes plots under the Plots tab in the bottom right pane\n\n\nAllows for easy saving and exporting"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#plotting-and-output-cont.",
-    "href": "econ_7201/rstudio/02-rstudio.html#plotting-and-output-cont.",
-    "title": "Luc Clair",
-    "section": "Plotting and Output (cont.)",
-    "text": "Plotting and Output (cont.)\n\nE.g., plotting the probability density of a standard normal variable"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#quarto",
-    "href": "econ_7201/rstudio/02-rstudio.html#quarto",
-    "title": "Luc Clair",
-    "section": "Quarto",
-    "text": "Quarto\n\nAssignments for this course will be written in Quarto\n\n\nQuarto is an open-source tool designed for creating dynamic documents, reports, presentations, and websites\n\n\nIt integrates with various programming languages and provides a unified framework for combining code, narrative text, and data visualization\n\n\nMore on Quarto in future lectures"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#quarto-cont.",
-    "href": "econ_7201/rstudio/02-rstudio.html#quarto-cont.",
-    "title": "Luc Clair",
-    "section": "Quarto (cont.)",
-    "text": "Quarto (cont.)\n\nTo open a Quarto document, click the  button in the top-left corner and select “Quarto Document…”"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#quarto-cont.-1",
-    "href": "econ_7201/rstudio/02-rstudio.html#quarto-cont.-1",
-    "title": "Luc Clair",
-    "section": "Quarto (cont.)",
-    "text": "Quarto (cont.)\n\nSelect the format for your document, HTML, PDF, or Word and click Create"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#quarto-cont.-2",
-    "href": "econ_7201/rstudio/02-rstudio.html#quarto-cont.-2",
-    "title": "Luc Clair",
-    "section": "Quarto (cont.)",
-    "text": "Quarto (cont.)\n\nYou can now edit your Quarto document"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#rendering-a-quarto-document",
-    "href": "econ_7201/rstudio/02-rstudio.html#rendering-a-quarto-document",
-    "title": "Luc Clair",
-    "section": "Rendering a Quarto Document",
-    "text": "Rendering a Quarto Document\n\nTo view the rendered document click the  button and save the file to your desired location\nThe rendered document shows up under the Viewer tab in the bottom-right pane"
-  },
-  {
-    "objectID": "econ_7201/rstudio/02-rstudio.html#summary-1",
-    "href": "econ_7201/rstudio/02-rstudio.html#summary-1",
-    "title": "Luc Clair",
-    "section": "Summary",
-    "text": "Summary\n\nAll-in-one workspace\n\n\nEncourages clean, reproducible code\nTools for data, models, graphics, reporting\nA key skill for econometrics, data science, and research"
   },
   {
     "objectID": "econ_7201/git/03_git.html#preliminaries",
